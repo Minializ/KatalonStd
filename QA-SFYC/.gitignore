@@ -1,0 +1,21 @@
+# ==== Katalon Studio ====
+ 
+# Archivos temporales
+bin/
+Libs/
+Reports/
+build/
+.settings/
+ 
+# Logs y resultados de ejecución
+*.log
+*.tmp
+*.class
+*.jar
+*.properties
+*.iml
+ 
+ 
+ 
+# Katalon generado automáticamente
+*.metadata
