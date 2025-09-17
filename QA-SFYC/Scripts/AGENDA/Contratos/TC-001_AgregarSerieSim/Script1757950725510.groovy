@@ -17,3 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.selectAllOption(findTestObject('Object Repository/AGENDA/Page_Atencin a Clientes/SPAN_Contratos'))
+WebUI.selectAllOption(findTestObject('null'))
+WebUI.selectAllOption(findTestObject('null'))
