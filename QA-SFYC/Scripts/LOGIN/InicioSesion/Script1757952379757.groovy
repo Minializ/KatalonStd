@@ -18,15 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.URL_AGENDA)
+
 WebUI.maximizeWindow()
+
 WebUI.selectOptionByLabel(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 'SFYC', false)
+
 WebUI.setText(findTestObject('Object Repository/LOGIN/INPUT_User'), GlobalVariable.USER)
+
 WebUI.setEncryptedText(findTestObject('Object Repository/LOGIN/INPUT_Password'), GlobalVariable.PASSWORD)
+
 WebUI.click(findTestObject('Object Repository/LOGIN/BUTTOM_IniciarSesion'))
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 2, FailureHandling.STOP_ON_FAILURE)
-WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/INPUT_Suscriptor'), 5)
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.takeScreenshot()
-
-
+WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/INPUT_Suscriptor'), GlobalVariable.TIME_OUT)

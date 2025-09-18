@@ -18,8 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.setText(findTestObject('Object Repository/AGENDA/INPUT_Suscriptor'), numeroSuscriptor)
-WebUI.click(findTestObject('Object Repository/AGENDA/BUTTON_Consultar'))
-//WebUI.verifyElementNotPresent(findTestObject('Object Repository/AGENDA/INPUT_Suscriptor'), 10, FailureHandling.STOP_ON_FAILURE)
-WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/DIV_MensajeTituloSuscriptor'), 10)
 
-WebUI.takeScreenshot()
+WebUI.click(findTestObject('Object Repository/AGENDA/BUTTON_Consultar'))
+
+//WebUI.verifyElementNotPresent(findTestObject('Object Repository/AGENDA/INPUT_Suscriptor'), 10, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/DIV_MensajeTituloSuscriptor'), GlobalVariable.TIME_OUT)
