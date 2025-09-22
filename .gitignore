@@ -17,7 +17,7 @@ bin/lib/
 Libs/
 .svn/
 .gradle
-
+.cache
 
 # Log file
 *.log
