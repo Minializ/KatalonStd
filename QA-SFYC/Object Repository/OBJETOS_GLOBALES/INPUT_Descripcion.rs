@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INPUT_Descripcion</name>
+   <tag></tag>
+   <elementGuidId>3f62348f-de73-46e1-8760-10d4239cc745</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[@aria-colindex=&quot;2&quot;]//div[@data-dx_placeholder=&quot;Filtrar...&quot;]/parent::div/input[@class=&quot;dx-texteditor-input&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

@@ -17,10 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('Object Repository/AGENDA/INPUT_Suscriptor'), numeroSuscriptor)
+// Verifica si la pestaña de "Contratos" está abierta y la cierra para evitar llegar al limite de solicitudes abiertas.
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_CerrarTabContratos'), 1, FailureHandling.OPTIONAL)) {
+    WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_CerrarTabContratos'))
+}
 
-WebUI.click(findTestObject('Object Repository/AGENDA/BUTTON_Consultar'))
+// Se valida que si estamos en el Dashboard de una consulta de cliente, se hace clic en "+ Consultar"
+// y se limpia el campo de suscriptor para preparar una nueva consulta.
+if (WebUI.verifyTextPresent('Atención al cliente', false, FailureHandling.OPTIONAL)) {
+    WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_Consultar'))
 
-//WebUI.verifyElementNotPresent(findTestObject('Object Repository/AGENDA/INPUT_Suscriptor'), 10, FailureHandling.STOP_ON_FAILURE)
+    WebUI.clearText(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'))
+}
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/DIV_MensajeTituloSuscriptor'), GlobalVariable.TIME_OUT)
+WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), numeroSuscriptor)
+
+WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
+
+// Si aparece un mensaje de alerta relacionado con el suscriptor al momento de consultar, se cierra el mensaje para poder continuar.
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/AlertaSuscriptor/DIV_MensajeTituloSuscriptor'), 
+    10, FailureHandling.OPTIONAL)) {
+    //Metodo personalizado que cierra ventanas o alertas
+    CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
+}
+
+WebUI.takeScreenshot()

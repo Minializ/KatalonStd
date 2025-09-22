@@ -23,15 +23,29 @@ import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
 class Preconfiguraciones {
-	
+
+	/**
+	 * Método ejecutado automáticamente antes de cada caso de prueba.
+	 * Su propósito es iniciar sesión en el sistema bajo prueba antes de que comience cualquier flujo.
+	 * Utiliza un keyword personalizado para encapsular la lógica de autenticación.
+	 */
 	@BeforeTestCase
 	def iniciarSesion(TestCaseContext testCaseContext) {
-		WebUI.callTestCase(findTestCase('LOGIN/InicioSesion'), [:], FailureHandling.STOP_ON_FAILURE)
+		CustomKeywords.'utilidades.FuncionesAuxiliares.login'()
 	}
 
-	
+	/**
+	 * Método ejecutado automáticamente después de cada caso de prueba.
+	 * Su objetivo es capturar una evidencia visual del estado final del test y limpiar la interfaz.
+	 *
+	 * Acciones realizadas:
+	 * - Captura una captura de pantalla con el nombre del ID del caso de prueba (para trazabilidad).
+	 * - Llama al método personalizado 'limpiarVista' para cerrar ventanas emergentes o pestañas abiertas
+	 *   y así dejar el entorno limpio para la siguiente ejecución.
+	 */
 	@AfterTestCase
 	def capturarEvidencias(TestCaseContext testCaseContext) {
 		WebUI.takeScreenshot(testCaseContext.getTestCaseId() + ".jpg")
+		CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 	}
 }

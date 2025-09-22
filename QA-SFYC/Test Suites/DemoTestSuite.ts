@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>DemoTestSuite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>5100ba98-c510-40e5-87e5-3ff5d09d8917</testSuiteGuid>
+   <testCaseLink>
+      <guid>7f8390c4-beab-4070-98a0-26e45395f3d5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AGENDA/Contratos/TC-001_AgregarSerieSim</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>1f77765a-f91d-41f7-985c-e97287303b92</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-10</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>1f77765a-f91d-41f7-985c-e97287303b92</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
+         <variableId>55f7ec93-5f59-44d4-95a7-a1909d43e4ed</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1f77765a-f91d-41f7-985c-e97287303b92</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>cis</value>
+         <variableId>b92aa4f5-5602-4ff5-a6c4-1824bb1e6924</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1f77765a-f91d-41f7-985c-e97287303b92</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>serieSIM</value>
+         <variableId>fe15d6ef-364a-43d9-81c2-947776c5e273</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
