@@ -42,9 +42,6 @@ WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opci
 
 WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/BUTTON_AgregarQuejaAdministrativa'))
 
-//Metodo personalizdo que elimina el chatbot para evitar obstrucciones con otros objetos
-CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
-
 WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Motivo'), 3)
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject("Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo"), 'Profeco')

@@ -97,6 +97,9 @@ class FuncionesAuxiliares {
 		// Validar que la sesión se haya iniciado correctamente
 		WebUI.verifyElementNotPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 2, FailureHandling.STOP_ON_FAILURE)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), 5)
+		
+		//Metodo personalizdo que elimina el chatbot para evitar obstrucciones con otros objetos
+		eliminarChatBot()
 	}
 
 	@Keyword

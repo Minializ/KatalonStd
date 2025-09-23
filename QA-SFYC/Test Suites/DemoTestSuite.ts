@@ -20,8 +20,8 @@
          <combinationType>ONE</combinationType>
          <id>1f77765a-f91d-41f7-985c-e97287303b92</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-3</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
       </testDataLink>
@@ -54,8 +54,8 @@
          <combinationType>ONE</combinationType>
          <id>1d75b79c-d81f-41ba-a66b-b3db964da44c</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-3</value>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/SuscriptoresQueja</testDataId>
       </testDataLink>
