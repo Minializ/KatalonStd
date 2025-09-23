@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>BUTTON_Editar</name>
+   <tag></tag>
+   <elementGuidId>fc25e4cf-71c7-480d-bbc1-aa91db29832e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-resizable ') and contains(concat(' ', normalize-space(@class), ' '), ' dx-popup-normal ') and contains(concat(' ', normalize-space(@class), ' '), ' dx-popup-inherit-height ')]//*[@aria-label = 'Editar']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-button-text ')])[last()]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>.dx-resizable.dx-popup-normal.dx-popup-inherit-height [aria-label=&quot;Editar&quot;] .dx-button-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Editar&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>06c7c0f3-c487-434f-a118-348af225d9cb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-button-text</value>
+      <webElementGuid>c8f84588-266d-420f-874a-54d9d2b37531</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Editar</value>
+      <webElementGuid>9c4f6f31-06d4-4ca6-8001-7f4aa93f8edf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-e9dcfad3794359db764a75da7fa48d2a</value>
+      <webElementGuid>e122d363-812a-475f-9679-362f17f8c4ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-resizable ') and contains(concat(' ', normalize-space(@class), ' '), ' dx-popup-normal ') and contains(concat(' ', normalize-space(@class), ' '), ' dx-popup-inherit-height ')]//*[@aria-label = 'Editar']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-button-text ')]</value>
+      <webElementGuid>5d5fc07f-52de-480d-bd35-35ab165ba9a4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-resizable ') and contains(concat(' ', normalize-space(@class), ' '), ' dx-popup-normal ') and contains(concat(' ', normalize-space(@class), ' '), ' dx-popup-inherit-height ')]//*[@aria-label = 'Editar']//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-button-text ')]</value>
+      <webElementGuid>0f0f61d5-2586-4bcf-8a32-479d74495d7a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Editar' or . = 'Editar')]</value>
+      <webElementGuid>5cd291e7-4d91-409e-a517-10a45cdfca41</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

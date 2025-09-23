@@ -21,7 +21,7 @@
          <id>1f77765a-f91d-41f7-985c-e97287303b92</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>1-10</value>
+            <value>1-3</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
       </testDataLink>
@@ -43,6 +43,50 @@
          <type>DATA_COLUMN</type>
          <value>serieSIM</value>
          <variableId>fe15d6ef-364a-43d9-81c2-947776c5e273</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1859046c-147c-41eb-9cc2-cd030aa39373</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AGENDA/Contratos/TC-002_ReasignarQueja</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>1d75b79c-d81f-41ba-a66b-b3db964da44c</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-3</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/SuscriptoresQueja</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>1d75b79c-d81f-41ba-a66b-b3db964da44c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
+         <variableId>4e8638d5-7293-4c2c-a505-b7e46ef9768d</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4f292cdd-607e-438c-ba07-a5a492b940b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQuejaAdminProfeco</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b69f895a-f718-475e-bcad-734b2dddf152</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>2</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/SuscriptoresQueja</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>b69f895a-f718-475e-bcad-734b2dddf152</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
+         <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

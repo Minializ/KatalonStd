@@ -57,34 +57,44 @@ class FuncionesAuxiliares {
 	 * el script lo que hace es ingresar a la pagina de inicio del sistema, caso contrario de que el sistema
 	 * detecte que no se ha iniciado sesión procede a iniciar sesión.
 	 */
-	def login() {
-
-		//Intenta obtener la URL actual de la sesión
+	def login(String usuario, String password) {
+		// Verificar si el navegador está abierto
 		def currentURL = WebUI.getUrl(FailureHandling.OPTIONAL)
 
-		//Si la url es == null, se da por hecho de que el script aun no tiene una instancia iniciada y procede a iniciarla
 		if (currentURL == null) {
 			WebUI.openBrowser(GlobalVariable.URL_AGENDA)
-
 			WebUI.maximizeWindow()
-
 			WebUI.waitForElementPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 10)
+			currentURL = WebUI.getUrl(FailureHandling.OPTIONAL)
 		}
 
-
-		//Validacion para determinar en que pantalla del sistema se encuentra por medio de la URL, si esta en el login procede a iniciar sesión
-		if (WebUI.getUrl(FailureHandling.OPTIONAL).contains("Login")) {
-
+		// Función auxiliar para iniciar sesión
+		def iniciarSesion = {
 			WebUI.selectOptionByLabel(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 'SFYC', false)
-
-			WebUI.setText(findTestObject('Object Repository/LOGIN/INPUT_User'), GlobalVariable.USER)
-
-			WebUI.setEncryptedText(findTestObject('Object Repository/LOGIN/INPUT_Password'), GlobalVariable.PASSWORD)
-
+			WebUI.setText(findTestObject('Object Repository/LOGIN/INPUT_User'), usuario)
+			WebUI.setEncryptedText(findTestObject('Object Repository/LOGIN/INPUT_Password'), password)
 			WebUI.click(findTestObject('Object Repository/LOGIN/BUTTON_IniciarSesion'))
 		}
 
-		// Validación después del inicio de sesión
+		// Si estamos en la pantalla de login
+		if (currentURL.contains("Login")) {
+			iniciarSesion()
+		} else if (WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/LABEL_NombreUsuario'), 3, FailureHandling.OPTIONAL)) {
+			def usuarioActual = WebUI.getText(findTestObject('Object Repository/AGENDA/PaginaInicio/LABEL_NombreUsuario'))
+
+			// Si el usuario actual no coincide, cerrar sesión e iniciar con el nuevo
+			if (!usuarioActual.contains(usuario)) {
+				WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/LABEL_NombreUsuario'))
+				WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/Usuario/BUTTON_CerrarSesion'))
+				WebUI.delay(2)
+				WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Si'))
+
+				WebUI.waitForElementPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 30)
+				iniciarSesion()
+			}
+		}
+
+		// Validar que la sesión se haya iniciado correctamente
 		WebUI.verifyElementNotPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 2, FailureHandling.STOP_ON_FAILURE)
 		WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), 5)
 	}
@@ -96,6 +106,12 @@ class FuncionesAuxiliares {
 		WebUI.waitForElementPresent(objetcSelect, 2)
 
 		WebUI.click(objetcSelect)
+
+		WebUI.mouseOver(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_RegistroDinamico', [('opcion') : '']))
+
+		WebUI.setText(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_DescripcionFiltro'), opcion)
+
+		WebUI.delay(1)
 
 		WebUI.enhancedClick(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_RegistroDinamico', [('opcion') : opcion]))
 	}
@@ -217,5 +233,12 @@ class FuncionesAuxiliares {
 		while (WebUI.verifyElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'), 1, FailureHandling.OPTIONAL)) {
 			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'))
 		}
+	}
+
+	@Keyword
+	//Metodo que elimina el chatbot para evitar obstrucciones con objetos
+	def eliminarChatBot() {
+		String script = "var el = document.querySelector('app-megan-side-bar-container'); if (el) el.remove();"
+		WebUI.executeJavaScript(script, null)
 	}
 }

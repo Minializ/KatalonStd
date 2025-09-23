@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SPAN_ServicioPor</name>
+   <name>TAB_DYN</name>
    <tag></tag>
-   <elementGuidId>39647e8d-7389-4f36-846b-d51325a18edc</elementGuidId>
+   <elementGuidId>eb348dcb-409b-4684-b1f1-93f51ca522b7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[@class='status-text' and text()=' POR '])[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//span[(text() = '${opcion}' or . = '${opcion}')] | //div[(contains(text(), '${opcion}'))] )[last()]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

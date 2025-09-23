@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INPUT_Descripcion</name>
+   <name>LABEL_NombreUsuario</name>
    <tag></tag>
-   <elementGuidId>3f62348f-de73-46e1-8760-10d4239cc745</elementGuidId>
+   <elementGuidId>d6576e5c-49c3-47d1-8779-7d2277fffc5d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[@aria-colindex=&quot;2&quot;]//div[@data-dx_placeholder=&quot;Filtrar...&quot;]/parent::div/input[@class=&quot;dx-texteditor-input&quot;]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;user-name-label&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

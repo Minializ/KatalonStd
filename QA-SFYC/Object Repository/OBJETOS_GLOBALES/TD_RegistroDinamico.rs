@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//table[@class=&quot;dx-datagrid-table dx-datagrid-table-fixed&quot;])[last()]//tr/td[contains(text(), '${opcion}')]</value>
+         <value>((//table[@class=&quot;dx-datagrid-table dx-datagrid-table-fixed&quot;])[last()]//tr/td[contains(text(), '${opcion}')])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

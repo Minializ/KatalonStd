@@ -36,7 +36,7 @@ WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consult
 
 // Si aparece un mensaje de alerta relacionado con el suscriptor al momento de consultar, se cierra el mensaje para poder continuar.
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/AlertaSuscriptor/DIV_MensajeTituloSuscriptor'), 
-    10, FailureHandling.OPTIONAL)) {
+    5, FailureHandling.OPTIONAL)) {
     //Metodo personalizado que cierra ventanas o alertas
     CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 }

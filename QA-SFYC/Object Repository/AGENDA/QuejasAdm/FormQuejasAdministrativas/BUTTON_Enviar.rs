@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TAB_Trabajos</name>
+   <name>BUTTON_Enviar</name>
    <tag></tag>
-   <elementGuidId>79d91f76-8ba2-4bc1-a3bc-10e8e200db25</elementGuidId>
+   <elementGuidId>5b32bfab-c9e5-486c-8b48-4e5cfa14dcde</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//span[(text() = 'Trabajos' or . = 'Trabajos')]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//dx-button[@text=&quot;Enviar&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

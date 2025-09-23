@@ -25,16 +25,6 @@ import com.kms.katalon.core.context.TestSuiteContext
 class Preconfiguraciones {
 
 	/**
-	 * Método ejecutado automáticamente antes de cada caso de prueba.
-	 * Su propósito es iniciar sesión en el sistema bajo prueba antes de que comience cualquier flujo.
-	 * Utiliza un keyword personalizado para encapsular la lógica de autenticación.
-	 */
-	@BeforeTestCase
-	def iniciarSesion(TestCaseContext testCaseContext) {
-		CustomKeywords.'utilidades.FuncionesAuxiliares.login'()
-	}
-
-	/**
 	 * Método ejecutado automáticamente después de cada caso de prueba.
 	 * Su objetivo es capturar una evidencia visual del estado final del test y limpiar la interfaz.
 	 *

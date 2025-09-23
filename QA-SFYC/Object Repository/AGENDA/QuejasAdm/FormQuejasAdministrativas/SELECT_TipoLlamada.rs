@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TAB_AprovisionamientoMVNO</name>
+   <name>SELECT_TipoLlamada</name>
    <tag></tag>
-   <elementGuidId>a3b7f2fa-bf42-4294-9d69-278143725de3</elementGuidId>
+   <elementGuidId>c4cda73c-d474-4e1f-a24a-01ae6281f480</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[(text() = 'Aprovisionamiento MVNO' or . = 'Aprovisionamiento MVNO')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//app-call-dropdown[@formcontrolname=&quot;typeCall&quot;]//input[@role=&quot;combobox&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

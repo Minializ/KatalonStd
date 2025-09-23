@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-002_ReasignarQueja</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>04a9ec7a-0128-4e0d-bb3b-c907f1cff3e1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4e8638d5-7293-4c2c-a505-b7e46ef9768d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0120063814'</defaultValue>
+      <description></description>
+      <id>4e8638d5-7293-4c2c-a505-b7e46ef9768d</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

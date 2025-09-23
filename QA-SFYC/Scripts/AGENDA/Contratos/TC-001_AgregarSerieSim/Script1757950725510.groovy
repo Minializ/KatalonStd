@@ -30,63 +30,65 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Se manda a llamar el caso de prueba de consulta de suscriptor, el cual necesita el parametro de Id para realizar la consulta
+
+final String ARCHIVO_DATOS = 'Data Files/AGENDA/Suscriptores.xlsx'
+final String HOJA_DATOS = 'Hoja1'
+
+boolean excepcionSIM = false
+
+// Login
+CustomKeywords.'utilidades.FuncionesAuxiliares.login'("APSANTILLAV", "xmwPVkGXOzg/mjMgod9mdJXPoCY3ZmJvZjpNUH1MJBC5xTLD1ro+jQ==")
+
+// Consulta del suscriptor
 WebUI.callTestCase(findTestCase('AGENDA/ConsultarSuscriptor'), [('numeroSuscriptor') : numeroSuscriptor], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_Contratos'))
+// Navegación hacia opción de asignar SIM
+WebUI.click(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
 
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_OtrosContratos'))
+WebUI.click(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Otros']))
 
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TR_TipoServicio'))
+WebUI.click(findTestObject('AGENDA/Contratos/TR_TipoServicio'))
 
-WebUI.mouseOver(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_VerOpciones'))
+WebUI.mouseOver(findTestObject('AGENDA/Contratos/BUTTON_VerOpciones'))
 
-//Se valida que la opción e asignar SIM este disponible
-boolean asignarSerieDisponible = WebUI.verifyElementClickable(findTestObject('Object Repository/AGENDA/Contratos/SPAN_AsignarSerieSIM'), FailureHandling.OPTIONAL)
+boolean asignarSerieDisponible = WebUI.verifyElementClickable(findTestObject('AGENDA/Contratos/SPAN_AsignarSerieSIM'), FailureHandling.OPTIONAL)
 
-//Si esta disponible, procede a realizar el proceso de asignación de SIM
-if (asignarSerieDisponible) {
-	WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/SPAN_AsignarSerieSIM'))
+if (!asignarSerieDisponible) {
+	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'Sin Permisos para Asignar SIM')
+	KeywordUtil.markFailed('\n\n El usuario no tiene permisos para asignar serie SIM \n\n')
+	return
+}
 
-	//Manda a llamar una funcion personalizada para seleccionar el CIS
-	CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'),
-			cis)
+// Proceso de asignación de SIM
+WebUI.click(findTestObject('AGENDA/Contratos/SPAN_AsignarSerieSIM'))
 
-	WebUI.setText(findTestObject('Object Repository/AGENDA/Contratos/FormAsignarSerieSIM/INPUT_SerieSIM'), serieSIM)
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'), cis)
 
-	WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/FormAsignarSerieSIM/BUTTON_Confirmar'))
+WebUI.setText(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/INPUT_SerieSIM'), serieSIM)
 
-	//Valida que se muestre una alerta al realizar la asignacion de SIM
-	WebUI.verifyElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 30, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/BUTTON_Confirmar'))
 
-	//Guarda el mensaje que muestra la alerta
-	def mensajeAlerta = WebUI.getText(findTestObject('Object Repository/OBJETOS_GLOBALES/LABEL_MensajeAlerta'))
+// Validar mensaje de alerta
+WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 30, FailureHandling.STOP_ON_FAILURE)
 
-	//Si el mensaje de alerta es exitoso procede a actualziar el estatus del regsitro en el Data File
-	if (mensajeAlerta.contains('Proceso finalizado con éxito')) {
-		CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'('Data Files/AGENDA/Suscriptores.xlsx',
-				'Hoja1', numeroSuscriptor, 'Asignado Con Exito')
-	} else {
-		//Caso contrario que el mensaje sea de error o warning, actualiza el estatus del testcase a Warning y actualiza el registro en el DataSet
-		CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'('Data Files/AGENDA/Suscriptores.xlsx',
-				'Hoja1', numeroSuscriptor, 'SIM no Registrada en BD')
+def mensajeAlerta = WebUI.getText(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'))
 
-		KeywordUtil.markWarning(('\n\nErrores o Problemas con la asignación de la serie SIM: ' + mensajeAlerta) + '\n\n')
-	}
+if (mensajeAlerta.contains('Proceso finalizado con éxito')) {
+	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'Asignado Con Exito')
+	excepcionSIM = true
+} else {
+	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'SIM no Registrada en BD')
+	excepcionSIM = true
+	KeywordUtil.markFailed("\n\nErrores o Problemas con la asignación de la serie SIM: ${mensajeAlerta}\n\n")
+}
 
-	//Metodo personalizado que cierra ventanas o alertas
+// Validar orden de activación si no hubo excepción
+if (!excepcionSIM) {
 	CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 
-	WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_Contratos'))
+	WebUI.click(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
+	
+	WebUI.click(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Aprovisionamiento MVNO']))
 
-	WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_AprovisionamientoMVNO'))
-
-	//Valida la presencia del registro "Activacion de SIM" en estado "POR"
-	WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TR_ActivacionSIM'), 1)
-} else {
-	//Si no esta disponible, manda un mensaje de alerta al reporte indicando que no se tienen permisos para asignar la SIM y actualiza el estatus del registro del Data File
-	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'('Data Files/AGENDA/Suscriptores.xlsx',
-			'Hoja1', numeroSuscriptor, 'Sin Permisos para Asignar SIM')
-
-	KeywordUtil.markWarning('El usuario no tiene permisos para asignar serie SIM')
+	WebUI.verifyElementPresent(findTestObject('AGENDA/Contratos/TR_ActivacionSIM'), 1)
 }
