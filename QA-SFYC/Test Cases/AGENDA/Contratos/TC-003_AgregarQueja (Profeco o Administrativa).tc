@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Indicar &quot;tipoQueja&quot; == &quot;profeco&quot; || &quot;administrativa&quot;</description>
+   <name>TC-003_AgregarQueja (Profeco o Administrativa)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b4f534ac-aab2-42d1-ac31-938e8263e011</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411627544'</defaultValue>
+      <description></description>
+      <id>5a50757a-28af-4e1a-8909-7b021d71a0e5</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+   <variable>
+      <defaultValue>'administrativa'</defaultValue>
+      <description></description>
+      <id>60e0ec73-68ff-4586-95e5-7aca1528a9cc</id>
+      <masked>false</masked>
+      <name>tipoQueja</name>
+   </variable>
+</TestCaseEntity>

@@ -19,26 +19,36 @@ import org.openqa.selenium.Keys as Keys
 
 // Verifica si la pestaña de "Contratos" está abierta y la cierra para evitar llegar al limite de solicitudes abiertas.
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_CerrarTabContratos'), 1, FailureHandling.OPTIONAL)) {
-    WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_CerrarTabContratos'))
+	WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_CerrarTabContratos'))
 }
 
 // Se valida que si estamos en el Dashboard de una consulta de cliente, se hace clic en "+ Consultar"
 // y se limpia el campo de suscriptor para preparar una nueva consulta.
 if (WebUI.verifyTextPresent('Atención al cliente', false, FailureHandling.OPTIONAL)) {
-    WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_Consultar'))
 
-    WebUI.clearText(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'))
+	def suscriptorActual = WebUI.getText(findTestObject('Object Repository/AGENDA/PaginaInicio/LABEL_NumeroSuscriptor'))
+
+	if(!suscriptorActual.equals(numeroSuscriptor)) {
+		WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_Consultar'))
+
+		WebUI.clearText(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'))
+
+		WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), numeroSuscriptor)
+		
+		WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
+	}
+}else if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), 1, FailureHandling.OPTIONAL)){
+	WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), numeroSuscriptor)
+	
+	WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
 }
 
-WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), numeroSuscriptor)
-
-WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
 
 // Si aparece un mensaje de alerta relacionado con el suscriptor al momento de consultar, se cierra el mensaje para poder continuar.
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/AlertaSuscriptor/DIV_MensajeTituloSuscriptor'), 
-    5, FailureHandling.OPTIONAL)) {
-    //Metodo personalizado que cierra ventanas o alertas
-    CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/AlertaSuscriptor/DIV_MensajeTituloSuscriptor'),
+		5, FailureHandling.OPTIONAL)) {
+	//Metodo personalizado que cierra ventanas o alertas
+	CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 }
 
 WebUI.takeScreenshot()

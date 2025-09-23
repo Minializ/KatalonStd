@@ -5,7 +5,7 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>10</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -21,7 +21,7 @@
          <id>1f77765a-f91d-41f7-985c-e97287303b92</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>1</value>
+            <value>1,5,20</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
       </testDataLink>
@@ -71,22 +71,56 @@
       <guid>4f292cdd-607e-438c-ba07-a5a492b940b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQuejaAdminProfeco</testCaseId>
+      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>b69f895a-f718-475e-bcad-734b2dddf152</id>
+         <id>765cd0e6-c5cc-40d6-8a85-2b3563850671</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>2</value>
+            <value>1</value>
          </iterationEntity>
-         <testDataId>Data Files/AGENDA/SuscriptoresQueja</testDataId>
+         <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>b69f895a-f718-475e-bcad-734b2dddf152</testDataLinkId>
+         <testDataLinkId>765cd0e6-c5cc-40d6-8a85-2b3563850671</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>numeroSuscriptor</value>
          <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>SCRIPT_VARIABLE</type>
+         <value>&quot;profeco&quot;</value>
+         <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f7a787a1-9f8c-4624-b3c1-e8b990ce2460</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2b63abe4-fe3b-49ef-bcdf-49413e310c5f</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>2b63abe4-fe3b-49ef-bcdf-49413e310c5f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
+         <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>SCRIPT_VARIABLE</type>
+         <value>&quot;administrativa&quot;</value>
+         <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

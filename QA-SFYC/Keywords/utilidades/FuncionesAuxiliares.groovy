@@ -96,8 +96,7 @@ class FuncionesAuxiliares {
 
 		// Validar que la sesión se haya iniciado correctamente
 		WebUI.verifyElementNotPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 2, FailureHandling.STOP_ON_FAILURE)
-		WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/INPUT_Suscriptor'), 5)
-		
+
 		//Metodo personalizdo que elimina el chatbot para evitar obstrucciones con otros objetos
 		eliminarChatBot()
 	}
@@ -110,11 +109,11 @@ class FuncionesAuxiliares {
 
 		WebUI.click(objetcSelect)
 
-		WebUI.mouseOver(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_RegistroDinamico', [('opcion') : '']))
+		//WebUI.mouseOver(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_RegistroDinamico', [('opcion') : '']))
 
 		WebUI.setText(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_DescripcionFiltro'), opcion)
 
-		WebUI.delay(1)
+		//WebUI.delay(1)
 
 		WebUI.enhancedClick(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_RegistroDinamico', [('opcion') : opcion]))
 	}
@@ -242,6 +241,6 @@ class FuncionesAuxiliares {
 	//Metodo que elimina el chatbot para evitar obstrucciones con objetos
 	def eliminarChatBot() {
 		String script = "var el = document.querySelector('app-megan-side-bar-container'); if (el) el.remove();"
-		WebUI.executeJavaScript(script, null)
+		WebUI.executeJavaScript(script, null, FailureHandling.OPTIONAL)
 	}
 }

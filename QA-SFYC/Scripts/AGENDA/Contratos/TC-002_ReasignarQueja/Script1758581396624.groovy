@@ -34,6 +34,8 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.login'("IASALAZARM", "GFtE3O0GwLC
 //Se manda a llamar el caso de prueba de consulta de suscriptor, el cual necesita el parametro de Id para realizar la consulta
 WebUI.callTestCase(findTestCase('AGENDA/ConsultarSuscriptor'), [('numeroSuscriptor') : numeroSuscriptor], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']), 30)
+
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']))
 
 //Se verifica que existan quejas con estado ASI, Caso contrario falla el caso de prueba
@@ -51,6 +53,8 @@ if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/QuejasAdm
 	WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Motivo'), 'Apoyo con esta QA')
 	
 	WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/BUTTON_Reasingar'))
+	
+	WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 30, FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.verifyElementText(findTestObject('Object Repository/OBJETOS_GLOBALES/LABEL_MensajeAlerta'), '¡Queja administrativa reasignada con éxito!')
 }else {

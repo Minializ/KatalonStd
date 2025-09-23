@@ -42,6 +42,8 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.login'("APSANTILLAV", "xmwPVkGXOz
 // Consulta del suscriptor
 WebUI.callTestCase(findTestCase('AGENDA/ConsultarSuscriptor'), [('numeroSuscriptor') : numeroSuscriptor], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForElementPresent(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), 30)
+
 // Navegación hacia opción de asignar SIM
 WebUI.click(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
 
@@ -75,7 +77,7 @@ def mensajeAlerta = WebUI.getText(findTestObject('OBJETOS_GLOBALES/LABEL_Mensaje
 
 if (mensajeAlerta.contains('Proceso finalizado con éxito')) {
 	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'Asignado Con Exito')
-	excepcionSIM = true
+	excepcionSIM = false
 } else {
 	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'SIM no Registrada en BD')
 	excepcionSIM = true

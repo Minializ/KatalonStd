@@ -36,6 +36,12 @@ class Preconfiguraciones {
 	@AfterTestCase
 	def capturarEvidencias(TestCaseContext testCaseContext) {
 		WebUI.takeScreenshot(testCaseContext.getTestCaseId() + ".jpg")
+		
+		if(testCaseContext.getTestCaseStatus() == "FAILED") {
+			WebUI.refresh()
+			CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
+		}
+		
 		CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 	}
 }
