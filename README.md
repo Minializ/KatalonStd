@@ -111,6 +111,7 @@ https://control.qa-cluster.sfycnextgen.com.mx/ui/
 [Documento](https://megacable-my.sharepoint.com/:w:/r/personal/mihernandezg_megacable_com_mx/Documents/PRUEBAS%20QA%20SFYC_V2/Casos%20de%20Pruebas%20QA%20SFyC/Casos%20de%20Pruebas%20BrainTesting/TestCase%20semanas/Liss/TestCases-Lissette%20-%20Semana%203.docx?d=wd04d9f4636e643c1a3923309de4785a9&csf=1&web=1&e=N96swV)
 
 
+- Meet 30 de septiembre
 
 
 
