@@ -17,30 +17,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Ingresa al menú "Materiales" y luego a la opción "Liquidaciones"
 CustomKeywords.'utilidades.Materiales.ingresarMenu'('Materiales', 'Liquidaciones')
 
+// Verifica que el combo "Tipo de Cuadrilla" esté presente antes de continuar
 WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 10)
 
+// Selecciona la opción "Quejas" en el selector de Tipo de Cuadrilla
 CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 
     'Quejas')
 
+// Selecciona la cuadrilla con identificador "32"
 CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_Cuadrilla'), 
     '32')
 
+// Hace clic en el campo de fecha para desplegar el calendario
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Fecha'))
 
+// Selecciona una fecha válida en el calendario (fecha hábil)
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SPAN_FechaHabil'))
 
+// Hace clic en el botón "Aceptar" para procesar la liquidación
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_Aceptar'))
 
+// Verifica que se muestre el mensaje de alerta indicando el resultado del proceso
 WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
 
+// Captura el texto del mensaje de alerta
 def msgAlerta = WebUI.getText(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'))
 
+// Verifica que el mensaje contenga el texto esperado para una liquidación exitosa
 CustomKeywords.'kms.turing.katalon.plugins.assertj.StringAssert.contains'(msgAlerta, 'Proceso de liquidación de materiales realizado con éxito con el folio', 
     null)
 
+// Extrae el número de folio desde el mensaje de confirmación
 def folio = msgAlerta.split('Proceso de liquidación de materiales realizado con éxito con el folio:')[1]
 
+// Escribe el número de folio en el archivo Excel correspondiente a liquidaciones
 CustomKeywords.'utilidades.FuncionesAuxiliares.writeMultipleToExcel'('MATERIALES/FoliosMateriales.xlsx', 'Liquidacion', 
     [('A') : folio])
