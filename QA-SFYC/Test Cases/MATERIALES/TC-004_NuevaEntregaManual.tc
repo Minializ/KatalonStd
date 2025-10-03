@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-004_NuevaEntregaManual</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>448cc8d5-0320-46f8-a5eb-200b713ae12b</testCaseGuid>
+</TestCaseEntity>

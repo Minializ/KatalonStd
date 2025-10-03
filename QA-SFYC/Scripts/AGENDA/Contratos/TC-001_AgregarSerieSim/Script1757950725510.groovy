@@ -36,13 +36,10 @@ final String HOJA_DATOS = 'Hoja1'
 
 boolean excepcionSIM = false
 
-// Login
-CustomKeywords.'utilidades.FuncionesAuxiliares.login'("APSANTILLAV", "xmwPVkGXOzg/mjMgod9mdJXPoCY3ZmJvZjpNUH1MJBC5xTLD1ro+jQ==")
-
 // Consulta del suscriptor
-WebUI.callTestCase(findTestCase('AGENDA/ConsultarSuscriptor'), [('numeroSuscriptor') : numeroSuscriptor], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'utilidades.Agenda.consultarSusciptor'(numeroSuscriptor)
 
-WebUI.waitForElementPresent(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), 30)
+WebUI.waitForElementPresent(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), GlobalVariable.TIME_OUT)
 
 // Navegación hacia opción de asignar SIM
 WebUI.click(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
@@ -64,14 +61,14 @@ if (!asignarSerieDisponible) {
 // Proceso de asignación de SIM
 WebUI.click(findTestObject('AGENDA/Contratos/SPAN_AsignarSerieSIM'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'), cis)
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'), cis)
 
 WebUI.setText(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/INPUT_SerieSIM'), serieSIM)
 
 WebUI.click(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/BUTTON_Confirmar'))
 
 // Validar mensaje de alerta
-WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 30, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
 
 def mensajeAlerta = WebUI.getText(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'))
 

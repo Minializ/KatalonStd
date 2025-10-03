@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INPUT_Cantidades-Dyn</name>
+   <tag></tag>
+   <elementGuidId>a3be0790-6239-494a-88bd-1195fc2eb3b2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//app-delivery-material-grid[@class=&quot;dx-card-component-grid-catalog&quot;]//tbody/tr)[3]//td[${idx}]//input[not(@type='hidden')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
