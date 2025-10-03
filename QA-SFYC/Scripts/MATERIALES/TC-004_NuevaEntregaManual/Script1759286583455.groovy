@@ -17,44 +17,74 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Ingresa al menú "Materiales" y luego a la opción "Entregas"
 CustomKeywords.'utilidades.Materiales.ingresarMenu'('Materiales', 'Entregas')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_NuevaEntregaManual'), GlobalVariable.TIME_OUT)
+// Verifica que el botón "Nueva Entrega Manual" esté presente en el DOM antes de continuar
+WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_NuevaEntregaManual'), 
+    GlobalVariable.TIME_OUT)
 
+// Hace clic en el botón para iniciar una nueva entrega manual
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_NuevaEntregaManual'))
 
-CustomKeywords.'utilidades.Materiales.selectOption'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 'ALM Almacen')
+// Selecciona la opción "ALM Almacen" en el combo de Tipo de Cuadrilla
+CustomKeywords.'utilidades.Materiales.selectOption'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 
+    'ALM Almacen')
 
-CustomKeywords.'utilidades.Materiales.selectOption'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_Cuadrilla'), '0001')
+// Selecciona la cuadrilla "0001" en el combo correspondiente
+CustomKeywords.'utilidades.Materiales.selectOption'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_Cuadrilla'), 
+    '0001')
 
+// Agrega una nueva fila a la tabla de materiales
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_AgregarFila'))
 
-WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '2']), Keys.chord(Keys.TAB))
+// Envía un TAB en la celda dinámica índice 2 para activar la edición/autocompletado
+WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '2']), 
+    Keys.chord(Keys.TAB))
 
-CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '2']), '4 Cable Coaxial')
+// Selecciona el tipo de material "4 Cable Coaxial"
+CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', 
+        [('idx') : '2']), '4 Cable Coaxial')
 
-CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '3']), '3 CABLE COAXIAL 500 PIII')
+// Selecciona el material "3 CABLE COAXIAL 500 PIII" (índice 3)
+CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', 
+        [('idx') : '3']), '3 CABLE COAXIAL 500 PIII')
 
+// Hace clic en la celda de la columna cantidad (índice 5)
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '5']))
 
-WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '5']), '5')
+// Ingresa el valor "5" en la celda de cantidad
+WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '5']), 
+    '5')
 
+// Hace clic en la celda de la columna M Inicial (índice 6)
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '6']))
 
-WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '6']), '100.00')
+// Ingresa el valor "100.00" en la columna M Inicial
+WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '6']), 
+    '100.00')
 
+// Hace clic en la celda de la columna M Final
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '7']))
 
-WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '7']), '80.00')
+// Ingresa el valor "80.00" en la columna M Final
+WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '7']), 
+    '80.00')
 
+// Hace clic en el botón "Guardar" para registrar la entrega
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_Guardar'))
 
+// Verifica que aparezca un mensaje de alerta indicando el resultado de la operación
 WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
-	
+
+// Obtiene el texto del mensaje de alerta mostrado en pantalla
 def msgAlerta = WebUI.getText(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'))
 
-def folio = msgAlerta.split('Entrega generada con exito. Folio: ')[1].trim()
+// Extrae el número de folio de la entrega desde el mensaje
+def folio = (msgAlerta.split('Entrega generada con exito. Folio: ')[1]).trim()
 
+// Valida que el mensaje contenga el texto esperado de confirmación
 CustomKeywords.'kms.turing.katalon.plugins.assertj.StringAssert.contains'(msgAlerta, 'Entrega generada con exito.', null)
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.writeMultipleToExcel'('MATERIALES/FoliosMateriales.xlsx', 'Entregas', ["A" : folio])
+// Escribe el número de folio generado en el archivo Excel correspondiente
+CustomKeywords.'utilidades.FuncionesAuxiliares.writeMultipleToExcel'('MATERIALES/FoliosMateriales.xlsx', 'Entregas', [('A') : folio])
