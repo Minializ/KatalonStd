@@ -33,14 +33,11 @@ import org.openqa.selenium.Keys as Keys
 //Se escribe en el reporte el tipo de queja a registrar
 WebUI.comment("INICIO TC-003_AgregarQuea - : " + tipoQueja.toUpperCase())
 
-//Se manda a llamar el caso de prueba de login, el cual necesita inyectarle parametros del usuario con el que iniciara
-CustomKeywords.'utilidades.FuncionesAuxiliares.login'('IASALAZARM', 'GFtE3O0GwLChRmwtPlBwjA==')
-
 //Se manda a llamar el caso de prueba de consulta de suscriptor, el cual necesita el parametro de Id para realizar la consulta
-WebUI.callTestCase(findTestCase('AGENDA/ConsultarSuscriptor'), [('numeroSuscriptor') : numeroSuscriptor], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'utilidades.Agenda.consultarSusciptor'(numeroSuscriptor)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']), 
-    30)
+    GlobalVariable.TIME_OUT)
 
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']))
 
@@ -51,21 +48,21 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/QuejasAdm/Fo
 
 //Valida que si la queja es de Profeco, se llenan los campos habilitado para esta opción
 if (tipoQueja.toUpperCase().contains("PROFECO")) {
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo'), 'Profeco')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo'), 'Profeco')
 
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_SubTipo'),  'Aclaración de venta')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_SubTipo'),  'Aclaración de venta')
 
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Motivo'), 'Promocion mal Configurada')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Motivo'), 'Promocion mal Configurada')
 
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_TipoServicio'), 'Cable')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_TipoServicio'), 'Cable')
 
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Servicio'), 'TV Básico Plus')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Servicio'), 'TV Básico Plus')
 
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Canal'), '800')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Canal'), '800')
 } else { //Caso contrario se interpreta que es una queja administrativa y se llena la información correspondiente
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo'), 'Quejas de Personal')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo'), 'Quejas de Personal')
 
-    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_SubTipo'), 'Mal servicio en CIS')
+    CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_SubTipo'), 'Mal servicio en CIS')
 }
 
 //Se llenan datos de contacto
@@ -75,18 +72,22 @@ WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdmin
 
 WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Telefono'), '3321301567')
 
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Sucursal'), 'GUADALAJARA')
+
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_CIS'),  'TERRANOVA')
+
 //Se llena sección comun para queja administrativa o de profeco
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo2'), 'CCN')
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo2'), 'CCN')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tecnologia'), 'PROFECO')
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tecnologia'), 'PROFECO')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_TipoLlamada'), 'COBRO EXCEDENTE')
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_TipoLlamada'), 'COBRO EXCEDENTE')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Sintoma'), 'CARGO AUTOMATICO')
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Sintoma'), 'CARGO AUTOMATICO')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Diagnostico'), 'NO SE CANCELO CARGO AUTOMATICO')
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Diagnostico'), 'NO SE CANCELO CARGO AUTOMATICO')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Definitivo'), 'SOLUCION TELEFONICA SE GENERA SOLICITUD DE QA')
+CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Definitivo'), 'SOLUCION TELEFONICA SE GENERA SOLICITUD DE QA')
 
 //Se ingresa el motivo/seguimiento
 WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Motivo'))
@@ -96,6 +97,6 @@ WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdmin
 //Se envia el registro de la queja
 WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/BUTTON_Enviar'))
 
-WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 30, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/OBJETOS_GLOBALES/LABEL_MensajeAlerta'), '¡Queja administrativa insertada con éxito!')

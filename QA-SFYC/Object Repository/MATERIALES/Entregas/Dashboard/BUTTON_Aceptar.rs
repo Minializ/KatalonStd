@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TD_RegistroDinamico</name>
+   <name>BUTTON_Aceptar</name>
    <tag></tag>
-   <elementGuidId>1c1604dc-3f4f-40c2-bf01-a3c779bc3c3e</elementGuidId>
+   <elementGuidId>0871dfdb-2859-4981-8b5e-7959ec272bed</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>((//table[@class=&quot;dx-datagrid-table dx-datagrid-table-fixed&quot;])[last()]//tr/td[contains(text(), '${opcion}')])[1]</value>
+         <value>//dx-button[@text=&quot;Aceptar&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

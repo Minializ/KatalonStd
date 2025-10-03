@@ -7,6 +7,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
@@ -42,7 +44,6 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
-
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -57,15 +58,17 @@ class FuncionesAuxiliares {
 	 * el script lo que hace es ingresar a la pagina de inicio del sistema, caso contrario de que el sistema
 	 * detecte que no se ha iniciado sesión procede a iniciar sesión.
 	 */
-	def login(String usuario, String password) {
+	def login(String url, String usuario, String password) {
 		// Verificar si el navegador está abierto
 		def currentURL = WebUI.getUrl(FailureHandling.OPTIONAL)
 
 		if (currentURL == null) {
-			WebUI.openBrowser(GlobalVariable.URL_AGENDA)
+			WebUI.openBrowser(url)
 			WebUI.maximizeWindow()
-			WebUI.waitForElementPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 10)
+			WebUI.waitForElementPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), GlobalVariable.TIME_OUT_CONTENT)
 			currentURL = WebUI.getUrl(FailureHandling.OPTIONAL)
+		}else {
+			WebUI.navigateToUrl(url)
 		}
 
 		// Función auxiliar para iniciar sesión
@@ -89,7 +92,7 @@ class FuncionesAuxiliares {
 				WebUI.delay(2)
 				WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Si'))
 
-				WebUI.waitForElementPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 30)
+				WebUI.waitForElementPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), GlobalVariable.TIME_OUT)
 				iniciarSesion()
 			}
 		}
@@ -101,22 +104,6 @@ class FuncionesAuxiliares {
 		eliminarChatBot()
 	}
 
-	@Keyword
-	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
-	def selectOptionWithFilter(TestObject objetcSelect, String opcion) {
-
-		WebUI.waitForElementPresent(objetcSelect, 2)
-
-		WebUI.click(objetcSelect)
-
-		//WebUI.mouseOver(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_RegistroDinamico', [('opcion') : '']))
-
-		WebUI.setText(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_DescripcionFiltro'), opcion)
-
-		//WebUI.delay(1)
-
-		WebUI.enhancedClick(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_RegistroDinamico', [('opcion') : opcion]))
-	}
 
 	@Keyword
 	// Método que actualiza el estatus de un suscriptor en un archivo Excel dado.
@@ -240,7 +227,85 @@ class FuncionesAuxiliares {
 	@Keyword
 	//Metodo que elimina el chatbot para evitar obstrucciones con objetos
 	def eliminarChatBot() {
+
 		String script = "var el = document.querySelector('app-megan-side-bar-container'); if (el) el.remove();"
 		WebUI.executeJavaScript(script, null, FailureHandling.OPTIONAL)
+	}
+
+
+	@Keyword
+	def writeMultipleToExcel(String fileName, String sheetName, Map<String, String> columnasYValores) {
+		try {
+			// Ruta completa al archivo dentro del proyecto
+			String filePath = RunConfiguration.getProjectDir() + "/Data Files/" + fileName
+			File excelFile = new File(filePath)
+
+			Workbook workbook
+			Sheet sheet
+
+			if (excelFile.exists()) {
+				FileInputStream fis = new FileInputStream(excelFile)
+				workbook = WorkbookFactory.create(fis)
+				sheet = workbook.getSheet(sheetName)
+				if (sheet == null) {
+					sheet = workbook.createSheet(sheetName)
+				}
+				fis.close()
+			} else {
+				workbook = new XSSFWorkbook()
+				sheet = workbook.createSheet(sheetName)
+			}
+
+			// Buscar siguiente fila vacía
+			int lastRowNum = sheet.getLastRowNum()
+			int nextRowNum = lastRowNum
+			while (sheet.getRow(nextRowNum) != null && !isRowEmpty(sheet.getRow(nextRowNum))) {
+				nextRowNum++
+			}
+
+			Row newRow = sheet.createRow(nextRowNum)
+
+			// Escribir cada columna y su valor
+			columnasYValores.each { columnaLetra, valor ->
+				int columnIndex = convertColumnLetterToIndex(columnaLetra)
+				Cell cell = newRow.createCell(columnIndex)
+				cell.setCellValue(valor)
+			}
+
+			// Guardar el archivo
+			FileOutputStream fos = new FileOutputStream(filePath)
+			workbook.write(fos)
+			fos.close()
+			workbook.close()
+
+			println "✅ Valores guardados en '${fileName}', hoja '${sheetName}', fila ${nextRowNum + 1}"
+		} catch (Exception e) {
+			println "❌ Error al escribir en Excel: ${e.message}"
+			throw e
+		}
+	}
+
+
+	private boolean isRowEmpty(Row row) {
+		if (row == null) return true
+		for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
+			Cell cell = row.getCell(c)
+			if (cell != null && cell.getCellType() != CellType.BLANK) {
+				return false
+			}
+		}
+		return true
+	}
+
+
+	private int convertColumnLetterToIndex(String column) {
+		column = column.toUpperCase()
+		int index = 0
+		for (int i = 0; i < column.length(); i++) {
+			char c = column.charAt(i)
+			index *= 26
+			index += ((int)c - (int)'A' + 1)
+		}
+		return index - 1
 	}
 }

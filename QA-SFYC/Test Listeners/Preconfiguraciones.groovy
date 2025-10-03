@@ -24,6 +24,18 @@ import com.kms.katalon.core.context.TestSuiteContext
 
 class Preconfiguraciones {
 
+	@BeforeTestCase
+	def inicioSesionDinamico(TestCaseContext testCaseContext) {
+		
+		def sistema = testCaseContext.getTestCaseId()
+		
+		if(sistema.contains('AGENDA')) {
+			CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_AGENDA, GlobalVariable.USER_AGENDA, GlobalVariable.PASSWORD_AGENDA)
+		}else if (sistema.contains('MATERIALES')) {
+			CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_MATERIALES, GlobalVariable.USER_MATERIALES, GlobalVariable.PASSWORD_MATERIALES)
+		}
+	}
+	
 	/**
 	 * Método ejecutado automáticamente después de cada caso de prueba.
 	 * Su objetivo es capturar una evidencia visual del estado final del test y limpiar la interfaz.
