@@ -24,6 +24,12 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/MATERIALES/TC-005_DevolucionMateriales</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d0fd52c2-be3f-45cf-90b5-da6f244c568d</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>18e07a6c-6e68-463c-bed2-c6322576bb4a</guid>
@@ -31,5 +37,11 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/MATERIALES/TC-006_LiquidacionMateriales</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2b0bd1f4-3e7f-44bd-a870-9985a5dde1ae</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
