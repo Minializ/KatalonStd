@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>e81d773d-8961-4791-a315-cbd5407b030b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2b0bd1f4-3e7f-44bd-a870-9985a5dde1ae</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'32'</defaultValue>
+      <description></description>
+      <id>2b0bd1f4-3e7f-44bd-a870-9985a5dde1ae</id>
+      <masked>false</masked>
+      <name>cuadrillaMateriales</name>
+   </variable>
 </TestCaseEntity>
