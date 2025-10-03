@@ -28,13 +28,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Se manda a llamar el caso de prueba de login, el cual necesita inyectarle parametros del usuario con el que iniciara
-CustomKeywords.'utilidades.FuncionesAuxiliares.login'("IASALAZARM", "GFtE3O0GwLChRmwtPlBwjA==")
 
 //Se manda a llamar el caso de prueba de consulta de suscriptor, el cual necesita el parametro de Id para realizar la consulta
-WebUI.callTestCase(findTestCase('AGENDA/ConsultarSuscriptor'), [('numeroSuscriptor') : numeroSuscriptor], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'utilidades.Agenda.consultarSusciptor'(numeroSuscriptor)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']), 30)
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']), GlobalVariable.TIME_OUT)
 
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']))
 
@@ -48,13 +46,13 @@ if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/QuejasAdm
 	
 	WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/BUTTON_Editar'))
 	
-	CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionWithFilter'(findTestObject("Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Reasignacion"), 'MAGALI ESTEFANIA GARCIA LLAMAS')
+	CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject("Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Reasignacion"), 'MAGALI ESTEFANIA GARCIA LLAMAS')
 	
 	WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Motivo'), 'Apoyo con esta QA')
 	
 	WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/BUTTON_Reasingar'))
 	
-	WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 30, FailureHandling.STOP_ON_FAILURE)
+	WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.verifyElementText(findTestObject('Object Repository/OBJETOS_GLOBALES/LABEL_MensajeAlerta'), '¡Queja administrativa reasignada con éxito!')
 }else {
