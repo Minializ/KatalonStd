@@ -31,7 +31,7 @@ CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Re
 
 // Selecciona la cuadrilla con identificador "32"
 CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_Cuadrilla'), 
-    '30')
+    cuadrillaMateriales)
 
 // Hace clic en el campo de fecha para desplegar el calendario
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Fecha'))
