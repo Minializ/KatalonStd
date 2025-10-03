@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>DemoTestSuite</name>
+   <name>Regresion_Agenda</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>1</numberOfRerun>
+   <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>10</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -23,7 +23,7 @@
             <iterationType>SPECIFIC</iterationType>
             <value>1,5,20</value>
          </iterationEntity>
-         <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
+         <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>1859046c-147c-41eb-9cc2-cd030aa39373</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-002_ReasignarQueja</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -79,7 +79,7 @@
             <iterationType>SPECIFIC</iterationType>
             <value>1</value>
          </iterationEntity>
-         <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
+         <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -107,7 +107,7 @@
             <iterationType>SPECIFIC</iterationType>
             <value>1</value>
          </iterationEntity>
-         <testDataId>Data Files/AGENDA/Suscriptores()</testDataId>
+         <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
