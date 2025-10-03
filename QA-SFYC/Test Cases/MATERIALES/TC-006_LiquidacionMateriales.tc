@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-006_LiquidacionMateriales</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e81d773d-8961-4791-a315-cbd5407b030b</testCaseGuid>
+</TestCaseEntity>
