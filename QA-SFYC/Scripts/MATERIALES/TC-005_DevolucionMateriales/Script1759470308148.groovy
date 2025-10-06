@@ -36,8 +36,15 @@ CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Re
 // Hace clic en el campo de fecha para desplegar el calendario
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Fecha'))
 
-// Selecciona una fecha válida en el calendario (fecha hábil)
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SPAN_FechaHabil'))
+if( WebUI.getAttribute(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 'value') in sucursalesDiaActual) {
+	// Selecciona una fecha válida en el calendario (fecha hábil)
+	WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SPAN_FechaHabil'))
+}else {
+	// Selecciona como fecha un día habil de Jueves
+	WebUI.takeScreenshot()
+	def diaJueves = CustomKeywords.'utilidades.FuncionesAuxiliares.obtenerJeuvesProximoMesActual'()
+	WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SPAN_DiaJueves-Dyn', [('diaJueves') : diaJueves]))
+}
 
 // Obtiene la tabla de materiales desde el DOM (segunda instancia de la tabla dentro del grid)
 WebElement table = DriverFactory.getWebDriver().findElement(By.xpath('(//dx-data-grid[@class="material-grid dx-card-grid-catalog dx-widget dx-visibility-change-handler"]//table)[2]'))

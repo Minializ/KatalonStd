@@ -50,6 +50,10 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
+import java.time.DayOfWeek
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 
 class FuncionesAuxiliares {
 	@Keyword
@@ -307,5 +311,21 @@ class FuncionesAuxiliares {
 			index += ((int)c - (int)'A' + 1)
 		}
 		return index - 1
+	}
+
+	@Keyword
+	def obtenerJeuvesProximoMesActual() {		
+		LocalDate hoy = LocalDate.now()
+		
+		int diasHastaJueves = DayOfWeek.THURSDAY.getValue() - hoy.getDayOfWeek().getValue()
+		if (diasHastaJueves <= 0) {
+			diasHastaJueves += 7
+		}
+		
+		LocalDate proximoJueves = hoy.plusDays(diasHastaJueves)
+		
+		int diaDelMes = proximoJueves.getDayOfMonth()
+		
+		return diaDelMes
 	}
 }
