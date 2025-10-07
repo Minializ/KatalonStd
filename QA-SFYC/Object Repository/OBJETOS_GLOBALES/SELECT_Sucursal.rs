@@ -3,7 +3,7 @@
    <description></description>
    <name>SELECT_Sucursal</name>
    <tag></tag>
-   <elementGuidId>3db55608-f040-4349-85b1-09c00e4bcc99</elementGuidId>
+   <elementGuidId>68c8f1c8-8f6c-493e-96e3-17a6cc4a2ca1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dx-drop-down-box[@placeholder=&quot;Seleccione una sucursal...&quot;]//input[@type=&quot;hidden&quot;]</value>
+         <value>//*[@placeholder=&quot;Seleccione una sucursal...&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BUTTON_Guardar</name>
+   <name>BUTTON_AgregarFila</name>
    <tag></tag>
-   <elementGuidId>f276c578-8e58-4d85-9575-6f5df7e4b674</elementGuidId>
+   <elementGuidId>9505520d-3023-4b55-bca0-634e64af55f7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-icon-edit-button-save ')]</value>
+         <key>CSS</key>
+         <value>.dx-icon-edit-button-addrow</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>.dx-icon-edit-button-save</value>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-icon-edit-button-addrow ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Guardar cambios&quot;i</value>
+         <value>internal:label=&quot;Agregar una fila&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,38 +29,38 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>427adf57-017f-40e1-bb5d-8b44f448aed8</webElementGuid>
+      <webElementGuid>a7d34929-03e4-45bc-b40a-acca6a09ba9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dx-icon dx-icon-edit-button-save</value>
-      <webElementGuid>66037c37-447a-465d-a433-12bff82a7f5d</webElementGuid>
+      <value>dx-icon dx-icon-edit-button-addrow</value>
+      <webElementGuid>1e9013b1-aaf3-4541-8b44-0224d79c080c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-fcd50234895203f93af5042edec76729</value>
-      <webElementGuid>6b4a9a1d-cfd3-4111-998c-690eaf718479</webElementGuid>
+      <value>md5.v1-b3d1a3088056f3820515364fef68d79c</value>
+      <webElementGuid>db754559-5212-4657-a763-0ae00bdde718</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-icon-edit-button-save ')]</value>
-      <webElementGuid>d74ec2b3-21e2-4eba-9a79-527530431bf8</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-icon-edit-button-addrow ')]</value>
+      <webElementGuid>bfb5c3b7-a162-4e74-926b-020bad6fa4c1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-icon-edit-button-save ')]</value>
-      <webElementGuid>75c02da6-dd37-42bb-aa6f-e6719ccc4f65</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' dx-icon-edit-button-addrow ')]</value>
+      <webElementGuid>5585fc7b-c573-4ea0-b0cf-1904da43914e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SPAN_FechaHabil</name>
+   <name>SPAN_IdSucursal</name>
    <tag></tag>
-   <elementGuidId>cea0fe8a-cf4f-4b41-8d66-bc6e9e3ccdb3</elementGuidId>
+   <elementGuidId>3db55608-f040-4349-85b1-09c00e4bcc99</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//td[contains(@class, &quot;dx-calendar-cell dx-calendar-today dx-calendar&quot;)]//span</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//dx-drop-down-box[@placeholder=&quot;Seleccione una sucursal...&quot;]//input[@type=&quot;hidden&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

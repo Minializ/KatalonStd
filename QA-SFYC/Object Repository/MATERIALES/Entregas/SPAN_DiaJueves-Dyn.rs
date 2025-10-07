@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INPUT_Cantidades-Dyn</name>
+   <name>SPAN_DiaJueves-Dyn</name>
    <tag></tag>
-   <elementGuidId>a3be0790-6239-494a-88bd-1195fc2eb3b2</elementGuidId>
+   <elementGuidId>843af4ca-281c-4d00-9bcd-0e351e39b552</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//app-delivery-material-grid[@class=&quot;dx-card-component-grid-catalog&quot;]//tbody/tr)[3]//td[${idx}]//input[not(@type='hidden')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//td[contains(@class, &quot;dx-calendar-cell&quot;)]//span[text() = ' ${diaJueves} '])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

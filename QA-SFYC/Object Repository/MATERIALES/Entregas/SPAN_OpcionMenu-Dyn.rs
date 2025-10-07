@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BUTTON_Aceptar</name>
+   <name>SPAN_OpcionMenu-Dyn</name>
    <tag></tag>
-   <elementGuidId>0871dfdb-2859-4981-8b5e-7959ec272bed</elementGuidId>
+   <elementGuidId>b8afc953-8af9-458e-8780-ffa7b42dfb33</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//dx-button[@text=&quot;Aceptar&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//*[@class=&quot;tree-view-custom-item&quot;]//span[contains(text(), '${opcionMenu}')] | //div[@class=&quot;dx-item dx-list-item&quot;]/div[contains(text(), '${opcionMenu}')])</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,12 +6,12 @@
    <elementGuidId>7ca3d417-7c07-4263-9db7-767a3521031c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-reflect-search-expr = 'crewId']//*[@aria-haspopup = 'listbox']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>[ng-reflect-search-expr=&quot;crewId&quot;] [aria-haspopup=&quot;listbox&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@ng-reflect-search-expr = 'crewId']//*[@aria-haspopup = 'listbox']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

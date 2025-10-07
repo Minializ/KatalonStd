@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SPAN_DiaJueves-Dyn</name>
+   <name>SELECT_EmpresaNomina</name>
    <tag></tag>
-   <elementGuidId>843af4ca-281c-4d00-9bcd-0e351e39b552</elementGuidId>
+   <elementGuidId>f20a21c2-b114-4026-ae0b-bfb342cf4b91</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//td[contains(@class, &quot;dx-calendar-cell&quot;)]//span[text() = ' ${diaJueves} '])[1]</value>
+         <value>//*[@id=&quot;companyPayrollDropdown&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -314,18 +314,30 @@ class FuncionesAuxiliares {
 	}
 
 	@Keyword
-	def obtenerJeuvesProximoMesActual() {		
+	def obtenerJeuvesProximoMesActual() {
 		LocalDate hoy = LocalDate.now()
-		
+
 		int diasHastaJueves = DayOfWeek.THURSDAY.getValue() - hoy.getDayOfWeek().getValue()
 		if (diasHastaJueves <= 0) {
 			diasHastaJueves += 7
 		}
-		
+
 		LocalDate proximoJueves = hoy.plusDays(diasHastaJueves)
-		
+
 		int diaDelMes = proximoJueves.getDayOfMonth()
-		
+
 		return diaDelMes
+	}
+
+	@Keyword
+	def ingresarMenu(String menu, String subMenu) {
+
+		if(!WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/BUTTON_NuevaEntregaManual'), 3, FailureHandling.OPTIONAL)) {
+			WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : menu]))
+
+			if(!subMenu.blank) {
+				WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : subMenu]))
+			}
+		}
 	}
 }

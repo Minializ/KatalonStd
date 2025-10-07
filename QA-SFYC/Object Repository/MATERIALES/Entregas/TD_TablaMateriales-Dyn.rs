@@ -6,12 +6,12 @@
    <elementGuidId>ecae3053-2681-4dfc-be6e-18a9db8d698c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//app-delivery-material-grid[@class=&quot;dx-card-component-grid-catalog&quot;]//tbody/tr)[3]//td[${idx}]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>[aria-describedby=&quot;dx-col-58&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//app-delivery-material-grid[@class=&quot;dx-card-component-grid-catalog&quot;]//tbody/tr)[3]//td[${idx}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

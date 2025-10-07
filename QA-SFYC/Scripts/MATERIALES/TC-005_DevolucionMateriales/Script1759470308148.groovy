@@ -20,25 +20,25 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebElement as WebElement
 
 // Ingresa al menú "Materiales" y luego a la opción "Devoluciones"
-CustomKeywords.'utilidades.Materiales.ingresarMenu'('Materiales', 'Devoluciones')
+CustomKeywords.'utilidades.Ventas.ingresarMenu'('Materiales', 'Devoluciones')
 
 // Verifica que el combo "Tipo de Cuadrilla" esté presente antes de continuar
-WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_TipoCuadrilla'), 10)
 
 // Selecciona la opción "Quejas" en el selector de Tipo de Cuadrilla
-CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 
+CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_TipoCuadrilla'), 
     'Quejas')
 
 // Selecciona la cuadrilla con identificador "32"
-CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_Cuadrilla'), 
+CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_Cuadrilla'), 
     cuadrillaMateriales)
 
 // Hace clic en el campo de fecha para desplegar el calendario
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Fecha'))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_Fecha'))
 
-if( WebUI.getAttribute(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 'value') in sucursalesDiaActual) {
+if( WebUI.getAttribute(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_IdSucursal'), 'value') in sucursalesDiaActual) {
 	// Selecciona una fecha válida en el calendario (fecha hábil)
-	WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SPAN_FechaHabil'))
+	WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_FechaHabil'))
 }else {
 	// Selecciona como fecha un día habil de Jueves
 	WebUI.takeScreenshot()
@@ -86,7 +86,7 @@ for (WebElement row : rows - 1) {
 }
 
 // Hace clic en el botón "Guardar" para confirmar la devolución
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_Guardar'))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/BUTTON_Guardar'))
 
 // Verifica que se muestre un mensaje de alerta (confirmación de éxito)
 WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)

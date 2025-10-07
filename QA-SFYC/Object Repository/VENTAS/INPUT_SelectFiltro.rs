@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SPAN_OpcionMenu-Dyn</name>
+   <name>INPUT_SelectFiltro</name>
    <tag></tag>
-   <elementGuidId>b8afc953-8af9-458e-8780-ffa7b42dfb33</elementGuidId>
+   <elementGuidId>db94eb25-f1ed-4ce8-8a16-aadfcadda818</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//*[@class=&quot;tree-view-custom-item&quot;]//span[contains(text(), '${opcionMenu}')] | //div[@class=&quot;dx-item dx-list-item&quot;]/div[contains(text(), '${opcionMenu}')])</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//td[@aria-label=&quot;Celda de filtro&quot;]//input[@class=&quot;dx-texteditor-input&quot;])[last()]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

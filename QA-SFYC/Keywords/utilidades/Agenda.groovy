@@ -73,6 +73,6 @@ public class Agenda {
 
 		WebUI.setText(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_DescripcionFiltro'), opcion)
 
-		WebUI.enhancedClick(findTestObject('Object Repository/OBJETOS_GLOBALES/TD_Registro-Dyn', [('opcion') : opcion]))
+		WebUI.enhancedClick(findTestObject('Object Repository/MATERIALES/Entregas/TD_Registro-Dyn', [('opcion') : opcion]))
 	}
 }

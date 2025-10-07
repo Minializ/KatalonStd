@@ -18,27 +18,27 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Ingresa al menú "Materiales" y luego a la opción "Liquidaciones"
-CustomKeywords.'utilidades.Materiales.ingresarMenu'('Materiales', 'Liquidaciones')
+CustomKeywords.'utilidades.Ventas.ingresarMenu'('Materiales', 'Liquidaciones')
 
 // Verifica que el combo "Tipo de Cuadrilla" esté presente antes de continuar
-WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 10)
+WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_TipoCuadrilla'), 10)
 
 // Selecciona la opción "Quejas" en el selector de Tipo de Cuadrilla
-CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_TipoCuadrilla'), 
+CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_TipoCuadrilla'), 
     'Quejas')
 
 // Selecciona la cuadrilla con identificador "32"
-CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SELECT_Cuadrilla'), 
+CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_Cuadrilla'), 
     cuadrillaMateriales)
 
 // Hace clic en el campo de fecha para desplegar el calendario
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Fecha'))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_Fecha'))
 
 // Selecciona una fecha válida en el calendario (fecha hábil)
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SPAN_FechaHabil'))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_FechaHabil'))
 
 // Hace clic en el botón "Aceptar" para procesar la liquidación
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_Aceptar'))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/BUTTON_Aceptar'))
 
 // Verifica que se muestre el mensaje de alerta indicando el resultado del proceso
 WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)

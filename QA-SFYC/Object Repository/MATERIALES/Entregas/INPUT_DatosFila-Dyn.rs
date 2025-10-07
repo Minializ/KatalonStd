@@ -6,12 +6,12 @@
    <elementGuidId>d3dfbeda-a8e3-4d92-9d9e-c0b68e19f503</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[contains(@class, 'dx-focused')]//input[not(@type = 'hidden')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>.dx-numberbox.dx-texteditor.dx-widget.dx-editor-filled [role=&quot;spinbutton&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[contains(@class, 'dx-focused')]//input[not(@type = 'hidden')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
