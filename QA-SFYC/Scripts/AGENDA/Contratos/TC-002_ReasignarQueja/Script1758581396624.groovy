@@ -30,7 +30,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 //Se manda a llamar el caso de prueba de consulta de suscriptor, el cual necesita el parametro de Id para realizar la consulta
-CustomKeywords.'utilidades.Agenda.consultarSusciptor'(numeroSuscriptor)
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']), GlobalVariable.TIME_OUT)
 
@@ -46,7 +46,7 @@ if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/QuejasAdm
 	
 	WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/BUTTON_Editar'))
 	
-	CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject("Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Reasignacion"), 'MAGALI ESTEFANIA GARCIA LLAMAS')
+	CustomKeywords.'utilidades.Agenda.selectOptionByName'(findTestObject("Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Reasignacion"), 'MAGALI ESTEFANIA GARCIA LLAMAS')
 	
 	WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Motivo'), 'Apoyo con esta QA')
 	
