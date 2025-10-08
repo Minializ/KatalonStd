@@ -12,11 +12,24 @@
       <value></value>
       <variableId>d0fd52c2-be3f-45cf-90b5-da6f244c568d</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d3abd411-3b1d-498f-811a-22504a93c7ca</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'30'</defaultValue>
       <description></description>
       <id>d0fd52c2-be3f-45cf-90b5-da6f244c568d</id>
       <masked>false</masked>
       <name>cuadrillaMateriales</name>
+   </variable>
+   <variable>
+      <defaultValue>['12', '15', '346', '398', '282', '289', '397']</defaultValue>
+      <description></description>
+      <id>d3abd411-3b1d-498f-811a-22504a93c7ca</id>
+      <masked>false</masked>
+      <name>sucursalesDiaActual</name>
    </variable>
 </TestCaseEntity>
