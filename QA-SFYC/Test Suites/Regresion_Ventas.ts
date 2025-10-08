@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>b1ef0a99-2e7d-4b7a-a87a-89c6ac410c23</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/VENTAS/TC-007_AsignarEntrenadorHombroHombro</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -88,7 +88,7 @@
    <testCaseLink>
       <guid>4b2c112a-ac20-4821-8ba3-57f084307a6f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/VENTAS/TC-009_ModificarVendendor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

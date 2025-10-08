@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'utilidades.Ventas.selectOption'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 'Guadalajara')
+CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 'Guadalajara')
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Catálogos', 'Vendedores')
 
-CustomKeywords.'utilidades.Ventas.selectOption'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_CompaniaNomina'), 'SAOSA')
+CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_CompaniaNomina'), 'SAOSA')
 
 WebUI.setText(findTestObject('Object Repository/VENTAS/Vendedores/INPUT_NumeroEmpleado'), numeroEmpleado)
 
@@ -29,9 +29,9 @@ WebUI.delay(1)
 
 WebUI.sendKeys(findTestObject('Object Repository/VENTAS/Vendedores/INPUT_NumeroEmpleado'), Keys.chord(Keys.ENTER))
 
-CustomKeywords.'utilidades.Ventas.selectOption'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_TipoCuadrilla'), 'Punto de Venta')
+CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_TipoCuadrilla'), 'Punto de Venta')
 
-CustomKeywords.'utilidades.Ventas.selectOption'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_Cuadrilla'), '0003')
+CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_Cuadrilla'), '0003')
 
 WebUI.click(findTestObject('Object Repository/VENTAS/Vendedores/BUTTON_Aceptar'))
 
