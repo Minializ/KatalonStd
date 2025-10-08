@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SPAN_OpcionFiltro</name>
+   <name>BUTTON_Guardar</name>
    <tag></tag>
-   <elementGuidId>2d1d5e40-b1db-4f0f-a203-fab2d70e5120</elementGuidId>
+   <elementGuidId>25cf1828-455a-4a0d-b7f2-73f64c3c1e44</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//dx-data-grid//div[@class=&quot;dx-scrollable-content&quot;]//td[contains(text(), '${opcionMenu}')])[1]</value>
+         <value>//dx-button[@text=&quot;Guardar&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

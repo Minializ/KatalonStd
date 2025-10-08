@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-008_AsignarVendedorCapacitador</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9ba33b04-c67e-424d-be6c-3e9f8dff4c2e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a8d952f1-5868-4849-8c62-485aa55a40a2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7837d858-2a9d-4a0a-88fd-aa4c735dc7d5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'187743'</defaultValue>
+      <description></description>
+      <id>a8d952f1-5868-4849-8c62-485aa55a40a2</id>
+      <masked>false</masked>
+      <name>numeroVendedor</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description></description>
+      <id>7837d858-2a9d-4a0a-88fd-aa4c735dc7d5</id>
+      <masked>false</masked>
+      <name>empresaNomina</name>
+   </variable>
+</TestCaseEntity>

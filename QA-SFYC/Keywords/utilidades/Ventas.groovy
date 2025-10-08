@@ -23,7 +23,7 @@ import internal.GlobalVariable
 public class Ventas {
 	@Keyword
 	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
-	def selectOption(TestObject objetcSelect, String opcion) {
+	def selectOptionByName(TestObject objetcSelect, String opcion) {
 
 		WebUI.waitForElementPresent(objetcSelect, GlobalVariable.TIME_OUT_CONTENT)
 
@@ -31,10 +31,27 @@ public class Ventas {
 
 		WebUI.delay(1)
 
-		WebUI.sendKeys(findTestObject('Object Repository/VENTAS/INPUT_SelectFiltro'), opcion)
+		WebUI.sendKeys(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/INPUT_SelectFiltroDescripcion'), opcion)
 
 		WebUI.delay(1)
 
-		WebUI.click(findTestObject('Object Repository/VENTAS/SPAN_OpcionFiltro', [('opcionMenu') : opcion]))
+		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : opcion]))
+	}
+
+	@Keyword
+	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
+	def selectOptionByCode(TestObject objetcSelect, String codigo) {
+
+		WebUI.waitForElementPresent(objetcSelect, GlobalVariable.TIME_OUT_CONTENT)
+
+		WebUI.click(objetcSelect)
+
+		WebUI.delay(1)
+
+		WebUI.sendKeys(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/INPUT_SelectFiltroCode'), codigo)
+
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : codigo]))
 	}
 }

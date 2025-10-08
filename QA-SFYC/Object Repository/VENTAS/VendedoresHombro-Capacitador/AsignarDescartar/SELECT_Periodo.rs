@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TAB_AsignarDescartar</name>
+   <name>SELECT_Periodo</name>
    <tag></tag>
-   <elementGuidId>f3dc56e8-3286-41a0-8b15-9c784e981ad7</elementGuidId>
+   <elementGuidId>724a31d4-2f23-43df-b758-827803e1ec2f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class=&quot;dx-tab-text&quot; and contains(text(),'ASIGNAR O DESCARTAR')]</value>
+         <value>//*[@id=&quot;weeklyTabulatorPeriodDropdown&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

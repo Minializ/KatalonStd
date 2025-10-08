@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INPUT_SelectFiltro</name>
+   <name>BUTTON_Asingar</name>
    <tag></tag>
-   <elementGuidId>db94eb25-f1ed-4ce8-8a16-aadfcadda818</elementGuidId>
+   <elementGuidId>50eb8c77-9970-42cc-afd6-6c63b30426ce</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//td[@aria-label=&quot;Celda de filtro&quot;]//input[@class=&quot;dx-texteditor-input&quot;])[last()]</value>
+         <value>//*[@text=&quot;Asignar&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

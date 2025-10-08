@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INPUT_NumeroVendedor</name>
+   <name>SELECT_Cuadrilla</name>
    <tag></tag>
-   <elementGuidId>75b02a2a-d5cd-4943-898d-8aa1d8687fa9</elementGuidId>
+   <elementGuidId>056c3208-1880-4255-8130-f2bf60660689</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@formcontrolname=&quot;salesmanNumberId&quot;]//input[@inputmode=&quot;decimal&quot;]</value>
+         <value>//dx-drop-down-box[@id=&quot;crewDropdown&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

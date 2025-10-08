@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BUTTON_Asingar</name>
+   <name>BUTTON_BuscarVendedor</name>
    <tag></tag>
-   <elementGuidId>50eb8c77-9970-42cc-afd6-6c63b30426ce</elementGuidId>
+   <elementGuidId>0043eb13-336c-4b0c-a033-f86cd216f60e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@text=&quot;Asignar&quot;]</value>
+         <value>//*[@text=&quot;Buscar Vendedor&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

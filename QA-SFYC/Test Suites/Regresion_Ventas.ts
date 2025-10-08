@@ -12,22 +12,84 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f7cb2b11-233c-4361-be1d-acd385659da1</testSuiteGuid>
    <testCaseLink>
-      <guid>486b6cd8-fee7-48f1-8fae-a595e1380919</guid>
+      <guid>b1ef0a99-2e7d-4b7a-a87a-89c6ac410c23</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/VENTAS/TC-007_AsignarEntrenadorHombroHombro</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>85af15ab-3ec4-4f2f-ac3e-de14b4103ca3</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/VENTAS/VendedoresQueYaSonHH</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>85af15ab-3ec4-4f2f-ac3e-de14b4103ca3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>VendedorEntrenador</value>
          <variableId>99a46707-a56e-4295-95d4-22ff9e4213be</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>85af15ab-3ec4-4f2f-ac3e-de14b4103ca3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>VendedorAsignarNuevo</value>
+         <variableId>003b7f48-d371-469d-9675-32ae8d6b858e</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>003b7f48-d371-469d-9675-32ae8d6b858e</variableId>
+         <variableId>08a0d42e-eb05-4b43-b926-a51c0aa92ff7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>85af15ab-3ec4-4f2f-ac3e-de14b4103ca3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>sucursal</value>
+         <variableId>b008d112-8efd-4357-b8bd-a9fd449e73e0</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ce0de9b3-6ca1-4f14-a714-2db03e6806cb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/VENTAS/TC-008_AsignarVendedorCapacitador</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>cc5ba796-1aad-4828-82da-d0f5015e7014</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/VENTAS/VendedoresHH</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>cc5ba796-1aad-4828-82da-d0f5015e7014</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NumVendedor</value>
+         <variableId>a8d952f1-5868-4849-8c62-485aa55a40a2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>cc5ba796-1aad-4828-82da-d0f5015e7014</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>EmpresaNomina</value>
+         <variableId>7837d858-2a9d-4a0a-88fd-aa4c735dc7d5</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4b2c112a-ac20-4821-8ba3-57f084307a6f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/VENTAS/TC-009_ModificarVendendor</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>83e1f352-3ac6-420d-a5b6-980743e6b08a</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SELECT_EmpresaNomina</name>
+   <name>INPUT_NumeroVendedor</name>
    <tag></tag>
-   <elementGuidId>f20a21c2-b114-4026-ae0b-bfb342cf4b91</elementGuidId>
+   <elementGuidId>75b02a2a-d5cd-4943-898d-8aa1d8687fa9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;companyPayrollDropdown&quot;]</value>
+         <value>//*[@formcontrolname=&quot;salesmanNumberId&quot;]//input[@inputmode=&quot;decimal&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

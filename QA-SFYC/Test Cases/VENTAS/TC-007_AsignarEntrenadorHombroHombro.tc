@@ -18,6 +18,18 @@
       <value></value>
       <variableId>003b7f48-d371-469d-9675-32ae8d6b858e</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>08a0d42e-eb05-4b43-b926-a51c0aa92ff7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b008d112-8efd-4357-b8bd-a9fd449e73e0</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'128018'</defaultValue>
       <description></description>
@@ -31,5 +43,19 @@
       <id>003b7f48-d371-469d-9675-32ae8d6b858e</id>
       <masked>false</masked>
       <name>numeroVendedorEntrenamiento</name>
+   </variable>
+   <variable>
+      <defaultValue>'NO'</defaultValue>
+      <description></description>
+      <id>08a0d42e-eb05-4b43-b926-a51c0aa92ff7</id>
+      <masked>false</masked>
+      <name>entrenadorNuevo</name>
+   </variable>
+   <variable>
+      <defaultValue>'41'</defaultValue>
+      <description></description>
+      <id>b008d112-8efd-4357-b8bd-a9fd449e73e0</id>
+      <masked>false</masked>
+      <name>sucursal</name>
    </variable>
 </TestCaseEntity>

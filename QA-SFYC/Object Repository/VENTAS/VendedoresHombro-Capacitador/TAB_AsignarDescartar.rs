@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BUTTON_Enviar</name>
+   <name>TAB_AsignarDescartar</name>
    <tag></tag>
-   <elementGuidId>acd274ab-a4a8-4a15-93f4-a0e89dc3918a</elementGuidId>
+   <elementGuidId>f3dc56e8-3286-41a0-8b15-9c784e981ad7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@aria-label=&quot;Enviar&quot;])[last()]</value>
+         <value>//span[@class=&quot;dx-tab-text&quot; and contains(text(),'ASIGNAR O DESCARTAR')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

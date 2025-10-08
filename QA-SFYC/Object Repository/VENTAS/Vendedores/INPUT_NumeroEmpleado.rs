@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SELECT_Periodo</name>
+   <name>INPUT_NumeroEmpleado</name>
    <tag></tag>
-   <elementGuidId>724a31d4-2f23-43df-b758-827803e1ec2f</elementGuidId>
+   <elementGuidId>225c4c20-4e92-421d-b41e-b7a3ed68680e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;weeklyTabulatorPeriodDropdown&quot;]</value>
+         <value>//*[@formcontrolname=&quot;employeeNumber&quot;]//input[@inputmode=&quot;decimal&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

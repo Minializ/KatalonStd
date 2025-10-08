@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BUTTON_BuscarVendedor</name>
+   <name>SPAN_OpcionFiltro</name>
    <tag></tag>
-   <elementGuidId>0043eb13-336c-4b0c-a033-f86cd216f60e</elementGuidId>
+   <elementGuidId>2d1d5e40-b1db-4f0f-a203-fab2d70e5120</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//dx-data-grid//div[@class=&quot;dx-scrollable-content&quot;]//td[contains(text(), '${opcionMenu}')])[last()]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@text=&quot;Buscar Vendedor&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
