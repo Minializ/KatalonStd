@@ -21,7 +21,7 @@
          <id>1f77765a-f91d-41f7-985c-e97287303b92</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>1,5,20</value>
+            <value>1</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
       </testDataLink>
@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>1859046c-147c-41eb-9cc2-cd030aa39373</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-002_ReasignarQueja</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -70,7 +70,7 @@
    <testCaseLink>
       <guid>4f292cdd-607e-438c-ba07-a5a492b940b2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -98,7 +98,7 @@
    <testCaseLink>
       <guid>f7a787a1-9f8c-4624-b3c1-e8b990ce2460</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

@@ -27,7 +27,7 @@
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>SCRIPT_VARIABLE</type>
-         <value>11</value>
+         <value>&quot;11&quot;</value>
          <variableId>d0fd52c2-be3f-45cf-90b5-da6f244c568d</variableId>
       </variableLink>
       <variableLink>

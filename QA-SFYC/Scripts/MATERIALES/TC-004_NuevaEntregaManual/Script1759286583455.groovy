@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Ingresa al menú "Materiales" y luego a la opción "Entregas"
-CustomKeywords.'utilidades.Ventas.ingresarMenu'('Materiales', 'Entregas')
+CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Materiales', 'Entregas')
 
 // Verifica que el botón "Nueva Entrega Manual" esté presente en el DOM antes de continuar
 WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/BUTTON_NuevaEntregaManual'), 
@@ -39,36 +39,36 @@ CustomKeywords.'utilidades.Materiales.selectOption'(findTestObject('Object Repos
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/BUTTON_AgregarFila'))
 
 // Envía un TAB en la celda dinámica índice 2 para activar la edición/autocompletado
-WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '2']), 
+WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/TD_TablaMateriales-Dyn', [('idx') : '2']), 
     Keys.chord(Keys.TAB))
 
 // Selecciona el tipo de material "4 Cable Coaxial"
-CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', 
-        [('idx') : '2']), '4 Cable Coaxial')
+CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/TD_TablaMateriales-Dyn', 
+        [('idx') : '2']), 'Cable Coaxial')
 
 // Selecciona el material "3 CABLE COAXIAL 500 PIII" (índice 3)
-CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', 
-        [('idx') : '3']), '3 CABLE COAXIAL 500 PIII')
+CustomKeywords.'utilidades.Materiales.selectOptionTable'(findTestObject('Object Repository/MATERIALES/Entregas/TD_TablaMateriales-Dyn', 
+        [('idx') : '3']), 'CABLE COAXIAL 500 PIII')
 
 // Hace clic en la celda de la columna cantidad (índice 5)
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '5']))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/TD_TablaMateriales-Dyn', [('idx') : '5']))
 
 // Ingresa el valor "5" en la celda de cantidad
-WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '5']), 
+WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_Cantidades-Dyn', [('idx') : '5']), 
     '5')
 
 // Hace clic en la celda de la columna M Inicial (índice 6)
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '6']))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/TD_TablaMateriales-Dyn', [('idx') : '6']))
 
 // Ingresa el valor "100.00" en la columna M Inicial
-WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '6']), 
+WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_Cantidades-Dyn', [('idx') : '6']), 
     '100.00')
 
 // Hace clic en la celda de la columna M Final
-WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/TD_TablaMateriales-Dyn', [('idx') : '7']))
+WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/TD_TablaMateriales-Dyn', [('idx') : '7']))
 
 // Ingresa el valor "80.00" en la columna M Final
-WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/INPUT_Cantidades-Dyn', [('idx') : '7']), 
+WebUI.setMaskedText(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_Cantidades-Dyn', [('idx') : '7']), 
     '80.00')
 
 // Hace clic en el botón "Guardar" para registrar la entrega

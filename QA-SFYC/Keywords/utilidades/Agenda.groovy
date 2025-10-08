@@ -90,9 +90,8 @@ public class Agenda {
 			WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/INPUT_Nombre'), nombre)
 
 			WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
-			
+
 			WebUI.doubleClick(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/TD_SuscriptorEncontrado'))
-			
 		}else if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/INPUT_Suscriptor'), 1, FailureHandling.OPTIONAL)){
 			WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/SPAN_NombreApellidos'))
 
@@ -105,9 +104,9 @@ public class Agenda {
 			WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/INPUT_Nombre'), nombre)
 
 			WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
-			
+
 			WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/TD_SuscriptorEncontrado'))
-			
+
 			WebUI.doubleClick(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/TD_SuscriptorEncontrado'))
 		}
 
@@ -130,6 +129,8 @@ public class Agenda {
 		WebUI.click(objetcSelect)
 
 		WebUI.setText(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_DescripcionFiltro'), opcion)
+
+		WebUI.delay(1)
 
 		WebUI.enhancedClick(findTestObject('Object Repository/MATERIALES/Entregas/TD_Registro-Dyn', [('opcion') : opcion]))
 	}

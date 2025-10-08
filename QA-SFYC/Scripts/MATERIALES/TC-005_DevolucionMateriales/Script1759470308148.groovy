@@ -20,7 +20,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebElement as WebElement
 
 // Ingresa al menú "Materiales" y luego a la opción "Devoluciones"
-CustomKeywords.'utilidades.Ventas.ingresarMenu'('Materiales', 'Devoluciones')
+CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Materiales', 'Devoluciones')
 
 // Verifica que el combo "Tipo de Cuadrilla" esté presente antes de continuar
 WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_TipoCuadrilla'), 10)
@@ -30,8 +30,7 @@ CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Re
     'Quejas')
 
 // Selecciona la cuadrilla con identificador "32"
-CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_Cuadrilla'), 
-    cuadrillaMateriales)
+CustomKeywords.'utilidades.Materiales.selectOptionTab'(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_Cuadrilla'), cuadrillaMateriales.toString())
 
 // Hace clic en el campo de fecha para desplegar el calendario
 WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_Fecha'))
@@ -43,7 +42,7 @@ if( WebUI.getAttribute(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_I
 	// Selecciona como fecha un día habil de Jueves
 	WebUI.takeScreenshot()
 	def diaJueves = CustomKeywords.'utilidades.FuncionesAuxiliares.obtenerJeuvesProximoMesActual'()
-	WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/SPAN_DiaJueves-Dyn', [('diaJueves') : diaJueves]))
+	WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_DiaJueves-Dyn', [('diaJueves') : diaJueves]))
 }
 
 // Obtiene la tabla de materiales desde el DOM (segunda instancia de la tabla dentro del grid)

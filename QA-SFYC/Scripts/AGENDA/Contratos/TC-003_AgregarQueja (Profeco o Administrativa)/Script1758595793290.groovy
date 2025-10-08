@@ -72,9 +72,9 @@ WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdmin
 
 WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Telefono'), '3321301567')
 
-CustomKeywords.'utilidades.Agenda.selectOptionByName'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Sucursal'), 'GUADALAJARA')
+CustomKeywords.'utilidades.Agenda.selectOptionById'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Sucursal'), '41')
 
-CustomKeywords.'utilidades.Agenda.selectOptionByName'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_CIS'),  'TERRANOVA')
+CustomKeywords.'utilidades.Agenda.selectOptionById'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_CIS'),  '2')
 
 //Se llena sección comun para queja administrativa o de profeco
 CustomKeywords.'utilidades.Agenda.selectOptionByName'(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Tipo2'), 'CCN')

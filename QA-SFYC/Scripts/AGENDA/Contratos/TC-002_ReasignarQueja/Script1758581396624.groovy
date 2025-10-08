@@ -46,7 +46,7 @@ if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/QuejasAdm
 	
 	WebUI.click(findTestObject('Object Repository/AGENDA/QuejasAdm/BUTTON_Editar'))
 	
-	CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject("Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Reasignacion"), 'MAGALI ESTEFANIA GARCIA LLAMAS')
+	CustomKeywords.'utilidades.Agenda.selectOptionByName'(findTestObject("Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/SELECT_Reasignacion"), 'MAGALI ESTEFANIA GARCIA LLAMAS')
 	
 	WebUI.setText(findTestObject('Object Repository/AGENDA/QuejasAdm/FormQuejasAdministrativas/INPUT_Motivo'), 'Apoyo con esta QA')
 	
