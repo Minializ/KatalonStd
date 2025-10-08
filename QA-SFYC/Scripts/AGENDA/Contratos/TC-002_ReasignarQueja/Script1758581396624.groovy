@@ -30,7 +30,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 //Se manda a llamar el caso de prueba de consulta de suscriptor, el cual necesita el parametro de Id para realizar la consulta
-CustomKeywords.'utilidades.Agenda.consultarSusciptor'(numeroSuscriptor)
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']), GlobalVariable.TIME_OUT)
 

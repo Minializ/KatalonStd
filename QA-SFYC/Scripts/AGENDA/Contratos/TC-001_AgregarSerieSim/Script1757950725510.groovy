@@ -37,7 +37,7 @@ final String HOJA_DATOS = 'Hoja1'
 boolean excepcionSIM = false
 
 // Consulta del suscriptor
-CustomKeywords.'utilidades.Agenda.consultarSusciptor'(numeroSuscriptor)
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
 
 WebUI.waitForElementPresent(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), GlobalVariable.TIME_OUT)
 
@@ -61,7 +61,7 @@ if (!asignarSerieDisponible) {
 // Proceso de asignación de SIM
 WebUI.click(findTestObject('AGENDA/Contratos/SPAN_AsignarSerieSIM'))
 
-CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'), cis)
+CustomKeywords.'utilidades.Agenda.selectOptionByName'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'), cis)
 
 WebUI.setText(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/INPUT_SerieSIM'), serieSIM)
 

@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>7f8390c4-beab-4070-98a0-26e45395f3d5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-001_AgregarSerieSim</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -98,7 +98,7 @@
    <testCaseLink>
       <guid>f7a787a1-9f8c-4624-b3c1-e8b990ce2460</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
