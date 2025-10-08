@@ -26,9 +26,15 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
+         <type>SCRIPT_VARIABLE</type>
+         <value>&quot;11&quot;</value>
+         <variableId>d0fd52c2-be3f-45cf-90b5-da6f244c568d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>d0fd52c2-be3f-45cf-90b5-da6f244c568d</variableId>
+         <variableId>d3abd411-3b1d-498f-811a-22504a93c7ca</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
