@@ -116,7 +116,7 @@ class FuncionesAuxiliares {
 	//   - sheetName: Nombre de la hoja dentro del archivo
 	//   - numeroSuscriptorBuscado: Número de suscriptor que se desea actualizar
 	//   - estatus: Nuevo valor que se desea asignar en la columna "estatus"
-	def actualizarEstatusDataSetSuscriptor(String filePath, String sheetName, String numeroSuscriptorBuscado, String estatus) {
+	def actualizarEstatusDataSetSuscriptor(String filePath, String sheetName, String columnaIdentificador, String numeroSuscriptorBuscado, String estatus) {
 
 		// Abre el archivo Excel para lectura
 		FileInputStream fis = new FileInputStream(filePath)
@@ -131,18 +131,18 @@ class FuncionesAuxiliares {
 
 		// Obtiene la fila de encabezado (primera fila) para identificar las columnas por nombre
 		Row headerRow = sheet.getRow(0)
-		int colNumeroSuscriptor = -1
+		int idxColIdentificador = -1
 		int colEstatus = -1
 
 		// Busca los índices de las columnas "numeroSuscriptor" y "estatus"
 		for (int i = 0; i < headerRow.getLastCellNum(); i++) {
-			String colName = headerRow.getCell(i)?.getStringCellValue()?.trim()?.toLowerCase()
-			if (colName == "numerosuscriptor") colNumeroSuscriptor = i
-			if (colName == "estatus") colEstatus = i
+			String colName = headerRow.getCell(i)?.getStringCellValue()?.trim()
+			if (colName?.equalsIgnoreCase(columnaIdentificador)) idxColIdentificador = i
+			if (colName?.equalsIgnoreCase("estatus")) colEstatus = i
 		}
 
 		// Si alguna columna no fue encontrada, lanza una excepción
-		if (colNumeroSuscriptor == -1 || colEstatus == -1) {
+		if (idxColIdentificador == -1 || colEstatus == -1) {
 			fis.close()
 			throw new Exception("No se encontró la columna 'numeroSuscriptor' o 'Estatus'")
 		}
@@ -156,7 +156,7 @@ class FuncionesAuxiliares {
 			// Empieza desde la fila 1 (fila 0 es encabezado)
 			Row row = sheet.getRow(i)
 			if (row != null) {
-				Cell cell = row.getCell(colNumeroSuscriptor)
+				Cell cell = row.getCell(idxColIdentificador)
 				String cellValue = ""
 				if (cell != null) {
 					cellValue = formatter.formatCellValue(cell).trim()

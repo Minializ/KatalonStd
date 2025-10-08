@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>b1ef0a99-2e7d-4b7a-a87a-89c6ac410c23</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VENTAS/TC-007_AsignarEntrenadorHombroHombro</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -50,6 +50,12 @@
          <value>sucursal</value>
          <variableId>b008d112-8efd-4357-b8bd-a9fd449e73e0</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>85af15ab-3ec4-4f2f-ac3e-de14b4103ca3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>vendedor_old</value>
+         <variableId>c56e590f-4727-462e-bbf9-b02e47799cf3</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>ce0de9b3-6ca1-4f14-a714-2db03e6806cb</guid>
@@ -82,7 +88,7 @@
    <testCaseLink>
       <guid>4b2c112a-ac20-4821-8ba3-57f084307a6f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VENTAS/TC-009_ModificarVendendor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

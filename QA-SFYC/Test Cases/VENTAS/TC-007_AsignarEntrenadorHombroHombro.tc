@@ -30,8 +30,14 @@
       <value></value>
       <variableId>b008d112-8efd-4357-b8bd-a9fd449e73e0</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c56e590f-4727-462e-bbf9-b02e47799cf3</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>'128018'</defaultValue>
+      <defaultValue>'366401'</defaultValue>
       <description></description>
       <id>99a46707-a56e-4295-95d4-22ff9e4213be</id>
       <masked>false</masked>
@@ -57,5 +63,12 @@
       <id>b008d112-8efd-4357-b8bd-a9fd449e73e0</id>
       <masked>false</masked>
       <name>sucursal</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description></description>
+      <id>c56e590f-4727-462e-bbf9-b02e47799cf3</id>
+      <masked>false</masked>
+      <name>empresaNomina</name>
    </variable>
 </TestCaseEntity>
