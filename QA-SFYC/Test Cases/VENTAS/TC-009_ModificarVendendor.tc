@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-009_ModificarVendendor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6cfc03a7-faa0-48da-9082-5ef5a904c43f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>83e1f352-3ac6-420d-a5b6-980743e6b08a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'239540'</defaultValue>
+      <description></description>
+      <id>83e1f352-3ac6-420d-a5b6-980743e6b08a</id>
+      <masked>false</masked>
+      <name>numeroEmpleado</name>
+   </variable>
+</TestCaseEntity>

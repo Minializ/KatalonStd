@@ -24,19 +24,6 @@ import internal.GlobalVariable
 
 public class Materiales {
 
-
-	@Keyword
-	def ingresarMenu(String menu, String subMenu) {
-
-		if(!WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/Dashboard/BUTTON_NuevaEntregaManual'), 3, FailureHandling.OPTIONAL)) {
-			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_OpcionMenu-Dyn', [('opcionMenu') : menu]))
-
-			if(!subMenu.blank) {
-				WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_OpcionMenu-Dyn', [('opcionMenu') : subMenu]))
-			}
-		}
-	}
-
 	@Keyword
 	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
 	def selectOption(TestObject objetcSelect, String opcion) {
@@ -49,7 +36,7 @@ public class Materiales {
 
 		WebUI.sendKeys(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_Seleccione'), opcion)
 
-		WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_OpcionMenu-Dyn', [('opcionMenu') : opcion]))
+		WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : opcion]))
 	}
 
 
@@ -66,10 +53,11 @@ public class Materiales {
 		WebUI.sendKeys(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_Seleccione'), opcion)
 
 		WebUI.delay(2)
-		
+
 		WebUI.sendKeys(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_Seleccione'), Keys.chord(Keys.TAB))
 	}
-		@Keyword
+	
+	@Keyword
 	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
 	def selectOptionTable(TestObject objetcSelect, String opcion) {
 
@@ -79,9 +67,9 @@ public class Materiales {
 
 		WebUI.delay(1)
 
-		WebUI.sendKeys(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_DatosFila-Dyn'), opcion)
+		WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_DatosFila-DYN'), opcion)
 
-		WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_OpcionMenu-Dyn', [('opcionMenu') : opcion]))
+		WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : opcion]))
 	}
 
 	@Keyword

@@ -37,7 +37,7 @@ final String HOJA_DATOS = 'Hoja1'
 boolean excepcionSIM = false
 
 // Consulta del suscriptor
-CustomKeywords.'utilidades.Agenda.consultarSusciptor'(numeroSuscriptor)
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
 
 WebUI.waitForElementPresent(findTestObject('AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), GlobalVariable.TIME_OUT)
 
@@ -53,7 +53,7 @@ WebUI.mouseOver(findTestObject('AGENDA/Contratos/BUTTON_VerOpciones'))
 boolean asignarSerieDisponible = WebUI.verifyElementClickable(findTestObject('AGENDA/Contratos/SPAN_AsignarSerieSIM'), FailureHandling.OPTIONAL)
 
 if (!asignarSerieDisponible) {
-	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'Sin Permisos para Asignar SIM')
+	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, 'numerosuscriptor', numeroSuscriptor, 'Sin Permisos para Asignar SIM')
 	KeywordUtil.markFailed('\n\n El usuario no tiene permisos para asignar serie SIM \n\n')
 	return
 }
@@ -61,7 +61,7 @@ if (!asignarSerieDisponible) {
 // Proceso de asignación de SIM
 WebUI.click(findTestObject('AGENDA/Contratos/SPAN_AsignarSerieSIM'))
 
-CustomKeywords.'utilidades.Agenda.selectOption'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'), cis)
+CustomKeywords.'utilidades.Agenda.selectOptionByName'(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/SELECT_Cis'), cis)
 
 WebUI.setText(findTestObject('AGENDA/Contratos/FormAsignarSerieSIM/INPUT_SerieSIM'), serieSIM)
 
@@ -73,10 +73,10 @@ WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'
 def mensajeAlerta = WebUI.getText(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'))
 
 if (mensajeAlerta.contains('Proceso finalizado con éxito')) {
-	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'Asignado Con Exito')
+	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, 'numerosuscriptor', numeroSuscriptor, 'Asignado Con Exito')
 	excepcionSIM = false
 } else {
-	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, numeroSuscriptor, 'SIM no Registrada en BD')
+	CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, 'numerosuscriptor', numeroSuscriptor, 'SIM no Registrada en BD')
 	excepcionSIM = true
 	KeywordUtil.markFailed("\n\nErrores o Problemas con la asignación de la serie SIM: ${mensajeAlerta}\n\n")
 }
