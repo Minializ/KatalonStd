@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>VendedoresHH</name>
+   <name>VendedoresHombroHombroTD</name>
    <tag></tag>
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>6e9d07d7-30c8-4ac2-93c7-f7fd4bf609de</dataFileGUID>
-   <dataSourceUrl>Data Files/VENTAS/VendedoresHH.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/VENTAS/VededoresHombroHombro.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

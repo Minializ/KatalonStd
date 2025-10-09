@@ -18,7 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String ARCHIVO_DATOS = 'Data Files/VENTAS/VendedoresHH.xlsx'
+String ARCHIVO_DATOS = 'Data Files/VENTAS/VendedoresCapacitador.xlsx'
 
 String HOJA_DATOS = 'in'
 
@@ -26,6 +26,7 @@ def msgAlertaGlobal = null
 
 def vendedorNoExistente = false
 
+// Se selecciona la sucursal 41 en base al caso de prueba
 CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
     'Guadalajara')
 
@@ -50,6 +51,7 @@ if (WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAle
     CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 }
 
+//Si el vendedor existe procede a convertirlo a capacitador
 if (!(vendedorNoExistente)) {
     WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/BUTTON_Guardar'))
 
@@ -63,6 +65,7 @@ if (!(vendedorNoExistente)) {
     CustomKeywords.'kms.turing.katalon.plugins.assertj.StringAssert.matches'(msgAlertaAsignacionCapacitador, '^Se certificó a .+? como Entrenador Hombro Hombro\\.$', 
         '')
 } else {
+	// SI el  vendedor no existe se actualiza el registro en el excel y se marca el test case como fallado
     KeywordUtil.markFailed('\n\n El Vendedor Entrenador no se encontro con los parametros de busuqeda \n\n')
 
     CustomKeywords.'utilidades.FuncionesAuxiliares.actualizarEstatusDataSetSuscriptor'(ARCHIVO_DATOS, HOJA_DATOS, 'NumVendedor', 

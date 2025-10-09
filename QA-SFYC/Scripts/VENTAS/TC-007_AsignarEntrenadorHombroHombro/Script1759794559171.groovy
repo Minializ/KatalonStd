@@ -18,7 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String ARCHIVO_DATOS = 'Data Files/VENTAS/VededoresQueYAsonHH.xlsx'
+String ARCHIVO_DATOS = 'Data Files/VENTAS/VededoresHombroHombro.xlsx'
 
 String HOJA_DATOS = 'in'
 
@@ -28,6 +28,7 @@ def vendedorPreviamenteAsignado = false
 
 def msgAlertaGlobal = null
 
+// Se selecciona la sucursal que requiere el vendedor
 CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
     sucursal)
 
@@ -53,8 +54,9 @@ if (WebUI.verifyElementPresent(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAle
 }
 
 //Valida que la bandera de vendedorNoExitente este en falso, esto indica que el vendedor si existe y puede continuar con el flujo de asignación
-if (!(vendedorNoExistente)) {
-    //Si el vendedor va a ser entrenador nuevo, de debe asignar el valor "SI" en la columna "entrenadorNuevo" del excel "VendedoresQueYaSonHH"
+if (!vendedorNoExistente) {
+   
+	 //Si el vendedor va a ser entrenador nuevo, de debe asignar el valor "SI" en la columna "entrenadorNuevo" del excel "VendedoresQueYaSonHH"
     if (entrenadorNuevo.toUpperCase().contains('SI')) {
         WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/BUTTON_Guardar'))
 
