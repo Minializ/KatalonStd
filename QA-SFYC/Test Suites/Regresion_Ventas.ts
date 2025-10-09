@@ -23,7 +23,7 @@
             <iterationType>SPECIFIC</iterationType>
             <value>1</value>
          </iterationEntity>
-         <testDataId>Data Files/VENTAS/VendedoresQueYaSonHH</testDataId>
+         <testDataId>Data Files/VENTAS/VendedoresHombroHombroTD</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -69,7 +69,7 @@
             <iterationType>SPECIFIC</iterationType>
             <value>1</value>
          </iterationEntity>
-         <testDataId>Data Files/VENTAS/VendedoresHH</testDataId>
+         <testDataId>Data Files/VENTAS/VendedoresCapacitadorTD</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
