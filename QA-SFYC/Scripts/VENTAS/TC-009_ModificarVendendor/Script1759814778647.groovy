@@ -21,7 +21,7 @@ int randomNumberCuadrilla = (int)(Math.random() * 6)
 
 String formattedNumberCuadrilla = String.format('%04d', randomNumberCuadrilla)
 
-
+// Se selecciona la sucursal 41 en base al caso de prueba
 CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 'Guadalajara')
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Catálogos', 'Vendedores')
