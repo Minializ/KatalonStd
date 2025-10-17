@@ -39,9 +39,9 @@
          <variableId>003b7f48-d371-469d-9675-32ae8d6b858e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>85af15ab-3ec4-4f2f-ac3e-de14b4103ca3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>entrenadorNuevo</value>
          <variableId>08a0d42e-eb05-4b43-b926-a51c0aa92ff7</variableId>
       </variableLink>
       <variableLink>

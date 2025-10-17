@@ -88,4 +88,25 @@
       <protected>false</protected>
       <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://equipos.qa-cluster.sfycnextgen.com.mx/ui/'</initValue>
+      <name>URL_EQUIPOS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'APSANTILLAV'</initValue>
+      <name>USER_EQUIPOS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'xmwPVkGXOzg/mjMgod9mdJXPoCY3ZmJvZjpNUH1MJBC5xTLD1ro+jQ=='</initValue>
+      <name>PASSWORD_EQUIPOS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
