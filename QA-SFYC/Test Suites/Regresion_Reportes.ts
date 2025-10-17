@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Regresion_Reportes</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>81a7a379-662b-49a4-b1b6-49d61f6b3251</testSuiteGuid>
+   <testCaseLink>
+      <guid>5237c4bc-fbd1-4101-b2cd-20c0c8f11d1e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EQUIPOS/TC-010_ReporteAuxiliarEquiposUbicacion</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aa4947ff-cb71-4ba7-b085-88821e053111</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1ebe55df-f8d7-47f0-9de5-6b76086abd5b</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>54c64a6c-13a7-4400-933f-f3ca4fb02d00</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EQUIPOS/TC-010_ReporteAuxiliarEquiposUbicacion</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aa4947ff-cb71-4ba7-b085-88821e053111</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>SCRIPT_VARIABLE</type>
+         <value>&quot;CLASIFICACION&quot;</value>
+         <variableId>1ebe55df-f8d7-47f0-9de5-6b76086abd5b</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
