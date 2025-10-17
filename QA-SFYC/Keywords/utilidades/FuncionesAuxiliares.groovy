@@ -223,8 +223,13 @@ class FuncionesAuxiliares {
 	// Mientras el botón esté presente, se hace clic para cerrarlo.
 	// Esto asegura que el entorno de la interfaz quede limpio para continuar con el siguiente paso del test.
 	def limpiarVista() {
+		
+		WebUI.closeWindowIndex(1, FailureHandling.OPTIONAL)
+		
+		WebUI.switchToWindowIndex(0)
+		
 		while (WebUI.verifyElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'), 1, FailureHandling.OPTIONAL)) {
-			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'))
+			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'), FailureHandling.OPTIONAL)
 		}
 	}
 

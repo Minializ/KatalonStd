@@ -21,6 +21,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class Agenda {
+	
 	@Keyword
 	def consultarSusciptorPorId(String numeroSuscriptor) {
 
@@ -92,7 +93,6 @@ public class Agenda {
 			WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
 
 			WebUI.doubleClick(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/TD_SuscriptorEncontrado'))
-			
 		}else if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/INPUT_Suscriptor'), 1, FailureHandling.OPTIONAL)){
 			WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/SPAN_NombreApellidos'))
 
