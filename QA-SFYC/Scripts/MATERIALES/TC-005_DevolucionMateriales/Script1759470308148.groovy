@@ -20,7 +20,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebElement as WebElement
 
 // Ingresa al menú "Materiales" y luego a la opción "Devoluciones"
-CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Materiales', 'Devoluciones')
+CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Materiales', 'Devoluciones', '')
 
 // Verifica que el combo "Tipo de Cuadrilla" esté presente antes de continuar
 WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/SELECT_TipoCuadrilla'), 10)

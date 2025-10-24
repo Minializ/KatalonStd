@@ -56,7 +56,7 @@ public class Materiales {
 
 		WebUI.sendKeys(findTestObject('Object Repository/OBJETOS_GLOBALES/INPUT_Seleccione'), Keys.chord(Keys.TAB))
 	}
-	
+
 	@Keyword
 	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
 	def selectOptionTable(TestObject objetcSelect, String opcion) {
