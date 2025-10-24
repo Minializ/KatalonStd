@@ -30,7 +30,7 @@ def vendedorNoExistente = false
 CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
     '41')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Vendedor Capacitador', '')
+CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Vendedor Capacitador', '', '')
 
 CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SELECT_EmpresaNomina'), 
     empresaNomina)
