@@ -32,7 +32,7 @@ def msgAlertaGlobal = null
 CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
     sucursal)
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Vendedores hombro a hombro', '')
+CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Vendedores hombro a hombro', '', '')
 
 CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SELECT_EmpresaNomina'), 
     empresaNomina)

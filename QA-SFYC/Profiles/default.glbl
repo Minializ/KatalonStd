@@ -109,4 +109,25 @@
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://servicios.qa-cluster.sfycnextgen.com.mx/ui/'</initValue>
+      <name>URL_SERVICIOS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'brntesting'</initValue>
+      <name>USER_SERVICIOS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'xcZ7rZm6ZfNX8lDXR6omcg=='</initValue>
+      <name>PASSWORD_SERVICIOS</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

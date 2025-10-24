@@ -6,11 +6,11 @@
    <elementGuidId>b12dcfa6-1986-48a5-a610-3a4bce595976</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//td[@aria-label=&quot;Celda de filtro&quot;]//input[@class=&quot;dx-texteditor-input&quot;])[last()-1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//td[@aria-label=&quot;Celda de filtro&quot;]//input[@class=&quot;dx-texteditor-input&quot;])[last()-1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
