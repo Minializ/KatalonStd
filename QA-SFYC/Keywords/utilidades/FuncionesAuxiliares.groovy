@@ -223,13 +223,20 @@ class FuncionesAuxiliares {
 	// Mientras el botón esté presente, se hace clic para cerrarlo.
 	// Esto asegura que el entorno de la interfaz quede limpio para continuar con el siguiente paso del test.
 	def limpiarVista() {
-		
+
+		int controlCiclado = 0
+
 		WebUI.closeWindowIndex(1, FailureHandling.OPTIONAL)
-		
+
 		WebUI.switchToWindowIndex(0)
-		
+
 		while (WebUI.verifyElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'), 1, FailureHandling.OPTIONAL)) {
 			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'), FailureHandling.OPTIONAL)
+			controlCiclado++
+
+			if(controlCiclado > 3) {
+				break
+			}
 		}
 	}
 
@@ -335,14 +342,29 @@ class FuncionesAuxiliares {
 	}
 
 	@Keyword
-	def ingresarMenu(String menu, String subMenu) {
+	def ingresarMenu(String menu, String subMenu, String module) {
 
-		if(!WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/BUTTON_NuevaEntregaManual'), 3, FailureHandling.OPTIONAL)) {
-			WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : menu]))
+		if(WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : menu]), 3, FailureHandling.OPTIONAL)) {
+			WebUI.enhancedClick(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : menu]))
 
 			if(!subMenu.blank) {
 				WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : subMenu]))
 			}
+			
+			if(!module.blank) {
+				WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : module]))
+			}
+		}
+	}
+
+	@Keyword
+	def esperarCargaContenido() {
+
+		def flag = WebUI.waitForElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/IMG_LoadContent'), 3, FailureHandling.OPTIONAL)
+
+		while(flag) {
+
+			flag = WebUI.waitForElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/IMG_LoadContent'), 1, FailureHandling.OPTIONAL)
 		}
 	}
 }

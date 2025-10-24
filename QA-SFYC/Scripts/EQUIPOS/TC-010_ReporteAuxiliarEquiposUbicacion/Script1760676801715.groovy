@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'),
 	sucursal)
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Reportes', '')
+CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Reportes', '', '')
 
 CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SELECT_Reporte'), 'Auxiliar de equipos por ubicación')
 
@@ -48,14 +48,16 @@ if(filtroReporte.toUpperCase().contains('SELECCION')) {
 	
 	WebUI.switchToWindowIndex(1)
 	
-	WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/VentanaPDF/SPAN_LoadingPDF'), 120)
+	WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/VentanaPDF/SPAN_LoadingPDF'), 180)
 	
 }else {
 	WebUI.click(findTestObject('Object Repository/EQUIPOS/Clasificacion/TAB_Clasificacion'))
+	
+	WebUI.click(findTestObject('Object Repository/EQUIPOS/Clasificacion/RADIO_Identificador'))
 	
 	WebUI.click(findTestObject('Object Repository/EQUIPOS/BUTTON_Aceptar'))
 	
 	WebUI.switchToWindowIndex(1)
 	
-	WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/VentanaPDF/SPAN_LoadingPDF'), 120)
+	WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/VentanaPDF/SPAN_LoadingPDF'), 180)
 }
