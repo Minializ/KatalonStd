@@ -25,8 +25,8 @@
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <type>SCRIPT_VARIABLE</type>
+         <value>&quot;SELECCION&quot;</value>
          <variableId>1ebe55df-f8d7-47f0-9de5-6b76086abd5b</variableId>
       </variableLink>
    </testCaseLink>

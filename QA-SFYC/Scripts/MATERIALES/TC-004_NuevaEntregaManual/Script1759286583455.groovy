@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Ingresa al menú "Materiales" y luego a la opción "Entregas"
-CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Materiales', 'Entregas')
+CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Materiales', 'Entregas', '')
 
 // Verifica que el botón "Nueva Entrega Manual" esté presente en el DOM antes de continuar
 WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/Entregas/BUTTON_NuevaEntregaManual'), 
