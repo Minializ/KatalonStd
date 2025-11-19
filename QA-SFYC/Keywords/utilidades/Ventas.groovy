@@ -37,6 +37,19 @@ public class Ventas {
 
 		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : opcion]))
 	}
+	
+	@Keyword
+	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
+	def selectOptionByIndex(TestObject objetcSelect, String index) {
+
+		WebUI.waitForElementPresent(objetcSelect, GlobalVariable.TIME_OUT_CONTENT)
+
+		WebUI.click(objetcSelect)
+
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_Option', ['idx' : index]))
+	}
 
 	@Keyword
 	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros

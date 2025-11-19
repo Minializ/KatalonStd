@@ -36,12 +36,15 @@ class Preconfiguraciones {
 		}else if (sistema.contains('VENTAS')) {
 			CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_VENTAS, GlobalVariable.USER_VENTAS, GlobalVariable.PASSWORD_VENTAS)
 		}else if (sistema.contains('EQUIPOS')) {
-			CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_EQUIPOS, GlobalVariable.USER_EQUIPOS, GlobalVariable.PASSWORD_EQUIPOS)
+			if(testCaseContext.getTestCaseId().contains('Traspaso') || testCaseContext.getTestCaseId().contains('SerieAltas') || testCaseContext.getTestCaseId().contains('CambioMasivo')){
+				CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_EQUIPOS, GlobalVariable.USER_EQUIPOS_TRASPASO, GlobalVariable.PASSWORD_EQUIPOS_TRASPASO)
+			}else {
+				CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_EQUIPOS, GlobalVariable.USER_EQUIPOS, GlobalVariable.PASSWORD_EQUIPOS)
+			}
 		}else if (sistema.contains('SERVICIOS')) {
 			CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_SERVICIOS, GlobalVariable.USER_SERVICIOS, GlobalVariable.PASSWORD_SERVICIOS)
 		}
 	}
-
 
 	/**
 	 * Método ejecutado automáticamente después de cada caso de prueba.
@@ -54,9 +57,9 @@ class Preconfiguraciones {
 	 */
 	@AfterTestCase
 	def capturarEvidencias(TestCaseContext testCaseContext) {
-		
-		 int randomNum = (int)(Math.random() * 100) + 1;
-		
+
+		int randomNum = (int)(Math.random() * 100) + 1;
+
 		WebUI.takeScreenshot(testCaseContext.getTestCaseId() + "_" + randomNum.toString() + ".jpg")
 
 		if(testCaseContext.getTestCaseStatus() == "FAILED") {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-00X_CambioMasivoUbicacion</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>73f5b1b2-14df-4462-8181-879a9fd6214f</testCaseGuid>
+</TestCaseEntity>

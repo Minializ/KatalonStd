@@ -6,12 +6,11 @@
    <elementGuidId>5da8eda7-72a1-4c8b-8a01-6a511b1c5be8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[@class=&quot;dx-toast-message&quot;]/parent::div//div[3]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
