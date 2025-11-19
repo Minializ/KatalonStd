@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Indicar en la variable &quot;filtroReporte&quot; si es por &quot;CLASIFICACION&quot; o &quot;SELECCION&quot;</description>
+   <name>TC-010_ReporteAuxiliarEquiposUbicacion-1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c50359ad-7c3b-48c2-8359-7fd31a8d24e3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aa4947ff-cb71-4ba7-b085-88821e053111</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'12'</defaultValue>
+      <description></description>
+      <id>aa4947ff-cb71-4ba7-b085-88821e053111</id>
+      <masked>false</masked>
+      <name>sucursal</name>
+   </variable>
+</TestCaseEntity>

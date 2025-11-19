@@ -77,6 +77,7 @@ class FuncionesAuxiliares {
 
 		// Función auxiliar para iniciar sesión
 		def iniciarSesion = {
+			WebUI.waitForElementClickable(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), GlobalVariable.TIME_OUT_CONTENT)
 			WebUI.selectOptionByLabel(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 'SFYC', false)
 			WebUI.setText(findTestObject('Object Repository/LOGIN/INPUT_User'), usuario)
 			WebUI.setEncryptedText(findTestObject('Object Repository/LOGIN/INPUT_Password'), password)
@@ -104,6 +105,10 @@ class FuncionesAuxiliares {
 		// Validar que la sesión se haya iniciado correctamente
 		WebUI.verifyElementNotPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 2, FailureHandling.STOP_ON_FAILURE)
 
+		esperarCargaContenido()
+		
+		WebUI.verifyElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/IMG_LogoMega'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
+		
 		//Metodo personalizdo que elimina el chatbot para evitar obstrucciones con otros objetos
 		eliminarChatBot()
 	}
@@ -350,7 +355,7 @@ class FuncionesAuxiliares {
 			if(!subMenu.blank) {
 				WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : subMenu]))
 			}
-			
+
 			if(!module.blank) {
 				WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : module]))
 			}
