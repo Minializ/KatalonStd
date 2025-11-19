@@ -22,6 +22,8 @@ String archivoPallets = RunConfiguration.getProjectDir() + "/Data Files/Equipos/
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Carga de Pallets', '')
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/EQUIPOS/CargaPallets/SELECT_TipoEquipo'), 30)
+
 CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CargaPallets/SELECT_TipoEquipo'), '02')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/CargaPallets/BUTTON_IniciarPallet'))

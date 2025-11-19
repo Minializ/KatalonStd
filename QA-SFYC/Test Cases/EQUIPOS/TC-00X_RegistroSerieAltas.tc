@@ -6,4 +6,30 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>a21a7ec0-5eda-460c-9e62-95e6ea5a80f4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ebe7b34c-01b8-4725-ab93-7f0087e255c1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>037cce0a-6013-4cfb-8974-7bba459300c5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'AZ01'</defaultValue>
+      <description></description>
+      <id>ebe7b34c-01b8-4725-ab93-7f0087e255c1</id>
+      <masked>false</masked>
+      <name>po</name>
+   </variable>
+   <variable>
+      <defaultValue>'220719NAC'</defaultValue>
+      <description></description>
+      <id>037cce0a-6013-4cfb-8974-7bba459300c5</id>
+      <masked>false</masked>
+      <name>factura</name>
+   </variable>
 </TestCaseEntity>

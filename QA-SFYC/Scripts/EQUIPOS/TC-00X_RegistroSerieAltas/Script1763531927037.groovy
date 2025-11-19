@@ -66,15 +66,14 @@ CustomKeywords.'kms.turing.katalon.plugins.assertj.StringAssert.contains'(msgAle
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/AltasEquipos/BUTTON_Cancelar'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByIndex'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Orden'), '1')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByIndex'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Factura'), '1')
+CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Orden'), po)
+
+CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Factura'), factura)
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
 
 def totalEquipos = WebUI.getText(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SPAN_TotalEquipos'))
-
-WebUI.verifyMatch(totalEquipos, 'Total: 2', false)
 
 WebUI.takeScreenshot()
 

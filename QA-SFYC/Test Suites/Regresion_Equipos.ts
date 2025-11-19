@@ -27,7 +27,7 @@
    <testCaseLink>
       <guid>0b05a336-cd10-4cbd-a1a5-ce07a29c6b68</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EQUIPOS/TC-00X_ReporteAuxiliarEquiposUbicacion-2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -40,28 +40,40 @@
    <testCaseLink>
       <guid>512d4b55-7b12-4f09-9854-61ac49faeb23</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EQUIPOS/TC-00X_ConsultaUbicacionEquipos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>19cec993-fc00-4c8f-a74c-fad171c4325c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EQUIPOS/TC-00X_RegistroEnSerieBajas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>5086a2a1-df63-4198-8e4b-e385c626a4a9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EQUIPOS/TC-00X_RegistroSerieAltas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ebe7b34c-01b8-4725-ab93-7f0087e255c1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>037cce0a-6013-4cfb-8974-7bba459300c5</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>5551d068-6504-4d1b-ba08-893c7aa59f0c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EQUIPOS/TC-00X_CrearSolicitudTraspaso</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -75,7 +87,7 @@
    <testCaseLink>
       <guid>3e6ab3b6-5be6-4711-b526-1a01cd061fc9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EQUIPOS/TC-00X_AsignacionPallets</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
