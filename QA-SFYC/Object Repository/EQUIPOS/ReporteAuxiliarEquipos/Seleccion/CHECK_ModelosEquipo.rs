@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CHECK_ModelosEquipo</name>
+   <tag></tag>
+   <elementGuidId>fae18abd-4d70-4678-a5fe-1c1e9714a164</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[@formgroupname=&quot;typeEquipmentAndModel&quot;]//input[@value=&quot;true&quot;]//parent::dx-check-box//span)[last()]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

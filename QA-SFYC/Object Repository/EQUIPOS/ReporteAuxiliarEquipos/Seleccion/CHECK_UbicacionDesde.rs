@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CHECK_UbicacionDesde</name>
+   <tag></tag>
+   <elementGuidId>7aa2a917-5ec7-4e89-af49-6ed5161c0938</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[@formgroupname=&quot;sourceTargetLocation&quot;]//input[@value=&quot;true&quot;]//parent::dx-check-box//span)[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
