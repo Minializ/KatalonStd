@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TAB_Clasificacion</name>
+   <name>INPUT_GuiaEnvio</name>
    <tag></tag>
-   <elementGuidId>a042df27-b2d5-47d3-bb50-da66fcfb070d</elementGuidId>
+   <elementGuidId>e50c7a0f-225b-46c1-ae65-0a56d330da63</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class=&quot;dx-tab-text&quot; and contains(text(), 'Clasificación')]</value>
+         <value>//*[@formcontrolname=&quot;guide&quot;]//input</value>
       </entry>
       <entry>
          <key>BASIC</key>

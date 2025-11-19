@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CHECK_UbicacionDesde</name>
+   <name>SELECT_ModelosEquipo</name>
    <tag></tag>
-   <elementGuidId>7aa2a917-5ec7-4e89-af49-6ed5161c0938</elementGuidId>
+   <elementGuidId>5054a1bd-a0f9-448f-b265-76fb8bceaff7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@formgroupname=&quot;sourceTargetLocation&quot;]//input[@value=&quot;true&quot;]//parent::dx-check-box//span)[1]</value>
+         <value>(//*[@formcontrolname=&quot;modelId&quot;]//dx-drop-down-box)[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -350,7 +350,7 @@ class FuncionesAuxiliares {
 			if(!subMenu.blank) {
 				WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : subMenu]))
 			}
-			
+
 			if(!module.blank) {
 				WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : module]))
 			}

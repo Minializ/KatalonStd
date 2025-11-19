@@ -28,20 +28,14 @@
    <testCaseLink>
       <guid>a7d63656-cf84-4da6-90b6-965d94c89600</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-010_ReporteAuxiliarEquiposUbicacion</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/EQUIPOS/TC-010_ReporteAuxiliarEquiposUbicacion-1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
          <variableId>aa4947ff-cb71-4ba7-b085-88821e053111</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>1ebe55df-f8d7-47f0-9de5-6b76086abd5b</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

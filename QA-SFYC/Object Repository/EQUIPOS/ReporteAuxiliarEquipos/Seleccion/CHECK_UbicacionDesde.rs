@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>RADIO_Identificador</name>
+   <name>CHECK_UbicacionDesde</name>
    <tag></tag>
-   <elementGuidId>e32aead0-ff54-4fe5-93b6-beeaa33ae438</elementGuidId>
+   <elementGuidId>7aa2a917-5ec7-4e89-af49-6ed5161c0938</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@formcontrolname=&quot;sworderbyid&quot;]//div[@class=&quot;dx-radiobutton-icon&quot;]</value>
+         <value>(//*[@formgroupname=&quot;sourceTargetLocation&quot;]//input[@value=&quot;true&quot;]//parent::dx-check-box//span)[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

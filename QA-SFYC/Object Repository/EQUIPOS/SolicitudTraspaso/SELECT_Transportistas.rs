@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SELECT_UbicacionDesde</name>
+   <name>SELECT_Transportistas</name>
    <tag></tag>
-   <elementGuidId>9f36a58b-7652-4140-8d52-f3d3213a58ee</elementGuidId>
+   <elementGuidId>bcbb3b3c-431b-4545-886d-6e81e5d3a6bf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@formcontrolname=&quot;startLocationId&quot;]//dx-drop-down-box)[1]</value>
+         <value>(//*[@id=&quot;equipmentTransportDropdown&quot;])</value>
       </entry>
       <entry>
          <key>BASIC</key>

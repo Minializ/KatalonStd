@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CHECK_TiposEquipo</name>
+   <name>INPUT_Observaciones</name>
    <tag></tag>
-   <elementGuidId>83d74ae4-97fa-4a9d-bf22-b3ed2db64a7e</elementGuidId>
+   <elementGuidId>bbe07302-83c5-4b76-a102-84baadfd9515</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@formgroupname=&quot;typeEquipmentAndModel&quot;]//input[@value=&quot;true&quot;]//parent::dx-check-box//span)[1]</value>
+         <value>//*[@id=&quot;comments&quot;]//textarea</value>
       </entry>
       <entry>
          <key>BASIC</key>

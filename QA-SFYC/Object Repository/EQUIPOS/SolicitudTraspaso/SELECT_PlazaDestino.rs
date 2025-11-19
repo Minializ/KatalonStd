@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SELECT_ModelosEquipo</name>
+   <name>SELECT_PlazaDestino</name>
    <tag></tag>
-   <elementGuidId>5054a1bd-a0f9-448f-b265-76fb8bceaff7</elementGuidId>
+   <elementGuidId>3910df8f-3621-4ef0-9f94-f15bf89e82ac</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@formcontrolname=&quot;modelId&quot;]//dx-drop-down-box)[1]</value>
+         <value>(//*[@id=&quot;locationEquipmentDropdown&quot;])[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TAB_Seleccion</name>
+   <name>CHECK_TiposEquipo</name>
    <tag></tag>
-   <elementGuidId>ef6bd61e-c5da-4402-ab0f-69103edd9513</elementGuidId>
+   <elementGuidId>83d74ae4-97fa-4a9d-bf22-b3ed2db64a7e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class=&quot;dx-tab-text&quot; and contains(text(), 'Selección')]</value>
+         <value>(//*[@formgroupname=&quot;typeEquipmentAndModel&quot;]//input[@value=&quot;true&quot;]//parent::dx-check-box//span)[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

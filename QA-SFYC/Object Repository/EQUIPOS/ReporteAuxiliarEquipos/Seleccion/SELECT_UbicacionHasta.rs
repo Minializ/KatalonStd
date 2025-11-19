@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SELECT_TiposEquipo</name>
+   <name>SELECT_UbicacionHasta</name>
    <tag></tag>
-   <elementGuidId>c458fc5e-1cf7-417d-bd7e-bc0b33525e0b</elementGuidId>
+   <elementGuidId>d87d3893-ae20-43df-82fc-518feb8d24dd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@formcontrolname=&quot;typeEquipmentId&quot;]//dx-drop-down-box)[1]</value>
+         <value>(//*[@formcontrolname=&quot;endLocationId&quot;]//dx-drop-down-box)[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
