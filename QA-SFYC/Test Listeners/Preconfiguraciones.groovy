@@ -40,7 +40,7 @@ class Preconfiguraciones {
 				CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_EQUIPOS, GlobalVariable.USER_EQUIPOS_TRASPASO, GlobalVariable.PASSWORD_EQUIPOS_TRASPASO)
 			}else {
 				CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_EQUIPOS, GlobalVariable.USER_EQUIPOS, GlobalVariable.PASSWORD_EQUIPOS)
-			}			
+			}
 		}else if (sistema.contains('SERVICIOS')) {
 			CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_SERVICIOS, GlobalVariable.USER_SERVICIOS, GlobalVariable.PASSWORD_SERVICIOS)
 		}
@@ -57,9 +57,9 @@ class Preconfiguraciones {
 	 */
 	@AfterTestCase
 	def capturarEvidencias(TestCaseContext testCaseContext) {
-		
-		 int randomNum = (int)(Math.random() * 100) + 1;
-		
+
+		int randomNum = (int)(Math.random() * 100) + 1;
+
 		WebUI.takeScreenshot(testCaseContext.getTestCaseId() + "_" + randomNum.toString() + ".jpg")
 
 		if(testCaseContext.getTestCaseStatus() == "FAILED") {
