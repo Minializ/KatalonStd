@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 final String ARCHIVO_DATOS = 'Data Files/SERVICIOS/Suscriptores servicio telefonia.xlsx'
+
 final String HOJA_DATOS = 'Hoja1'
 
 WebUI.setMaskedText(findTestObject('Object Repository/SERVICIOS/INPUT_Suscriptor'), '0' + numeroSuscriptor)
@@ -59,7 +60,7 @@ WebUI.click(findTestObject('Object Repository/SERVICIOS/BUTTON_Imprimir'))
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/VentanaPDF/SPAN_LoadingPDF'), 180)
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/VentanaPDF/SPAN_LoadingPDF'), 180)
 
 WebUI.takeScreenshot()
 
