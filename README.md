@@ -28,6 +28,7 @@
 # Precondiciones, Instalación, usuarios +
 * [Descargar Katalon](https://katalon.com/download)
 * [Documentacion Oficial](https://docs.katalon.com/katalon-studio/about-katalon-studio)
+* [Katalon Academy](https://academy.katalon.com/)
 * [Definicion del entorno de trabajo](https://megacable-my.sharepoint.com/:w:/r/personal/mihernandezg_megacable_com_mx/Documents/PRUEBAS%20QA%20SFYC_V2/Casos%20de%20Pruebas%20QA%20SFyC/Casos%20de%20Pruebas%20BrainTesting/Manual%20Ingresar%20Cuenta%20Git.docx?d=w84aa91e09b6b4d7e8d7d52d434b2d616&csf=1&web=1&e=3pFYkD)
 * [Manual para ingresar a GIT](https://megacable-my.sharepoint.com/:w:/r/personal/mihernandezg_megacable_com_mx/Documents/PRUEBAS%20QA%20SFYC_V2/Casos%20de%20Pruebas%20QA%20SFyC/Casos%20de%20Pruebas%20BrainTesting/Manual%20Ingresar%20Cuenta%20Git.docx?d=w84aa91e09b6b4d7e8d7d52d434b2d616&csf=1&web=1&e=3pFYkD)
 
@@ -89,7 +90,7 @@ https://control.qa-cluster.sfycnextgen.com.mx/ui/
 
 ---
 # Semana 2
-- [ ] _22 septiembre a 26 de Septiembre_
+- [x] _22 septiembre a 26 de Septiembre_
 
 [Meet 23 de Septiembre](https://megacable-my.sharepoint.com/:v:/r/personal/mihernandezg_megacable_com_mx/Documents/V%C3%ADdeos/meets%20Braintesting/23%20de%20septiembre.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=obehUO)
 
@@ -104,20 +105,26 @@ https://control.qa-cluster.sfycnextgen.com.mx/ui/
 
 ---
 # Semana 3
-- [ ] _29 septiembre a 03 de octubre_
+- [x] _29 septiembre a 03 de octubre_
 
 **Test Case Semana 3**
 
 [Documento](https://megacable-my.sharepoint.com/:w:/r/personal/mihernandezg_megacable_com_mx/Documents/PRUEBAS%20QA%20SFYC_V2/Casos%20de%20Pruebas%20QA%20SFyC/Casos%20de%20Pruebas%20BrainTesting/TestCase%20semanas/Liss/TestCases-Lissette%20-%20Semana%203.docx?d=wd04d9f4636e643c1a3923309de4785a9&csf=1&web=1&e=N96swV)
 
 
-- Meet 30 de septiembre
+[Meet 30 de septiembre ](https://megacable-my.sharepoint.com/:v:/r/personal/mihernandezg_megacable_com_mx/Documents/V%C3%ADdeos/meets%20Braintesting/30%20de%20septiembre.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eE2WeK)
+
+[Meet 03 de octubre](https://megacable-my.sharepoint.com/:v:/r/personal/mihernandezg_megacable_com_mx/Documents/V%C3%ADdeos/meets%20Braintesting/3%20de%20octubre.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ENA335)
 
 
 
 ---
 # Semana 4
-- [ ]  _06 de octubre a 10 de octubre_
+- [x]  _06 de octubre a 10 de octubre_
+      
+* Ian Mandó por link video la entrega de conocimiento
+  
+[Entrega de conocimiento](https://megacable-my.sharepoint.com/:v:/r/personal/mihernandezg_megacable_com_mx/Documents/V%C3%ADdeos/meets%20Braintesting/BrainTesting_Explicaci%C3%B3n%20Ejecuci%C3%B3n%20Casos%20de%20Prueba%20Semana%203.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pWckFL)
 
 
 **Test Case Semana 4**
@@ -129,13 +136,15 @@ https://control.qa-cluster.sfycnextgen.com.mx/ui/
 
 ---
 # Semana 5
-- [ ]  _13 de octubre a 17 de octubre_
+- [x]  _13 de octubre a 17 de octubre_
+
+[Dudas 13 de Octubre](https://megacable-my.sharepoint.com/:v:/r/personal/mihernandezg_megacable_com_mx/Documents/V%C3%ADdeos/meets%20Braintesting/13%20de%20Octubre.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Sj2zpn)
 
 **Test Case Semana 5**
 
 [Documento](https://megacable-my.sharepoint.com/:w:/r/personal/mihernandezg_megacable_com_mx/Documents/PRUEBAS%20QA%20SFYC_V2/Casos%20de%20Pruebas%20QA%20SFyC/Casos%20de%20Pruebas%20BrainTesting/TestCase%20semanas/Mine%20Semana%209%20a%2012/TestCases-Minerva-%20Semana%205.docx?d=w60be4531f60d4d9abf72d5992f2ffa86&csf=1&web=1&e=FRjBNb)
 
-
+[Entrega de Conocimiento](https://megacable-my.sharepoint.com/:v:/r/personal/mihernandezg_megacable_com_mx/Documents/V%C3%ADdeos/meets%20Braintesting/17%20%20de%20Octubre.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OMfWiL)
 
 
 
