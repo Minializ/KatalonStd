@@ -106,9 +106,9 @@ class FuncionesAuxiliares {
 		WebUI.verifyElementNotPresent(findTestObject('Object Repository/LOGIN/SELECT_Dominio'), 2, FailureHandling.STOP_ON_FAILURE)
 
 		esperarCargaContenido()
-		
+
 		WebUI.verifyElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/IMG_LogoMega'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
-		
+
 		//Metodo personalizdo que elimina el chatbot para evitar obstrucciones con otros objetos
 		eliminarChatBot()
 	}

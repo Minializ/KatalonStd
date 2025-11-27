@@ -6,12 +6,11 @@
    <elementGuidId>fb86cf71-2ff0-45ac-901e-7c6290a677d6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@class=&quot;logo-container&quot;] | //*[@alt=&quot;MEGA&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@class=&quot;logo-container&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
