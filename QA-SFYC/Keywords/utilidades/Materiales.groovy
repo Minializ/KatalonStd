@@ -39,7 +39,6 @@ public class Materiales {
 		WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : opcion]))
 	}
 
-
 	@Keyword
 	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
 	def selectOptionTab(TestObject objetcSelect, String opcion) {
@@ -70,9 +69,5 @@ public class Materiales {
 		WebUI.sendKeys(findTestObject('Object Repository/MATERIALES/Entregas/INPUT_DatosFila-DYN'), opcion)
 
 		WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMenu-Dyn', [('opcionMenu') : opcion]))
-	}
-
-	@Keyword
-	def consultarEntrega() {
 	}
 }

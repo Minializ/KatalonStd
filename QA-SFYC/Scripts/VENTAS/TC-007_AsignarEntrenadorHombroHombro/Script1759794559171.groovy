@@ -29,12 +29,12 @@ def vendedorPreviamenteAsignado = false
 def msgAlertaGlobal = null
 
 // Se selecciona la sucursal que requiere el vendedor
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
     sucursal)
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Vendedores hombro a hombro', '', '')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SELECT_EmpresaNomina'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SELECT_EmpresaNomina'), 
     empresaNomina)
 
 WebUI.setText(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/INPUT_NumeroVendedor'), numeroVendedor)
@@ -108,7 +108,7 @@ if (!vendedorNoExistente) {
     
     //Si el vendedor a asignar no fue previamente asignado a otro usuario, el flujo continua
     if (!(vendedorPreviamenteAsignado)) {
-        CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/AsignarDescartar/SELECT_Periodo'), 
+        CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/AsignarDescartar/SELECT_Periodo'), 
             '/')
 
         WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/AsignarDescartar/BUTTON_Asingar'))
