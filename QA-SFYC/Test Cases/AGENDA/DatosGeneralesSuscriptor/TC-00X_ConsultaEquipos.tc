@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-00X_ConsultaEquipos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>28b9ec9e-76fa-427a-b0c7-7d9b83caddcc</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>905b5f2f-2049-4f50-baeb-b4ac828a73b2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0120063814'</defaultValue>
+      <description></description>
+      <id>905b5f2f-2049-4f50-baeb-b4ac828a73b2</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

@@ -25,7 +25,7 @@ String archivoConsulta = RunConfiguration.getProjectDir() + "/Data Files/Equipos
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Consulta Ubicación de Equipos', '')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/ConsultaUbicacionEquipos/SELECT_CampoFiltrar'), 'Serie')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/ConsultaUbicacionEquipos/SELECT_CampoFiltrar'), 'Serie')
 
 WebUI.uploadFile(findTestObject('Object Repository/EQUIPOS/ConsultaUbicacionEquipos/INPUT_CargaArchivos'), archivoConsulta)
 

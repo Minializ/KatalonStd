@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_00X_ConsultaDomicilio</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2672fc74-f2a1-44a1-bbbf-36110710b568</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ecbbab90-131f-4113-9488-491a63fa31ab</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0120063814'</defaultValue>
+      <description></description>
+      <id>ecbbab90-131f-4113-9488-491a63fa31ab</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>
