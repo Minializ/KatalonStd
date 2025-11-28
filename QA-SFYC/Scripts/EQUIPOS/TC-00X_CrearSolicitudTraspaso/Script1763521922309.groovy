@@ -24,10 +24,10 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Sol
 /* Registro Traspaso */
 WebUI.click(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/BTN_Agregar'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_PlazaDestino'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_PlazaDestino'), 
     'GUADALAJARA')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_TipoEquipo'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_TipoEquipo'), 
     'CABLE MODEMS')
 
 WebUI.setText(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/INPUT_Observaciones'), 'CREACIÓN TRASPASO KATALON STUDIO')
@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/BTN_Acep
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_PlazaOrigen'), 10)
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_PlazaOrigen'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_PlazaOrigen'), 
     'ACATLAN')
 
 WebUI.setText(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/INPUT_Observaciones'), 'ASIGNACIÓN ORIGEN KATALON STUDIO')
@@ -90,7 +90,7 @@ WebUI.click(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/BTN_Acep
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_Transportistas'), 10)
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_Transportistas'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/SELECT_Transportistas'), 
     'GALEX')
 
 WebUI.setText(findTestObject('Object Repository/EQUIPOS/SolicitudTraspaso/INPUT_GuiaEnvio'), guia.toString())

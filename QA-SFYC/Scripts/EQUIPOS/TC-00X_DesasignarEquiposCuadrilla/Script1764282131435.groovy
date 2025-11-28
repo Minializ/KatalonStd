@@ -29,7 +29,7 @@ WebUI.click(findTestObject('Object Repository/EQUIPOS/AsignarEquiposCuadrilla/CH
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/EQUIPOS/AsignarEquiposCuadrilla/TR_Equipo'), 60)
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/AsignarEquiposCuadrilla/SELECT_TipoEquipo'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/AsignarEquiposCuadrilla/SELECT_TipoEquipo'), 
     '4')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/AsignarEquiposCuadrilla/TR_Equipo'))

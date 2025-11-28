@@ -22,11 +22,11 @@ int randomNumberCuadrilla = (int)(Math.random() * 6)
 String formattedNumberCuadrilla = String.format('%04d', randomNumberCuadrilla)
 
 // Se selecciona la sucursal 41 en base al caso de prueba
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), '41')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), '41')
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Catálogos', 'Vendedores', '')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_CompaniaNomina'), 'SAOSA')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_CompaniaNomina'), 'SAOSA')
 
 WebUI.setText(findTestObject('Object Repository/VENTAS/Vendedores/INPUT_NumeroEmpleado'), numeroEmpleado)
 
@@ -34,9 +34,9 @@ WebUI.delay(1)
 
 WebUI.sendKeys(findTestObject('Object Repository/VENTAS/Vendedores/INPUT_NumeroEmpleado'), Keys.chord(Keys.ENTER))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_TipoCuadrilla'), 'Punto de Venta')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_TipoCuadrilla'), 'Punto de Venta')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_Cuadrilla'), formattedNumberCuadrilla)
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/VENTAS/Vendedores/SELECT_Cuadrilla'), formattedNumberCuadrilla)
 
 WebUI.click(findTestObject('Object Repository/VENTAS/Vendedores/BUTTON_Aceptar'))
 

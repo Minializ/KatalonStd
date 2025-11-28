@@ -26,15 +26,15 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Cam
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/CHECK_CambioEstado'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_TipoEquipo'), '19')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_TipoEquipo'), '19')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_UbicacionOrigen'), 'LOG')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_UbicacionOrigen'), 'LOG')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_UbicacionDestino'), 'ALM')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_UbicacionDestino'), 'ALM')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_EstadoOrigen'), 'DÑA')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_EstadoOrigen'), 'DÑA')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_EstadoDestino'), 'F04')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CambioMasivoUbicacion/SELECT_EstadoDestino'), 'F04')
 
 WebUI.uploadFile(findTestObject('Object Repository/EQUIPOS//CambioMasivoUbicacion/INPUT_CargaCsv'), archivoCMU)
 

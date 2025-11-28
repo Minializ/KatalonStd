@@ -24,7 +24,7 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Car
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/EQUIPOS/CargaPallets/SELECT_TipoEquipo'), 30)
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CargaPallets/SELECT_TipoEquipo'), '02')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/CargaPallets/SELECT_TipoEquipo'), '02')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/CargaPallets/BUTTON_IniciarPallet'))
 
