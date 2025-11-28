@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>BUTTON_Consultar</name>
+   <tag></tag>
+   <elementGuidId>b9b57cf6-1889-43f5-9581-c53d66320693</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancelar'])[1]/following::span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>dx-button.dx-widget.dx-button.dx-button-mode-contained.dx-button-normal.dx-button-has-text.acw-button-action.dx-state-focused.dx-state-hover > div.dx-button-content</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Consultar&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0eb4f282-a2a7-47d0-a70b-767a79fd2fbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-button-content</value>
+      <webElementGuid>e9a8caab-8c6b-490b-b919-e477bafbdac2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Consultar</value>
+      <webElementGuid>3990c17a-d755-4e34-9d1b-6f7ab309179f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;dx-overlay-wrapper dx-popup-wrapper subscriber-search-container-popup&quot;]/div[@class=&quot;dx-overlay-content dx-popup-normal dx-resizable&quot;]/div[@class=&quot;dx-popup-content&quot;]/app-subscriber-search-container[@class=&quot;is-first-search&quot;]/div[@class=&quot;subscriber-search-tab-panel-container&quot;]/div[@class=&quot;search-scroll-content-container&quot;]/div[@class=&quot;subscriber-search-footer&quot;]/div[@class=&quot;add-subscriber-buttons&quot;]/dx-button[@class=&quot;dx-widget dx-button dx-button-mode-contained dx-button-normal dx-button-has-text acw-button-action dx-state-focused dx-state-hover&quot;]/div[@class=&quot;dx-button-content&quot;]</value>
+      <webElementGuid>f53d4a43-9c56-42eb-8b8a-49ff752291cc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancelar'])[1]/following::div[2]</value>
+      <webElementGuid>95e4df4b-62bf-4b33-ae30-e0c1bf632703</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[14]/following::div[30]</value>
+      <webElementGuid>2ff94ce8-4375-40cc-8ec5-e81def65bba9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Suscriptores encontrados'])[1]/preceding::div[3]</value>
+      <webElementGuid>b3881bb8-d7c5-4b05-bcef-c745c769113c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//dx-button[2]/div</value>
+      <webElementGuid>8e91db0e-2fe6-431d-8d79-78db9255313b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Consultar' or . = 'Consultar')]</value>
+      <webElementGuid>19b62f61-318b-4cbe-91e7-b989caa58bd2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
