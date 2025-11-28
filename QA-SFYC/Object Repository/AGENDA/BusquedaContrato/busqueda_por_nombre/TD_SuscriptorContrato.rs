@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TD_SuscriptorContrato</name>
+   <tag></tag>
+   <elementGuidId>a96f1f92-1473-4ab0-a544-ee1074994d5e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Reestablecer'])[1]/following::td[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>tr.dx-row.dx-data-row.dx-row-lines.dx-column-lines.dx-state-hover > td.dx-cell-focus-disabled</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;DI*** LI****** HERNANDEZ DO*******&quot;i] >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>24b28b00-17e9-4142-9c1e-effff3a4e716</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>dx-col-37</value>
+      <webElementGuid>2c246076-d793-41ec-9bb2-5d1c1fcc1afc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>gridcell</value>
+      <webElementGuid>edac015d-ac6b-4538-a0e9-0b9fa7b52420</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-colindex</name>
+      <type>Main</type>
+      <value>1</value>
+      <webElementGuid>26437c0e-acf0-42bb-9cd1-13e3749e02ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>70c7c821-8aaf-45d1-b667-07be82cdfb0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-cell-focus-disabled</value>
+      <webElementGuid>55ab6891-9084-4bde-8e37-cb5c21ac6bac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>DI*** LI****** HERNANDEZ DO*******</value>
+      <webElementGuid>b3fd3502-da3a-4a56-a6a4-3d7e31f0f082</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;dx-overlay-wrapper dx-popup-wrapper dx-overlay-shader&quot;]/div[@class=&quot;dx-overlay-content dx-popup-normal dx-popup-draggable dx-resizable dx-popup-flex-height&quot;]/div[@class=&quot;dx-popup-content&quot;]/app-subscriber-search-grid[1]/div[@class=&quot;subscriber-search-grid-container&quot;]/dx-data-grid[@class=&quot;subscriber-search-grid dx-widget dx-visibility-change-handler&quot;]/div[@class=&quot;dx-datagrid dx-gridbase-container dx-datagrid-borders&quot;]/div[@class=&quot;dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated&quot;]/div[@class=&quot;dx-scrollable-wrapper&quot;]/div[@class=&quot;dx-scrollable-container&quot;]/div[@class=&quot;dx-scrollable-content&quot;]/div[@class=&quot;dx-datagrid-content&quot;]/table[@class=&quot;dx-datagrid-table dx-datagrid-table-fixed&quot;]/tbody[1]/tr[@class=&quot;dx-row dx-data-row dx-row-lines dx-column-lines dx-state-hover&quot;]/td[@class=&quot;dx-cell-focus-disabled&quot;]</value>
+      <webElementGuid>c917ad56-bbfe-44fa-b98e-09157abcbd2c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reestablecer'])[1]/following::td[4]</value>
+      <webElementGuid>0a098a03-bf45-4ff1-beda-e6b6a8ba116f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No es igual'])[1]/following::td[4]</value>
+      <webElementGuid>4deb1e02-72fe-4932-8d5d-32e16f863ac1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='xxxx'])[1]/preceding::td[2]</value>
+      <webElementGuid>073cb7cf-66f7-4ba4-b804-ec954e73c7c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='DI*** LI****** HERNANDEZ DO*******']/parent::*</value>
+      <webElementGuid>7d603d7a-5eff-4a7f-b1c1-349fb387ac0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//app-subscriber-search-grid/div/dx-data-grid/div/div[6]/div/div/div/div/table/tbody/tr/td</value>
+      <webElementGuid>8af21942-4261-46a6-a56c-b9a8ed754043</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'DI*** LI****** HERNANDEZ DO*******' or . = 'DI*** LI****** HERNANDEZ DO*******')]</value>
+      <webElementGuid>b66e1234-7e5d-4792-8979-c8421323c47d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
