@@ -113,7 +113,6 @@ class FuncionesAuxiliares {
 		eliminarChatBot()
 	}
 
-
 	@Keyword
 	// Método que actualiza el estatus de un suscriptor en un archivo Excel dado.
 	// Parámetros:
@@ -253,7 +252,6 @@ class FuncionesAuxiliares {
 		WebUI.executeJavaScript(script, null, FailureHandling.OPTIONAL)
 	}
 
-
 	@Keyword
 	def writeMultipleToExcel(String fileName, String sheetName, Map<String, String> columnasYValores) {
 		try {
@@ -306,7 +304,6 @@ class FuncionesAuxiliares {
 		}
 	}
 
-
 	private boolean isRowEmpty(Row row) {
 		if (row == null) return true
 		for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
@@ -317,7 +314,6 @@ class FuncionesAuxiliares {
 		}
 		return true
 	}
-
 
 	private int convertColumnLetterToIndex(String column) {
 		column = column.toUpperCase()
@@ -371,5 +367,52 @@ class FuncionesAuxiliares {
 
 			flag = WebUI.waitForElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/IMG_LoadContent'), 1, FailureHandling.OPTIONAL)
 		}
+	}
+	
+	@Keyword
+	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
+	def selectOptionByName(TestObject objetcSelect, String opcion) {
+
+		WebUI.waitForElementPresent(objetcSelect, GlobalVariable.TIME_OUT_CONTENT)
+
+		WebUI.click(objetcSelect)
+
+		WebUI.delay(1)
+
+		WebUI.sendKeys(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/INPUT_SelectFiltroDescripcion'), opcion)
+
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : opcion]))
+	}
+
+	@Keyword
+	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
+	def selectOptionByIndex(TestObject objetcSelect, String index) {
+
+		WebUI.waitForElementPresent(objetcSelect, GlobalVariable.TIME_OUT_CONTENT)
+
+		WebUI.click(objetcSelect)
+
+		WebUI.delay(1)
+
+		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_Option', ['idx' : index]))
+	}
+
+	@Keyword
+	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
+	def selectOptionByCode(TestObject objetcSelect, String codigo) {
+
+		WebUI.waitForElementPresent(objetcSelect, GlobalVariable.TIME_OUT_CONTENT)
+
+		WebUI.click(objetcSelect)
+
+		WebUI.delay(1)
+
+		WebUI.sendKeys(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/INPUT_SelectFiltroCode'), codigo)
+
+		WebUI.delay(2)
+
+		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : codigo]))
 	}
 }
