@@ -66,7 +66,7 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Reg
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/AltasEquipos/BUTTON_Nuevo'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/BajasEquipos/SELECT_TipoEquipo'), '02')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/BajasEquipos/SELECT_TipoEquipo'), '02')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/AltasEquipos/CHECK_Precarga'))
 
@@ -86,9 +86,9 @@ CustomKeywords.'kms.turing.katalon.plugins.assertj.StringAssert.contains'(msgAle
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/AltasEquipos/BUTTON_Cancelar'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Orden'), po)
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Orden'), po)
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Factura'), factura)
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/AltasEquipos/SELECT_Factura'), factura)
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
 

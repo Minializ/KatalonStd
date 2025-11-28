@@ -25,4 +25,3 @@ WebUI.delay(5)
 WebUI.click(findTestObject('AGENDA/DatosGenerales/SPAN_OpcionMenuTexto-Dyn', [('nombreOpcion') : 'Equipos']))
 
 WebUI.delay(10)
-

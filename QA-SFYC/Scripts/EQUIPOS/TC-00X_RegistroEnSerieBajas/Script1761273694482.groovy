@@ -25,11 +25,11 @@ String archivoConsulta = RunConfiguration.getProjectDir() + "/Data Files/Equipos
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Registro en Serie', 'Bajas')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/BajasEquipos/SELECT_TipoEquipo'), '04')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/BajasEquipos/SELECT_TipoEquipo'), '04')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/BajasEquipos/CHECK_MotivoBaja'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/BajasEquipos/SELECT_MotivoBaja'), 'Irreparable')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/BajasEquipos/SELECT_MotivoBaja'), 'Irreparable')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/BajasEquipos/CHECK_CargaArchivoCSV'))
 

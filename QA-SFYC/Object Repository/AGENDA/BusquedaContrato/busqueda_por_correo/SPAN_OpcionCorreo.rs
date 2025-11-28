@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SPAN_OpcionCorreo</name>
+   <tag></tag>
+   <elementGuidId>4914f65b-3a9a-4b10-ab07-0b364147dc81</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='dx-819329c9-2c93-d8de-b57e-f9647ab193e6']/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dx-819329c9-2c93-d8de-b57e-f9647ab193e6 > div.dx-item-content.dx-tab-content > span.dx-tab-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=tab[name=&quot; Email&quot;i] >> span</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6c8763b7-bbd8-4638-a477-c1d2950c7f2b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-tab-text</value>
+      <webElementGuid>381b4c52-6b50-4d90-ae08-39ecf5eb708a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Email</value>
+      <webElementGuid>df2269d5-bd9a-4fe3-869f-fb3c89aa2f76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dx-819329c9-2c93-d8de-b57e-f9647ab193e6&quot;)/div[@class=&quot;dx-item-content dx-tab-content&quot;]/span[@class=&quot;dx-tab-text&quot;]</value>
+      <webElementGuid>18858d12-ea4b-4673-b851-d77ca735d771</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='dx-819329c9-2c93-d8de-b57e-f9647ab193e6']/div/span</value>
+      <webElementGuid>1ac16a09-08b0-4355-b9a1-430aa678560e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Teléfono'])[1]/following::span[1]</value>
+      <webElementGuid>e84e8b27-a5da-492a-aa78-2c8e5db478b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Domicilio'])[1]/following::span[2]</value>
+      <webElementGuid>88f13585-6478-4138-8cd6-ac5313331efd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Folio de venta'])[1]/preceding::span[1]</value>
+      <webElementGuid>8e080a14-5e60-4020-8c82-bfcf9e5adf3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Folio llamada o folio queja'])[1]/preceding::span[2]</value>
+      <webElementGuid>78f9380c-ebf3-49dc-b297-986e7f3c0e2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Email']/parent::*</value>
+      <webElementGuid>a9d4ed4d-6802-4c35-b97b-ba710465fc80</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/span</value>
+      <webElementGuid>243ea976-7f55-4536-932f-75ac80e617ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Email' or . = 'Email')]</value>
+      <webElementGuid>77878da6-b696-4dc2-86cc-6767d513a04c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

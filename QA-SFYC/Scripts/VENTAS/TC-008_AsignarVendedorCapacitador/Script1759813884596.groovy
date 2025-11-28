@@ -27,12 +27,12 @@ def msgAlertaGlobal = null
 def vendedorNoExistente = false
 
 // Se selecciona la sucursal 41 en base al caso de prueba
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
     '41')
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Vendedor Capacitador', '', '')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SELECT_EmpresaNomina'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SELECT_EmpresaNomina'), 
     empresaNomina)
 
 WebUI.setText(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/INPUT_NumeroVendedor'), numeroVendedor)
