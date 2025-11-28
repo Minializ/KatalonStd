@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_00X_BusquedaPorTelefono</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8b6a6f0c-c84f-4637-a074-aceb3aa2a267</testCaseGuid>
+</TestCaseEntity>

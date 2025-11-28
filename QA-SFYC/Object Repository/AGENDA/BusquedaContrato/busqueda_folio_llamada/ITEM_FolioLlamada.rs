@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ITEM_FolioLlamada</name>
+   <tag></tag>
+   <elementGuidId>53f58bdc-5128-49c4-a63d-b1884f284ad3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='dx-238f03ba-4785-3b45-9908-a2bd642381b2']/div/div/div/div[2]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.dx-item-content.dx-list-item-content</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Folio llamada&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4b1e86f8-5c61-4b57-a4cf-2ba3b384ba88</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-item-content dx-list-item-content</value>
+      <webElementGuid>084b2b64-d51e-4ddd-a845-c1e62092f83e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Folio llamada</value>
+      <webElementGuid>939974d2-8c6e-4163-9908-5474e1a72638</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dx-238f03ba-4785-3b45-9908-a2bd642381b2&quot;)/div[@class=&quot;dx-scrollable-wrapper&quot;]/div[@class=&quot;dx-scrollable-container&quot;]/div[@class=&quot;dx-scrollable-content&quot;]/div[@class=&quot;dx-scrollview-content&quot;]/div[@class=&quot;dx-item dx-list-item dx-state-hover&quot;]/div[@class=&quot;dx-item-content dx-list-item-content&quot;]</value>
+      <webElementGuid>0f9131d6-7576-4d17-98f1-48e37c1d0171</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='dx-238f03ba-4785-3b45-9908-a2bd642381b2']/div/div/div/div[2]/div/div</value>
+      <webElementGuid>ee999005-4842-440a-94bc-e6a5a63a67fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='`'])[1]/following::div[29]</value>
+      <webElementGuid>f232a333-553f-4ddd-8f92-01b266cecdc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Folio queja técnica'])[1]/preceding::div[1]</value>
+      <webElementGuid>58a86b61-3a3f-4769-8514-624bc74884a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Folio llamada']/parent::*</value>
+      <webElementGuid>fb9ab54d-7e60-4700-8116-13050e4e4f15</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div/div/div/div[2]/div/div</value>
+      <webElementGuid>17e8f192-61f7-4c07-a02e-b04b916fdf8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Folio llamada' or . = 'Folio llamada')]</value>
+      <webElementGuid>7aa3e5f2-de2a-48fa-88f2-000e8c3e7d6b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
