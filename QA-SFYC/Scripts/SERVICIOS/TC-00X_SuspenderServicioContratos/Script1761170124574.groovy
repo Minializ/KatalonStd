@@ -68,7 +68,7 @@ WebUI.closeWindowIndex(1)
 
 WebUI.switchToWindowIndex(0)
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/SELECT_Cis'), '01')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/SELECT_Cis'), '01')
 
 WebUI.click(findTestObject('Object Repository/SERVICIOS/BUTTON_SuspenderContrato'))
 
