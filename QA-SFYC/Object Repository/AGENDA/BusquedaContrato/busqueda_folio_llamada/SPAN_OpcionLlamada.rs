@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SPAN_OpcionLlamada</name>
+   <tag></tag>
+   <elementGuidId>70e95531-2961-4b15-adb8-fccf85787f37</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='dx-819329c9-2c93-d8de-b57e-f9647ab193e6']/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#dx-819329c9-2c93-d8de-b57e-f9647ab193e6 > div.dx-item-content.dx-tab-content > span.dx-tab-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Folio llamada o folio queja&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>90b8d55d-2d59-4b8b-9a00-f691423800ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-tab-text</value>
+      <webElementGuid>314cfb59-4845-41db-a78e-7abe6eb4c854</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Folio llamada o folio queja</value>
+      <webElementGuid>9932ebab-f63b-4e28-93fb-dcd7401c5b8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;dx-819329c9-2c93-d8de-b57e-f9647ab193e6&quot;)/div[@class=&quot;dx-item-content dx-tab-content&quot;]/span[@class=&quot;dx-tab-text&quot;]</value>
+      <webElementGuid>ac6785d0-d152-4d19-9554-b09f2136a882</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='dx-819329c9-2c93-d8de-b57e-f9647ab193e6']/div/span</value>
+      <webElementGuid>1256f9e0-fb91-4455-a304-340fd8b9b93f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Folio de venta'])[1]/following::span[1]</value>
+      <webElementGuid>6da35f84-21d8-440a-8d50-7d3017f1ee00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::span[2]</value>
+      <webElementGuid>329dd1c6-bd65-48a9-a8e3-c9fa6b9ebe96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contrato'])[2]/preceding::span[1]</value>
+      <webElementGuid>3969bb8c-4674-4440-aaf1-8e6172b77957</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Folio llamada o folio queja']/parent::*</value>
+      <webElementGuid>477d2b5f-a319-4de3-b448-f9b7b44b9e72</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[7]/div/span</value>
+      <webElementGuid>142ad990-e3d2-4b5a-9ead-6d9c4077c08e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Folio llamada o folio queja' or . = 'Folio llamada o folio queja')]</value>
+      <webElementGuid>b58e7f97-9bc3-4f77-a2ae-6254abeba7eb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

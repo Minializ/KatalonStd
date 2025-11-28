@@ -18,12 +18,12 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // Se selecciona la sucursal que requiere el vendedor
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/OBJETOS_GLOBALES/SELECT_Sucursal'), 
     sucursal)
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Reportes', '', '')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SELECT_Reporte'), 'Auxiliar de equipos por ubicación')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SELECT_Reporte'), 'Auxiliar de equipos por ubicación')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Clasificacion/TAB_Clasificacion'))
 
@@ -33,22 +33,22 @@ WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Sel
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/CHECK_TiposEquipo'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_TiposEquipo'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_TiposEquipo'), 
     '002')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/CHECK_ModelosEquipo'))
 
 WebUI.delay(1)
 
-CustomKeywords.'utilidades.Ventas.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_ModelosEquipo'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_ModelosEquipo'), 
     'T504')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/CHECK_UbicacionDesde'))
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionDesde'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionDesde'), 
     'A01')
 
-CustomKeywords.'utilidades.Ventas.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionHasta'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionHasta'), 
     'CTL')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/BUTTON_Aceptar'))

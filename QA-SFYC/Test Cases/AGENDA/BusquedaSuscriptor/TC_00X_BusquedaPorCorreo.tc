@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_00X_BusquedaPorCorreo</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e940e4cf-6e01-46c9-adbc-0764cd3a97bb</testCaseGuid>
+</TestCaseEntity>
