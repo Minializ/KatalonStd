@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_19_ConsultaDatosDeVenta</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>31f6fda1-2754-4c90-9782-822e0b7c1305</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e40a6220-f15a-42ce-9073-2c7b396b3ee5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0120063814'</defaultValue>
+      <description></description>
+      <id>e40a6220-f15a-42ce-9073-2c7b396b3ee5</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

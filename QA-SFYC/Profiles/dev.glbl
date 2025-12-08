@@ -97,29 +97,15 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'APSANTILLAV'</initValue>
+      <initValue>'mihernandezg'</initValue>
       <name>USER_EQUIPOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'xmwPVkGXOzg/mjMgod9mdJXPoCY3ZmJvZjpNUH1MJBC5xTLD1ro+jQ=='</initValue>
+      <initValue>'xcZ7rZm6ZfNX8lDXR6omcg=='</initValue>
       <name>PASSWORD_EQUIPOS</name>
-      <protected>false</protected>
-      <valueType>STRING</valueType>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'MAGONZALEZ'</initValue>
-      <name>USER_EQUIPOS_TRASPASO</name>
-      <protected>false</protected>
-      <valueType>STRING</valueType>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'aeHFOx8jV/A='</initValue>
-      <name>PASSWORD_EQUIPOS_TRASPASO</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
@@ -132,7 +118,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'brntesting'</initValue>
+      <initValue>'mihernandezg'</initValue>
       <name>USER_SERVICIOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
