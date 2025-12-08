@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_20_ConsultaDatosGenerales</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>712b688b-db08-49f3-985b-442bd58e9e73</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9b9db717-8483-454b-b91d-f8e1477db7f0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0120063814'</defaultValue>
+      <description></description>
+      <id>9b9db717-8483-454b-b91d-f8e1477db7f0</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

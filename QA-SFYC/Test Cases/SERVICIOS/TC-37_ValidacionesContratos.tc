@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-37_ValidacionesContratos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7e708368-0e3d-4e70-8de4-c5678bf9d76e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a8cf7300-76fc-44c0-81ed-e6fdb4aa794f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0410174041'</defaultValue>
+      <description></description>
+      <id>a8cf7300-76fc-44c0-81ed-e6fdb4aa794f</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

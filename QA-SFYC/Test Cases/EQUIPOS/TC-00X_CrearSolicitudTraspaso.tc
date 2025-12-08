@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC-00X_CrearSolicitudTraspaso</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e0aa7bb0-3500-49d8-abed-313b67c79dd7</testCaseGuid>
-</TestCaseEntity>

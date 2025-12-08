@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-36_SuspenderServicioContratos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8530d9b1-cb7e-4183-a5b0-35fb6b977384</testCaseGuid>
+   <variable>
+      <defaultValue>'0410003653'</defaultValue>
+      <description></description>
+      <id>80850779-69f2-4934-b462-899668a1c6b6</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

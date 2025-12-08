@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_13_BusquedaPorFolioLlamada</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f9b8e262-d5b0-43ba-887c-a415b7699b24</testCaseGuid>
+</TestCaseEntity>

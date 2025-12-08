@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_25_ConsultaPlazosForzosos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>68454534-8f0a-4d60-aa8d-65dab172ddd6</testCaseGuid>
+</TestCaseEntity>
