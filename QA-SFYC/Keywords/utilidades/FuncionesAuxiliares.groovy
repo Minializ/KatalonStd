@@ -304,27 +304,6 @@ class FuncionesAuxiliares {
 		}
 	}
 
-	private boolean isRowEmpty(Row row) {
-		if (row == null) return true
-		for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
-			Cell cell = row.getCell(c)
-			if (cell != null && cell.getCellType() != CellType.BLANK) {
-				return false
-			}
-		}
-		return true
-	}
-
-	private int convertColumnLetterToIndex(String column) {
-		column = column.toUpperCase()
-		int index = 0
-		for (int i = 0; i < column.length(); i++) {
-			char c = column.charAt(i)
-			index *= 26
-			index += ((int)c - (int)'A' + 1)
-		}
-		return index - 1
-	}
 
 	@Keyword
 	def obtenerJeuvesProximoMesActual() {
@@ -368,7 +347,7 @@ class FuncionesAuxiliares {
 			flag = WebUI.waitForElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/IMG_LoadContent'), 1, FailureHandling.OPTIONAL)
 		}
 	}
-	
+
 	@Keyword
 	//Metodo que nos ayuda a seleccionar opciones de los componentes select web que contienen tablas y filtros
 	def selectOptionByName(TestObject objetcSelect, String opcion) {
@@ -414,5 +393,27 @@ class FuncionesAuxiliares {
 		WebUI.delay(2)
 
 		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : codigo]))
+	}
+
+	private boolean isRowEmpty(Row row) {
+		if (row == null) return true
+		for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
+			Cell cell = row.getCell(c)
+			if (cell != null && cell.getCellType() != CellType.BLANK) {
+				return false
+			}
+		}
+		return true
+	}
+
+	private int convertColumnLetterToIndex(String column) {
+		column = column.toUpperCase()
+		int index = 0
+		for (int i = 0; i < column.length(); i++) {
+			char c = column.charAt(i)
+			index *= 26
+			index += ((int)c - (int)'A' + 1)
+		}
+		return index - 1
 	}
 }

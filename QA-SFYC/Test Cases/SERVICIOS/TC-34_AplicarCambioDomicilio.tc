@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-34_AplicarCambioDomicilio</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5888b05c-9066-4e0f-8519-a182e1746c50</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2c9ff7b2-da55-415e-a652-7f1b31899313</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0410174041'</defaultValue>
+      <description></description>
+      <id>2c9ff7b2-da55-415e-a652-7f1b31899313</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

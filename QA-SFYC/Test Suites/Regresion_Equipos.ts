@@ -28,7 +28,7 @@
       <guid>0b05a336-cd10-4cbd-a1a5-ce07a29c6b68</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_ReporteAuxiliarEquiposUbicacion-2</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-33_ReporteAuxiliarEquiposUbicacion-2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -41,21 +41,21 @@
       <guid>512d4b55-7b12-4f09-9854-61ac49faeb23</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_ConsultaUbicacionEquipos</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-29_ConsultaUbicacionEquipos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>19cec993-fc00-4c8f-a74c-fad171c4325c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_RegistroEnSerieBajas</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-32_RegistroEnSerieBajas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>5086a2a1-df63-4198-8e4b-e385c626a4a9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_RegistroSerieAltas</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-33_RegistroSerieAltas</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -74,28 +74,28 @@
       <guid>5551d068-6504-4d1b-ba08-893c7aa59f0c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_CrearSolicitudTraspaso</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-30_CrearSolicitudTraspaso</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>40f99096-d946-47d2-9469-d069ddd5dcbb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_CambioMasivoUbicacion</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-28_CambioMasivoUbicacion</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>3e6ab3b6-5be6-4711-b526-1a01cd061fc9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_AsignacionPallets</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-27_AsignacionPallets</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>49c54533-a90a-4b99-9d98-74f1da243a61</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-00X_DesasignarEquiposCuadrilla</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/TC-31_DesasignarEquiposCuadrilla</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

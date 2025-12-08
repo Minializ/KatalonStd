@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SELECT_Colonia</name>
+   <tag></tag>
+   <elementGuidId>e3c6ce70-eaf9-4337-8091-4201225fe857</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>((//app-neighbourhood-dropdown[@ng-reflect-name=&quot;id_colonia&quot;])[last()]//input[not(@type=&quot;hidden&quot;)])[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
