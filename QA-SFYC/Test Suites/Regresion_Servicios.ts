@@ -12,25 +12,49 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>5bf39462-7498-4816-aa2a-34cc0d3236f0</testSuiteGuid>
    <testCaseLink>
-      <guid>cdb79d00-56ff-4828-b7ac-7ddb216e4cc9</guid>
+      <guid>de938e57-2995-4741-93a2-4cce83acb67a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SERVICIOS/TC-00X_SuspenderServicioContratos</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>ab49a63a-587d-4fab-8b14-4a383033c6e9</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-1</value>
-         </iterationEntity>
-         <testDataId>Data Files/SERVICIOS/SuscriptoresTelefonia</testDataId>
-      </testDataLink>
+      <testCaseId>Test Cases/SERVICIOS/TC-34_AplicarCambioDomicilio</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>ab49a63a-587d-4fab-8b14-4a383033c6e9</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>numeroSuscriptor</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c9ff7b2-da55-415e-a652-7f1b31899313</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>629c3be7-9ae2-4381-85c1-0374e60fbcec</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-35_NuevaPapeleta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e7a9de0b-8c13-4198-9c86-f965f4be5e37</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-36_SuspenderServicioContratos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>80850779-69f2-4934-b462-899668a1c6b6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>200051f0-ad14-406e-addc-7f353852dae6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-37_ValidacionesContratos</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a8cf7300-76fc-44c0-81ed-e6fdb4aa794f</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

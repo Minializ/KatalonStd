@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-29_ConsultaUbicacionEquipos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ca21952f-2c98-4ac2-9259-bf2f03cc982d</testCaseGuid>
+</TestCaseEntity>
