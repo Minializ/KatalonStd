@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC_00X_BusquedaPorDomicilio</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9e738d01-52fa-4739-bd8a-f8df6f1ade15</testCaseGuid>
-</TestCaseEntity>

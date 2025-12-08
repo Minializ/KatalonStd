@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC-00X_RegistroEnSerieBajas</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>6bbe0f8b-4796-4c34-b74c-9181da5752d4</testCaseGuid>
-</TestCaseEntity>
