@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_26_ConsultaTelefonosContactos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>739118ba-a7c5-4a48-8730-5d061ed91196</testCaseGuid>
+</TestCaseEntity>
