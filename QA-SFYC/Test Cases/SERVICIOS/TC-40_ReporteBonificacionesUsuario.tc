@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-40_ReporteBonificacionesUsuario</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b4a0e037-397b-42f9-a394-581d2c174b4d</testCaseGuid>
+</TestCaseEntity>

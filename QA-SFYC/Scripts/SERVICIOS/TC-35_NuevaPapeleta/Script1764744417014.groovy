@@ -75,3 +75,5 @@ def msgAlerta = WebUI.getText(findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAler
 
 WebUI.verifyElementText(findTestObject('Object Repository/OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 'Proceso finalizado', 
     FailureHandling.CONTINUE_ON_FAILURE)
+
+//Almacenar Id

@@ -395,6 +395,21 @@ class FuncionesAuxiliares {
 		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : codigo]))
 	}
 
+	@Keyword
+	def selectDate(TestObject objectDate, String mes, String dia) {
+
+		WebUI.click(objectDate)
+
+		if(mes.isEmpty() == false) {
+			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_FechaMes'))
+
+			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_FechaMes', ['mes' : mes]))
+		}
+
+
+		WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/SPAN_FechaDia', ['dia' : dia]))
+	}
+
 	private boolean isRowEmpty(Row row) {
 		if (row == null) return true
 		for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
