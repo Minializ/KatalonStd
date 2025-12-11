@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//pre[contains(text(), 'Ocurió un error')]</value>
+         <value>//pre[contains(text(), 'Ocurió un error')] | //div[@class=&quot;dx-overlay-content dx-toast-error dx-toast-content&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
