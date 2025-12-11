@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-38_DepositosBancariosCIS</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>08258d73-c5e3-4134-99ae-556f9f942576</testCaseGuid>
+</TestCaseEntity>

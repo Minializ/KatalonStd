@@ -6,12 +6,11 @@
    <elementGuidId>acd75e35-f4ff-4fb0-8c09-e6c66f65875a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//dx-button[@text=&quot;Si&quot; or @aria-label=&quot;Si&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//dx-button[@text=&quot;Si&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
