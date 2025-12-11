@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-39_SuspenderContrato</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a2205291-1784-4a63-bf97-056097a1d8be</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>605b9f41-74c3-436f-a3d8-969b4d5c5668</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0420024163'</defaultValue>
+      <description></description>
+      <id>605b9f41-74c3-436f-a3d8-969b4d5c5668</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

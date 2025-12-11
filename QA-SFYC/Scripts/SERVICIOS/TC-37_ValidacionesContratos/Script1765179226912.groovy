@@ -75,7 +75,6 @@ WebUI.sendKeys(findTestObject('Object Repository/SERVICIOS/Cajero/CambioDomicili
 
 WebUI.click(findTestObject('Object Repository/SERVICIOS/Contratos/Generales/BUTTON_Aceptar'))
 
-/*
 def flagAlertDom = WebUI.waitForElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/LABEL_MensajeAlerta'), 15, FailureHandling.CONTINUE_ON_FAILURE)
 
 if(flagAlertDom) {
@@ -83,11 +82,10 @@ if(flagAlertDom) {
 	
 	WebUI.takeScreenshot('GuardarGenerales.jpg')
 	
-	WebUI.verifyMatch(msgActualizacionGenerales, '.*Datos de cliente actualizados correctamente*', true, FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.verifyMatch(msgActualizacionDom, '.*Datos de cliente actualizados correctamente*', true, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'))
 }
-}*/
 
 //Facturacion
 
