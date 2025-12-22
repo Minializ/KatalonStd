@@ -13,14 +13,14 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'APSANTILLAV'</initValue>
+      <initValue>'mihernandezg'</initValue>
       <name>USER_AGENDA</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'xmwPVkGXOzg/mjMgod9mdJXPoCY3ZmJvZjpNUH1MJBC5xTLD1ro+jQ=='</initValue>
+      <initValue>'xcZ7rZm6ZfNX8lDXR6omcg=='</initValue>
       <name>PASSWORD_AGENDA</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

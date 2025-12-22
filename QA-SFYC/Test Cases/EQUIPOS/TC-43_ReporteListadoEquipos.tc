@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-43_ReporteListadoEquipos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>950f8cc7-63d3-49c4-b76f-e4700c9f079b</testCaseGuid>
+</TestCaseEntity>

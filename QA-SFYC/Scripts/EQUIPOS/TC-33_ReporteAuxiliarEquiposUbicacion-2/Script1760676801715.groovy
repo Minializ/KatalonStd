@@ -25,39 +25,39 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Reportes', '', '')
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/EQUIPOS/SELECT_Reporte'), 'Auxiliar de equipos por ubicación')
 
-WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Clasificacion/TAB_Clasificacion'))
+WebUI.click(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Clasificacion/TAB_Clasificacion'))
 
-WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Clasificacion/RADIO_Serie'))
+WebUI.click(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Clasificacion/RADIO_Serie'))
 
-WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/TAB_Seleccion'))
+WebUI.click(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Seleccion/TAB_Seleccion'))
 
-WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/CHECK_TiposEquipo'))
+WebUI.click(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Seleccion/CHECK_TiposEquipo'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_TiposEquipo'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Seleccion/SELECT_TiposEquipo'), 
     '004')
 
-WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/CHECK_UbicacionDesde'))
+WebUI.click(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Seleccion/CHECK_UbicacionDesde'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionDesde'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionDesde'), 
     '001')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionHasta'), 
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/Seleccion/SELECT_UbicacionHasta'), 
     'ATL')
 
-WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/MasOpciones/TAB_MasOpciones'))
+WebUI.click(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/MasOpciones/TAB_MasOpciones'))
 
-WebUI.click(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/MasOpciones/CHECK_EstadoDesde'))
+WebUI.click(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/MasOpciones/CHECK_EstadoDesde'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/MasOpciones/SELECT_EstadoDesde'),
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/MasOpciones/SELECT_EstadoDesde'),
 	'DAÑ')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/MasOpciones/SELECT_EstadoHasta'),
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/MasOpciones/SELECT_EstadoHasta'),
 	'REV')
 
 WebUI.click(findTestObject('Object Repository/EQUIPOS/BUTTON_Aceptar'))
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/VentanaPDF/SPAN_ErrorPDF'), 3, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/VentanaPDF/SPAN_ErrorPDF'), 3, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/VentanaPDF/SPAN_LoadingPDF'), 180)
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/VentanaPDF/SPAN_LoadingPDF'), 180)
