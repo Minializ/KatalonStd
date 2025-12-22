@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dx-overlay-wrapper dx-popup-wrapper dx-dropdowneditor-overlay dx-datebox-wrapper dx-datebox-wrapper-date dx-datebox-wrapper-calendar&quot;]//table[@aria-label=&quot;Calendario&quot;]//td[not(contains(@class, 'dx-calendar-other-month'))]//span[text()='${dia}']</value>
+         <value>(//div[@class=&quot;dx-overlay-wrapper dx-popup-wrapper dx-dropdowneditor-overlay dx-datebox-wrapper dx-datebox-wrapper-date dx-datebox-wrapper-calendar&quot;]//table[@aria-label=&quot;Calendario&quot;]//td[not(contains(@class, 'dx-calendar-other-month'))]//span[text()='${dia}'])[last()]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
