@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SPAN_ErrorPDF</name>
+   <name>INPUT_Hasta</name>
    <tag></tag>
-   <elementGuidId>36791e44-7dcc-4124-a69e-052391c01758</elementGuidId>
+   <elementGuidId>244291f8-a8f8-4427-99a2-7677314ad364</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//pre[contains(text(), 'Ocurió un error')]</value>
+         <value>//*[@formcontrolname=&quot;endDateId&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

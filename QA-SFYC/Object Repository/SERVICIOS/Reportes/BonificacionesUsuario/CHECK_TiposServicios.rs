@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SELECT_EstadoHasta</name>
+   <name>CHECK_TiposServicios</name>
    <tag></tag>
-   <elementGuidId>a084fcc8-2c0f-4ba5-90bc-27b2f714e2fa</elementGuidId>
+   <elementGuidId>2e4cdae9-ed17-4356-b17e-9838f915e5f4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[@id=&quot;stateEquipmentDropdown&quot;])[2]</value>
+         <value>//label[contains(text(), 'Tipos de Servicios')]//ancestor::div[@class='controls-optional-checkbox-container']//dx-check-box</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

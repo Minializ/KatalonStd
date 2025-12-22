@@ -12,26 +12,6 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>5bf39462-7498-4816-aa2a-34cc0d3236f0</testSuiteGuid>
    <testCaseLink>
-      <guid>de938e57-2995-4741-93a2-4cce83acb67a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SERVICIOS/TC-34_AplicarCambioDomicilio</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>2c9ff7b2-da55-415e-a652-7f1b31899313</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>629c3be7-9ae2-4381-85c1-0374e60fbcec</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SERVICIOS/TC-35_NuevaPapeleta</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>e7a9de0b-8c13-4198-9c86-f965f4be5e37</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
@@ -45,9 +25,29 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>629c3be7-9ae2-4381-85c1-0374e60fbcec</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-35_NuevaPapeleta</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>de938e57-2995-4741-93a2-4cce83acb67a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-34_AplicarCambioDomicilio</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c9ff7b2-da55-415e-a652-7f1b31899313</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>200051f0-ad14-406e-addc-7f353852dae6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SERVICIOS/TC-37_ValidacionesContratos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -56,5 +56,32 @@
          <value></value>
          <variableId>a8cf7300-76fc-44c0-81ed-e6fdb4aa794f</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b6ce4a92-938f-43fb-8647-689df90b07ba</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-38_DepositosBancariosCIS</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99dc6fd1-0240-4363-8350-24ce5fd42095</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-39_SuspenderContrato</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>605b9f41-74c3-436f-a3d8-969b4d5c5668</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>90f128aa-d32e-48b3-9ec5-369a58d50752</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/SERVICIOS/TC-40_ReporteBonificacionesUsuario</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
