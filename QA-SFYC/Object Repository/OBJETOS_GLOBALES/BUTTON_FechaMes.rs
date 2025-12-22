@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dx-widget dx-calendar-navigator&quot;]//span[@class=&quot;dx-button-text&quot;]</value>
+         <value>(//div[@class=&quot;dx-widget dx-calendar-navigator&quot;]//span[@class=&quot;dx-button-text&quot;])[last()]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

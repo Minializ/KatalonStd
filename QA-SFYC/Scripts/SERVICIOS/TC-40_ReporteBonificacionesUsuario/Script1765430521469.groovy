@@ -19,36 +19,36 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Reportes', '', '')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/SERVICIOS/Reportes/SELECT_Reporte'), 'Bonificaciones por Usuario')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/SELECT_Reporte'), 'Bonificaciones por Usuario')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectDate'(findTestObject('Object Repository/SERVICIOS/Reportes/INPUT_Desde'), 'sep', '1')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectDate'(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/INPUT_Desde'), 'sep', '1')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectDate'(findTestObject('Object Repository/SERVICIOS/Reportes/INPUT_Hasta'), '', '13')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectDate'(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/INPUT_Hasta'), '', '13')
 
-WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/CHECK_CisTodos'))
+WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/CHECK_CisTodos'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/SELECT_Cis'), '1')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/SELECT_Cis'), '1')
 
-WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/TAB_MasOpciones'))
+WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/TAB_MasOpciones'))
 
-WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/CHECK_Conceptos'))
+WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/CHECK_Conceptos'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/SELECT_Conceptos'), '1')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/SELECT_Conceptos'), '1')
 
-WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/CHECK_TiposServicios'))
+WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/CHECK_TiposServicios'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/SELECT_TiposServicios'), '4')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/SELECT_TiposServicios'), '4')
 
-WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/TAB_MasOpciones2'))
+WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/TAB_MasOpciones2'))
 
-WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/CHECK_Promociones'))
+WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/CHECK_Promociones'))
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/SELECT_Promociones'), '1051')
+CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/BonificacionesUsuario/SELECT_Promociones'), '1051')
 
 WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/BUTTON_Aceptar'))
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/VentanaPDF/SPAN_LoadingPDF'), 180)
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/VentanaPDF/SPAN_LoadingPDF'), 180)
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/VentanaPDF/SPAN_ErrorPDF'), 3, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/VentanaPDF/SPAN_ErrorPDF'), 3, FailureHandling.STOP_ON_FAILURE)
