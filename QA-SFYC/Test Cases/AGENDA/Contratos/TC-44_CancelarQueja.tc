@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-44_CancelarQueja</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f9b715c4-73b4-485f-b0d8-a966511fe3d4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aa43d32d-cd95-418a-a3c6-649803e80a45</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0440778526'</defaultValue>
+      <description></description>
+      <id>aa43d32d-cd95-418a-a3c6-649803e80a45</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>
