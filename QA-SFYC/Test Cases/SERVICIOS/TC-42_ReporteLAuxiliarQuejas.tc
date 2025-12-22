@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-42_ReporteLAuxiliarQuejas</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>91d0ff5e-b690-4fc9-b894-45fe63cdd4f2</testCaseGuid>
+</TestCaseEntity>

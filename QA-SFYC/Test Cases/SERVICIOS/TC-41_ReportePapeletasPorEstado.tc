@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-41_ReportePapeletasPorEstado</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fe56beea-9cd0-4b22-bf0a-fcd8c365b321</testCaseGuid>
+</TestCaseEntity>
