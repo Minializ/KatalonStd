@@ -392,7 +392,7 @@ class FuncionesAuxiliares {
 
 		WebUI.delay(2)
 
-		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_OpcionFiltro', [('opcionMenu') : codigo]))
+		WebUI.click(findTestObject('Object Repository/VENTAS/VendedoresHombro-Capacitador/SPAN_Option', ['idx' : '1']))
 	}
 
 	@Keyword

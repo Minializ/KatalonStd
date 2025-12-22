@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//dx-data-grid//div[@class=&quot;dx-scrollable-content&quot;]//td[contains(text(), '${opcionMenu}')])[last()]</value>
+         <value>//dx-data-grid//div[@class=&quot;dx-scrollable-content&quot;]//td[@role=&quot;gridcell&quot; and text() = '${opcionMenu}']</value>
       </entry>
       <entry>
          <key>BASIC</key>

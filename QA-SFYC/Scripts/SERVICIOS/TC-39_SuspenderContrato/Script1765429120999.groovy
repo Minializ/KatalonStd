@@ -49,11 +49,11 @@ WebUI.click(findTestObject('Object Repository/SERVICIOS/Contratos/PContratos/Sus
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/VentanaPDF/SPAN_LoadingPDF'), 180)
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/VentanaPDF/SPAN_LoadingPDF'), 180)
 
 WebUI.takeScreenshot('CuestionarioSuspension.jpg')
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/EQUIPOS/ReporteAuxiliarEquipos/VentanaPDF/SPAN_ErrorPDF'), 3, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/EQUIPOS/Reportes/ReporteAuxiliarEquipos/VentanaPDF/SPAN_ErrorPDF'), 3, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeWindowIndex(1)
 
