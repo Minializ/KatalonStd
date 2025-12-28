@@ -55,7 +55,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'dhernandezd'</initValue>
+      <initValue>'mihernandezg'</initValue>
       <name>USER_VENTAS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

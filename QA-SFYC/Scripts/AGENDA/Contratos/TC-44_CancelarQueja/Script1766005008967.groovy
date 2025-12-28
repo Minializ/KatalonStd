@@ -34,6 +34,8 @@ WebUI.click(findTestObject('Object Repository/AGENDA/Quejas/BUTTON_VerOpciones')
 
 WebUI.click(findTestObject('Object Repository/AGENDA/Quejas/BUTTON_Cancelar'))
 
+CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
+
 WebUI.click(findTestObject('Object Repository/AGENDA/Quejas/SELECT_CausaCancelacion'))
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
