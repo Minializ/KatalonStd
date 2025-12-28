@@ -27,8 +27,6 @@ CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObjec
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.selectDate'(findTestObject('Object Repository/SERVICIOS/Reportes/PapeletasPorEstado/INPUT_Desde'), 'ago', '1')
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.selectDate'(findTestObject('Object Repository/SERVICIOS/Reportes/PapeletasPorEstado/INPUT_Hasta'), '', '29')
-
 WebUI.click(findTestObject('Object Repository/SERVICIOS/Reportes/PapeletasPorEstado/CHECK_TiposServicios'))
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('Object Repository/SERVICIOS/Reportes/PapeletasPorEstado/SELECT_EntreTipoServicio'), '00')

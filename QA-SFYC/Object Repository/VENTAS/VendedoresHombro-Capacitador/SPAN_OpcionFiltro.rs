@@ -6,11 +6,11 @@
    <elementGuidId>2d1d5e40-b1db-4f0f-a203-fab2d70e5120</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//dx-data-grid//div[@class=&quot;dx-scrollable-content&quot;]//td[@role=&quot;gridcell&quot; and text() = '${opcionMenu}']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dx-data-grid//div[@class=&quot;dx-scrollable-content&quot;]//td[@role=&quot;gridcell&quot; and text() = '${opcionMenu}' or contains(text(), '${opcionMenu}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
