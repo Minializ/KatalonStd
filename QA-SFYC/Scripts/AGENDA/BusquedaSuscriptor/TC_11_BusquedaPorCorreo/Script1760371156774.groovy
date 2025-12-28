@@ -38,4 +38,3 @@ WebUI.doubleClick(findTestObject('AGENDA/BusquedaContrato/busqueda_por_correo/SE
 WebUI.delay(3)
 
 WebUI.closeBrowser()
-
