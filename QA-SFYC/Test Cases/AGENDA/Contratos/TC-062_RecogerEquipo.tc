@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-062_RecogerEquipo</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c5e0945c-629f-4061-92b5-3fa89b44135e</testCaseGuid>
+</TestCaseEntity>
