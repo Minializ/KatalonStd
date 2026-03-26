@@ -31,7 +31,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 // Consulta del suscriptor (keyword reutilizable del proyecto SFYC).
-CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('0440601390')
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('3080011513')
 
 // Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
 CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
