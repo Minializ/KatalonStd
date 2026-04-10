@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC-063_ReemplazarEquipo</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9795e4f5-9da1-4c15-8ba2-118a85ce5128</testCaseGuid>
-</TestCaseEntity>
