@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>9795e4f5-9da1-4c15-8ba2-118a85ce5128</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId>TC-063_ReemplazarEquipo</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>numeroSuscriptor</value>
+      <variableId>41beb523-4bf1-4577-8ade-daf30e3346a0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>41beb523-4bf1-4577-8ade-daf30e3346a0</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
 </TestCaseEntity>

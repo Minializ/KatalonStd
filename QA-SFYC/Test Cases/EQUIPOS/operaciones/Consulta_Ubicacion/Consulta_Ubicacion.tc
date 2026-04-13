@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Consulta_Ubicacion</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8cd16108-cca7-4fba-b960-2826add3053a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a41c1425-bf57-48c7-b111-e749991e9a0a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a41c1425-bf57-48c7-b111-e749991e9a0a</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

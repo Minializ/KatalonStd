@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Carga_Pallets</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>488ed8e5-6e2b-410f-be2a-c9f130054c4c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ce799d66-d653-42e6-ac47-0ee0132b03a6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ce799d66-d653-42e6-ac47-0ee0132b03a6</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

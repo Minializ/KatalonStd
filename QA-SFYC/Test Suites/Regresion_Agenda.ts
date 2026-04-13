@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>7f8390c4-beab-4070-98a0-26e45395f3d5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-001_AgregarSerieSim</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>1859046c-147c-41eb-9cc2-cd030aa39373</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-002_ReasignarQueja</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -70,7 +70,7 @@
    <testCaseLink>
       <guid>4f292cdd-607e-438c-ba07-a5a492b940b2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -98,7 +98,7 @@
    <testCaseLink>
       <guid>f7a787a1-9f8c-4624-b3c1-e8b990ce2460</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -121,6 +121,28 @@
          <type>SCRIPT_VARIABLE</type>
          <value>&quot;administrativa&quot;</value>
          <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a7c3f1e2-5d84-4b96-bc12-8e0f23d47a91</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AGENDA/Contratos/TC-063_ReemplazarEquipo</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>TC-063_ReemplazarEquipo</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value>1</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>TC-063_ReemplazarEquipo</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
+         <variableId>41beb523-4bf1-4577-8ade-daf30e3346a0</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

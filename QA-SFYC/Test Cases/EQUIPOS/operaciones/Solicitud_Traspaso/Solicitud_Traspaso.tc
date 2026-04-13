@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Solicitud_Traspaso</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a39ad4c-bb21-4c9a-9599-fd3e421381b4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>213d2cb5-e293-4817-919f-6850a3fd0288</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>213d2cb5-e293-4817-919f-6850a3fd0288</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

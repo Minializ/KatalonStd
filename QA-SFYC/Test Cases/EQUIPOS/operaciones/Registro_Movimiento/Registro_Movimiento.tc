@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Registro_Movimiento</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8efe2ccd-0bd0-475e-92e0-14039a9a5188</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a6361fc7-2a2a-4f05-b5ab-3d675e6d06b8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a6361fc7-2a2a-4f05-b5ab-3d675e6d06b8</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

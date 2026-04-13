@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>operaciones</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>34d10a30-de7e-4adf-8336-be5aed82cdf9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c02ac6a6-968d-4457-81e5-b8d9d838d6cc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c02ac6a6-968d-4457-81e5-b8d9d838d6cc</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>
