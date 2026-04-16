@@ -1,6 +1,7 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+//import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
@@ -22,7 +23,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 // Consulta del suscriptor (keyword reutilizable del proyecto SFYC).
-CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('0440601390')
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
 
 // Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
 CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
@@ -36,26 +37,3 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/T
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
-//WebUI.delay(5)
-
-// Selección del equipo por modelo (ej. HG8145V5).
-WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TD_ModeloEquipo'), 0)
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TD_ModeloEquipo'))//, [('opcion') : modeloEquipoActual]))
-
-// timeout en segundos (usa la variable global definida en tu proyecto)
-int timeout = GlobalVariable.TIME_OUT ?: 30
-
-CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
-
-// Abrir opciones del equipo y elegir Reemplazar equipo.
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_VerOpciones'))
-
-CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
-
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/SPAN_ProcesosEquipos'))
-
-CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
-
-// Completar aquí los pasos del formulario de reemplazo (serie nuevo equipo, CIS, etc.)
-// y la verificación del mensaje de éxito según objetos del Object Repository cuando existan.

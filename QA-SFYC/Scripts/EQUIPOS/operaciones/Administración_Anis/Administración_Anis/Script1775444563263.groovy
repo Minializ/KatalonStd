@@ -1,4 +1,4 @@
-﻿import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 //import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
@@ -18,5 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Modelo de equipo a reemplazar; si no se define en el Test Case, se usa valor por defecto.
+//def modeloEquipoActual = (binding.hasVariable('modeloEquipo') && modeloEquipo) ? modeloEquipo : 'HG8145V5'
+
 CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Administración de Anis', '')
-WebUI.delay(3)

@@ -1,4 +1,4 @@
-﻿import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 //import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
@@ -28,11 +28,11 @@ CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
 // Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
 CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 
-// Navegacion a Contratos.
+// Navegación a Contratos.
 WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), GlobalVariable.TIME_OUT)
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
 
-// Navegacion a Equipos dentro de Contratos.
+// Navegación a Equipos dentro de Contratos.
 WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']), GlobalVariable.TIME_OUT)
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
 

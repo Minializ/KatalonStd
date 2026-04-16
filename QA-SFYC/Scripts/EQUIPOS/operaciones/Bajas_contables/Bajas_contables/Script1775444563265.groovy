@@ -1,4 +1,4 @@
-﻿import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 //import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
@@ -18,6 +18,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// Seleccionar la opcion
-CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Operaciones', 'Bajas Contables', '')
-WebUI.delay(3)
+// Modelo de equipo a reemplazar; si no se define en el Test Case, se usa valor por defecto.
+//def modeloEquipoActual = (binding.hasVariable('modeloEquipo') && modeloEquipo) ? modeloEquipo : 'HG8145V5'
+
+
+// Consulta del suscriptor (keyword reutilizable del proyecto SFYC).
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
+
+// Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
+CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
+
+// Navegación a Contratos.
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), GlobalVariable.TIME_OUT)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
+
+// Navegación a Equipos dentro de Contratos.
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']), GlobalVariable.TIME_OUT)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
+
+CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
