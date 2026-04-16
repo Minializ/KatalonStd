@@ -37,3 +37,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/T
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+
+
+
+Asignar Equipos a Cuadrilla

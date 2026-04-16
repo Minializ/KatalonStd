@@ -6,10 +6,19 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>c3842a5b-74ff-443a-9f3c-c75765316376</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>58aaf049-404b-4261-89c6-c1e357f3da2a</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
+   </testDataLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <type>SCRIPT_VARIABLE</type>
+      <value>null</value>
       <variableId>55f7ec93-5f59-44d4-95a7-a1909d43e4ed</variableId>
    </variableLinks>
    <variableLinks>
@@ -25,7 +34,7 @@
       <variableId>fe15d6ef-364a-43d9-81c2-947776c5e273</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'0440601389'</defaultValue>
       <description></description>
       <id>55f7ec93-5f59-44d4-95a7-a1909d43e4ed</id>
       <masked>false</masked>

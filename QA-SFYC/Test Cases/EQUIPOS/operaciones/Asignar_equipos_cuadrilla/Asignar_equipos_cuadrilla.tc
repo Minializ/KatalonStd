@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
    <name>Asignar_equipos_cuadrilla</name>
@@ -16,6 +16,29 @@
       <defaultValue>''</defaultValue>
       <description></description>
       <id>d473cb1a-6979-45d7-b0c2-bef9462d0af7</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Asignar_equipos_cuadrilla</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f7eb0f19-7571-4cdb-9861-cd9b2b0564a4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>619fb7f3-f4a8-4653-aff4-bb97402cf6f9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>619fb7f3-f4a8-4653-aff4-bb97402cf6f9</id>
       <masked>false</masked>
       <name>numeroSuscriptor</name>
    </variable>

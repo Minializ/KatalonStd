@@ -1,21 +1,37 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> f6564746de77aaa88fb981ab8f5a57272b1c5b6c
 <TestCaseEntity>
    <description></description>
    <name>Registro_Movimiento</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
+<<<<<<< HEAD
    <testCaseGuid>8efe2ccd-0bd0-475e-92e0-14039a9a5188</testCaseGuid>
+=======
+   <testCaseGuid>7c0e041d-4158-4195-801c-0e9e3505badb</testCaseGuid>
+>>>>>>> f6564746de77aaa88fb981ab8f5a57272b1c5b6c
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
+<<<<<<< HEAD
       <variableId>a6361fc7-2a2a-4f05-b5ab-3d675e6d06b8</variableId>
+=======
+      <variableId>9d7c37c2-a81f-40fd-b9e4-915294827430</variableId>
+>>>>>>> f6564746de77aaa88fb981ab8f5a57272b1c5b6c
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
+<<<<<<< HEAD
       <id>a6361fc7-2a2a-4f05-b5ab-3d675e6d06b8</id>
+=======
+      <id>9d7c37c2-a81f-40fd-b9e4-915294827430</id>
+>>>>>>> f6564746de77aaa88fb981ab8f5a57272b1c5b6c
       <masked>false</masked>
       <name>numeroSuscriptor</name>
    </variable>
