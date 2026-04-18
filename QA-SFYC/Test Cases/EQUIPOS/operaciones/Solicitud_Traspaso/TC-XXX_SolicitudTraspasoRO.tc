@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-XXX_SolicitudTraspasoRO</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1d325ade-c70e-4f68-9968-acc1d72ff684</testCaseGuid>
+</TestCaseEntity>

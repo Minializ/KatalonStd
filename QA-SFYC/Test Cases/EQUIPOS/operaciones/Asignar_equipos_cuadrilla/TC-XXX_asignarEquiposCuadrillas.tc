@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-XXX_asignarEquiposCuadrillas</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4288c34f-12b1-4144-b1c5-a68e0e974df5</testCaseGuid>
+</TestCaseEntity>

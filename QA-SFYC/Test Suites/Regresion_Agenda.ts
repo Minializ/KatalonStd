@@ -5,508 +5,105 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>0</numberOfRerun>
+   <numberOfRerun>3</numberOfRerun>
    <pageLoadTimeout>10</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>5100ba98-c510-40e5-87e5-3ff5d09d8917</testSuiteGuid>
+   <testSuiteGuid>000b98bb-f4bc-4b6c-abc0-92906e60fe97</testSuiteGuid>
    <testCaseLink>
-      <guid>7f8390c4-beab-4070-98a0-26e45395f3d5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-001_AgregarSerieSim</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>1f77765a-f91d-41f7-985c-e97287303b92</id>
-         <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>1</value>
-         </iterationEntity>
-         <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>1f77765a-f91d-41f7-985c-e97287303b92</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>numeroSuscriptor</value>
-         <variableId>55f7ec93-5f59-44d4-95a7-a1909d43e4ed</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1f77765a-f91d-41f7-985c-e97287303b92</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>cis</value>
-         <variableId>b92aa4f5-5602-4ff5-a6c4-1824bb1e6924</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1f77765a-f91d-41f7-985c-e97287303b92</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>serieSIM</value>
-         <variableId>fe15d6ef-364a-43d9-81c2-947776c5e273</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1859046c-147c-41eb-9cc2-cd030aa39373</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-002_ReasignarQueja</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>1d75b79c-d81f-41ba-a66b-b3db964da44c</id>
-         <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>1</value>
-         </iterationEntity>
-         <testDataId>Data Files/AGENDA/SuscriptoresQueja</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>1d75b79c-d81f-41ba-a66b-b3db964da44c</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>numeroSuscriptor</value>
-         <variableId>4e8638d5-7293-4c2c-a505-b7e46ef9768d</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4f292cdd-607e-438c-ba07-a5a492b940b2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>765cd0e6-c5cc-40d6-8a85-2b3563850671</id>
-         <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>1</value>
-         </iterationEntity>
-         <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>765cd0e6-c5cc-40d6-8a85-2b3563850671</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>numeroSuscriptor</value>
-         <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>&quot;profeco&quot;</value>
-         <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f7a787a1-9f8c-4624-b3c1-e8b990ce2460</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>2b63abe4-fe3b-49ef-bcdf-49413e310c5f</id>
-         <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>1</value>
-         </iterationEntity>
-         <testDataId>Data Files/AGENDA/Suscriptres</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>2b63abe4-fe3b-49ef-bcdf-49413e310c5f</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>numeroSuscriptor</value>
-         <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>&quot;administrativa&quot;</value>
-         <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-<<<<<<< HEAD
-      <guid>a7c3f1e2-5d84-4b96-bc12-8e0f23d47a91</guid>
+      <guid>8339211f-db28-4154-8897-2576b8cc74e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-063_ReemplazarEquipo</testCaseId>
+      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-061_EntregaEquipo</testCaseId>
       <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>TC-063_ReemplazarEquipo</id>
+         <combinationType>MANY</combinationType>
+         <id>351abf9c-b298-40f0-8238-d6060d751cdc</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value>1</value>
+            <iterationType>RANGE</iterationType>
+            <value>2-40</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>TC-063_ReemplazarEquipo</testDataLinkId>
+         <testDataLinkId>351abf9c-b298-40f0-8238-d6060d751cdc</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>numeroSuscriptor</value>
-         <variableId>41beb523-4bf1-4577-8ade-daf30e3346a0</variableId>
-=======
-      <guid>e386aa98-362a-417d-a996-f3faf17300e4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Adicionales/Adicionales</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>df3989d3-fd02-4780-999c-e54d163ce235</variableId>
+         <variableId>2c220e27-912f-49f3-8784-8b3cf65dcd38</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>761cd687-d29b-4463-96f8-15b7e642eec8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/Equipos</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e189e3f1-73af-48b2-bfd7-17441cd9fffd</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d6cdf7e4-af36-4042-821a-4076192633ca</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-061_EntregaEquipo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e99c8600-29da-477f-9962-882b5e68a9db</guid>
+      <guid>49598d6f-6c83-449f-b32c-c529336fc1b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-062_RecogerEquipo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>fb747f90-fa26-455f-900c-19e17e32c0aa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-063_ReemplazarEquipo</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0f4b621e-656c-4dd7-9111-3767290eca02</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-40</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>0f4b621e-656c-4dd7-9111-3767290eca02</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
+         <variableId>2fc0b3f9-e2b0-44d7-939e-1b2eff9d2d4f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>eca79509-5668-4758-9f83-bffb349c2b3e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>'0430460860'</defaultValue>
+         <description></description>
+         <id>375ea94b-3f03-41cc-9080-6a8e1b47952a</id>
+         <masked>false</masked>
+         <name>numeroSuscriptor</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-063_ReemplazarEquipo</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>beb29367-dbb9-460d-8157-9d5d6f54146e</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-40</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>beb29367-dbb9-460d-8157-9d5d6f54146e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
          <variableId>375ea94b-3f03-41cc-9080-6a8e1b47952a</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>187532f4-1203-41fc-b7f2-001b0753f45b</guid>
+      <guid>c95d05d0-090a-4ecf-800d-a5c1089276e1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-064_PromoverEquipo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>28cb66c7-405c-4e48-b869-e28dcb8c03a8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Otros/Envio de Cred/Envio de Cred</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3c611dde-f6d4-48d2-b67b-7d0ad2171a2b</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c4fa2061-5fcb-4802-985a-f7dc55c5ba4b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Otros/Otros</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>fd549398-d9fb-4ea0-a334-6ab37798d516</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-40</value>
+         </iterationEntity>
+         <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>2a79ace5-6149-498d-9e6c-20821fc54f09</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6e35a4b0-cf63-4c05-a9b6-7aa664a2ec75</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Premier/Premier</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a2da7950-1056-493a-9e08-c2011f3bbb37</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ecc4ba70-2371-45be-84e9-c8917b2fe160</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Principales/Principales</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a6468314-1e77-4c24-857d-c4849324027b</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>51def4e5-c107-4196-8660-69b92c1bd3b7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-001_AgregarSerieSim</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>55f7ec93-5f59-44d4-95a7-a1909d43e4ed</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b92aa4f5-5602-4ff5-a6c4-1824bb1e6924</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>fe15d6ef-364a-43d9-81c2-947776c5e273</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b9ae6dbe-5a08-4abf-af99-344d5db32167</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-002_ReasignarQueja</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4e8638d5-7293-4c2c-a505-b7e46ef9768d</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b2c092b3-b76e-440d-a9eb-e3228cb3cd45</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4e7a06db-28e9-41a8-ac36-025b290c041c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-44_CancelarQueja</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>aa43d32d-cd95-418a-a3c6-649803e80a45</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0336c0e6-d17a-41ee-91da-5dc32ac0005b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Adicionales/Adicionales</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>df3989d3-fd02-4780-999c-e54d163ce235</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cd7cc0a7-023a-490f-b414-66f0a095b187</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/Equipos</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e189e3f1-73af-48b2-bfd7-17441cd9fffd</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a3948a55-cc44-4665-b60f-7cda87565947</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-061_EntregaEquipo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>361a12f1-cd7f-410b-91bb-9c629842a37f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-062_RecogerEquipo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>53651da1-5eb9-4e50-aa0a-199f66335bc0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-063_ReemplazarEquipo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>375ea94b-3f03-41cc-9080-6a8e1b47952a</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4fe56333-cf62-4521-803b-f43bb44ec1f6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-064_PromoverEquipo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cc53c901-991a-46d5-8378-9c39f2bd361f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Otros/Envio de Cred/Envio de Cred</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3c611dde-f6d4-48d2-b67b-7d0ad2171a2b</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e9c98fd2-b377-4f64-89e4-ce3c4b85e3f1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Otros/Otros</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>2a79ace5-6149-498d-9e6c-20821fc54f09</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>98ee1c66-3480-47c5-870b-adfb1e0c7ece</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Premier/Premier</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a2da7950-1056-493a-9e08-c2011f3bbb37</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7af07d8b-8c4e-4850-993f-73a87b8dc9ce</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/Principales/Principales</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a6468314-1e77-4c24-857d-c4849324027b</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f469e546-4674-4fa1-a7fa-7fa74d0164e4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-001_AgregarSerieSim</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>55f7ec93-5f59-44d4-95a7-a1909d43e4ed</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b92aa4f5-5602-4ff5-a6c4-1824bb1e6924</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>fe15d6ef-364a-43d9-81c2-947776c5e273</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>423c3c15-7949-43f1-9275-47564c3c695a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-002_ReasignarQueja</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4e8638d5-7293-4c2c-a505-b7e46ef9768d</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f7ccd59b-28e9-462b-8668-9693e4dd4583</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-003_AgregarQueja (Profeco o Administrativa)</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5a50757a-28af-4e1a-8909-7b021d71a0e5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>60e0ec73-68ff-4586-95e5-7aca1528a9cc</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>45f2ae26-d18a-4e4f-8df2-1bc6b1bda3a6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AGENDA/Contratos/TC-44_CancelarQueja</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>aa43d32d-cd95-418a-a3c6-649803e80a45</variableId>
->>>>>>> f6564746de77aaa88fb981ab8f5a57272b1c5b6c
+         <testDataLinkId>fd549398-d9fb-4ea0-a334-6ab37798d516</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>numeroSuscriptor</value>
+         <variableId>d09c56c7-db37-49a4-b803-05bf1c3c729b</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

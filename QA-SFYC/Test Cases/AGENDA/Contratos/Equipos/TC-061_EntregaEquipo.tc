@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>1f39e3dd-6b70-4431-bdf7-d6005c793337</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2c220e27-912f-49f3-8784-8b3cf65dcd38</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2c220e27-912f-49f3-8784-8b3cf65dcd38</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
 </TestCaseEntity>

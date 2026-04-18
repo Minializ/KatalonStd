@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-XXX_registroMovimiento</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>51f39712-6319-4b86-bfd2-eb1b1c73b617</testCaseGuid>
+</TestCaseEntity>

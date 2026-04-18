@@ -16,7 +16,9 @@ import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import org.openqa.selenium.WebElement
 
 import internal.GlobalVariable
 
@@ -45,12 +47,14 @@ public class Agenda {
 
 				WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/INPUT_Suscriptor'), numeroSuscriptor)
 
-				WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
+				WebElement btnConsultar = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'), GlobalVariable.TIME_OUT)
+				WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnConsultar))
 			}
 		}else if(WebUI.verifyElementPresent(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/INPUT_Suscriptor'), 1, FailureHandling.OPTIONAL)){
 			WebUI.setText(findTestObject('Object Repository/AGENDA/PaginaInicio/Consulta/INPUT_Suscriptor'), numeroSuscriptor)
 
-			WebUI.click(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'))
+			WebElement btnConsultar = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/AGENDA/PaginaInicio/BUTTON_Consultar'), GlobalVariable.TIME_OUT)
+			WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(btnConsultar))
 		}
 
 

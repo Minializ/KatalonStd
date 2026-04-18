@@ -12,49 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f0c133a9-1c0f-4a6d-8a3e-6f920567d057</testSuiteGuid>
    <testCaseLink>
-      <guid>0041435f-ab77-4e60-81b9-b593c77ecfa5</guid>
+      <guid>261150f6-bd23-4002-af93-8590a5cb74d7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Recoger_Equipos/Recoger_Equipos</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e919973b-141e-4648-9009-bb85b2a62c70</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>75b8be94-9610-4041-abf1-f9419cbb8e83</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Registro_Movimiento/Registro_Movimiento</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9d7c37c2-a81f-40fd-b9e4-915294827430</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2808fb4f-2bab-46fb-bbb2-d895cfb49313</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Solicitud_Traspaso/Solicitud_Traspaso</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5c6eb409-9b5d-43bf-b68e-aadf917e142b</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4c228d39-8f0b-486d-9d91-5a47755fe6ae</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Administración_Anis/Administración_Anis</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Administración_Anis/TC-XXX_administraciónAnis</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -64,62 +25,56 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>a555ef53-0194-4d5f-8bda-6c18206269ca</guid>
+      <guid>8a4b79ad-96f0-4d52-b61c-1d72eb872dd0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Asignar_equipos_cuadrilla/Asignar_equipos_cuadrilla</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Asignar_equipos_cuadrilla/TC-XXX_asignarEquiposCuadrillas</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a15a9548-4a82-4797-8d23-3dc8d65c9ec1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Bajas_contables/TC-XXX_bajasContables</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>619fb7f3-f4a8-4653-aff4-bb97402cf6f9</variableId>
+         <variableId>203bb0db-115a-488c-ad37-596a6fd1c35c</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>ceaefd2a-ff16-4b12-9242-f7a36bee9a59</guid>
+      <guid>6e087c98-cf57-4d48-b60c-429b2db718d1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Bajas_contables/Bajas_contables</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Carga_Pallets/TC-XXX_cargaPallets</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>bfcf511c-8e8b-4014-8338-3cce008b5c8f</variableId>
+         <variableId>ce799d66-d653-42e6-ac47-0ee0132b03a6</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>d2c09f90-5a8c-44fa-b2d4-f155d629be73</guid>
+      <guid>09597521-24d7-4c20-b3aa-c98475d2bed6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Carga_Pallets/Carga_Pallets</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Configuracion_settops/TC-XXX_configuracionSettops</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>c172cd34-a71c-41e4-b756-1285da0f7eeb</variableId>
+         <variableId>f9d81069-d03a-419e-9498-39a51991860d</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>4b8b2874-d481-45bb-a710-451322407f59</guid>
+      <guid>c2892ba0-a690-43fa-8abe-fd40f60823dc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Configuración_settops/Configuración_settops</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9448bfea-8cc1-404f-b43d-846e1a13685e</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f8ec8c87-9e46-4c6e-a64d-271b5bc074a3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Consulta_Ubicación/Consulta_Ubicación</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Consulta_Ubicación/TC-XXX_consultaUbicación</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -129,10 +84,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>450f0532-545f-438d-823e-e663a4cc06ba</guid>
+      <guid>c7301101-4aac-4046-a098-83b12d53d3c2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Control_Financiero de Equipos/Control_Financiero de Equipos</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Control_Financiero de Equipos/TC-XXX_controlFinancieroEquipos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -142,42 +97,43 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8e871407-802c-414b-8c1d-c7effdcb761b</guid>
+      <guid>444a4a49-bf34-4c4c-9ccb-7880988cd20d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Recoger_Equipos/Recoger_Equipos</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/operaciones</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>e919973b-141e-4648-9009-bb85b2a62c70</variableId>
+         <variableId>c02ac6a6-968d-4457-81e5-b8d9d838d6cc</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8c6e952c-426b-46e9-9b0f-995abd971521</guid>
+      <guid>4cac4233-7f27-40be-b980-00b3d2308117</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Registro_Movimiento/Registro_Movimiento</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Recoger_Equipos/TC-XXX_recogerEquipos</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>9d7c37c2-a81f-40fd-b9e4-915294827430</variableId>
+         <variableId>db8d7fa6-16e5-4ebe-a1bb-d93971e77644</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>6138fdf5-0dc9-498f-afc7-6e3b83e33b50</guid>
+      <guid>a671417c-eff2-4cd2-9ce8-97bba97f7008</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/operaciones/Solicitud_Traspaso/Solicitud_Traspaso</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Registro_Movimiento/TC-XXX_registroMovimiento</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5c6eb409-9b5d-43bf-b68e-aadf917e142b</variableId>
-      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a2d69c46-bf09-48d1-b65e-f6e3312304e4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/Solicitud_Traspaso/TC-XXX_SolicitudTraspasoRO</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
