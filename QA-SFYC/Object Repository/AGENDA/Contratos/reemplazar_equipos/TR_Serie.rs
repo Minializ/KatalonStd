@@ -6,12 +6,12 @@
    <elementGuidId>fd4cae26-ef27-42e2-8cb6-f7145b9fb58d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[text()='Internet']//ancestor::tr//td[4]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//app-contract-grid//tr[contains(@class,'dx-data-row')]/td[4])[2]&#xd;
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

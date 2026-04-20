@@ -23,7 +23,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 // Consulta del suscriptor (keyword reutilizable del proyecto SFYC).
-CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('0430181005')
 
 // Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
 CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
@@ -37,3 +37,44 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/T
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+//WebUI.delay(5)
+
+// Selección del equipo por modelo (ej. HG8145V5).
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TD_ModeloEquipo'), 0)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TD_ModeloEquipo'))//, [('opcion') : modeloEquipoActual]))
+
+// timeout en segundos (usa la variable global definida en tu proyecto)
+int timeout = GlobalVariable.TIME_OUT ?: 5
+
+CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
+
+// Abrir opciones del equipo y elegir Reemplazar equipo.
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_VerOpciones'))
+
+CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+
+//Seleccionar la opcion de Procesos de equipos
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/SPAN_ProcesosEquipos'))
+
+CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+
+//Seleccionar la opcion de Reemplazar equipos
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/SPAN_ReemplazarEquipo'), 5)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/SPAN_ReemplazarEquipo'))
+
+// Completar aquí los pasos del formulario de reemplazo (serie nuevo equipo, CIS, etc.)
+// y la verificación del mensaje de éxito según objetos del Object Repository cuando existan.
+WebUI.delay(5)
+CustomKeywords.'utilidades.Agenda.selectOptionById'(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/Dropdown_Cis'), '001')
+
+
+//ingresar serie // Obtener texto de la columna 4
+String valorColumna4 = WebUI.getText(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TR_Serie')).trim()
+
+// Ingresar valor en el input serie
+WebUI.setText(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/INPUT_Serie'),valorColumna4)
+
+// Seleccionar boton OK
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/BUTTON_OK'), 5)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/BUTTON_OK'))

@@ -18,12 +18,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// Modelo de equipo a reemplazar; si no se define en el Test Case, se usa valor por defecto.
-//def modeloEquipoActual = (binding.hasVariable('modeloEquipo') && modeloEquipo) ? modeloEquipo : 'HG8145V5'
-
-
 // Consulta del suscriptor (keyword reutilizable del proyecto SFYC).
-CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
+//suscriptor en estado ACT/POR/ y casi todos
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('0430507604')
 
 // Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
 CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
@@ -37,3 +34,28 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/T
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+//WebUI.delay(5)
+
+// Selección del equipo por modelo (ej. HG8145V5).
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TD_ModeloEquipo'), 0)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TD_ModeloEquipo'))//, [('opcion') : modeloEquipoActual]))
+
+// timeout en segundos (usa la variable global definida en tu proyecto)
+int timeout = GlobalVariable.TIME_OUT ?: 5
+
+CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
+
+// Abrir opciones del equipo y elegir Reemplazar equipo.
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_VerOpciones'))
+
+CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+
+//Seleccionar la opcion de Procesos de equipos
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/SPAN_ProcesosEquipos'))
+
+CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+
+//Seleccionar la opcion de Reemplazar equipos
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/PromoverEquipo/SPAN_PromoverEquipo'), 5)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/PromoverEquipo/SPAN_PromoverEquipo'))
