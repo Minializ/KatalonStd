@@ -1,181 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
-   <description>Profile QA explicito (espejo de default). Reemplazar &apos;__REEMPLAZAR__&apos; por credenciales cifradas con Katalon.</description>
-   <n>qa</n>
+   <description>Profile QA explicito</description>
+   <name>qa</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
-
-   <!-- URLs QA -->
    <GlobalVariableEntity>
       <description>URL del modulo AGENDA en QA</description>
       <initValue>'https://agenda.qa-cluster.sfycnextgen.com.mx/ui/'</initValue>
-      <n>URL_AGENDA</n>
+      <name>URL_AGENDA</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>URL del modulo EQUIPOS en QA</description>
       <initValue>'https://equipos.qa-cluster.sfycnextgen.com.mx/ui/'</initValue>
-      <n>URL_EQUIPOS</n>
+      <name>URL_EQUIPOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>URL del modulo MATERIALES / CONTROL en QA</description>
       <initValue>'https://control.qa-cluster.sfycnextgen.com.mx/ui/'</initValue>
-      <n>URL_MATERIALES</n>
+      <name>URL_MATERIALES</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>URL del modulo SERVICIOS en QA</description>
       <initValue>'https://servicios.qa-cluster.sfycnextgen.com.mx/ui/'</initValue>
-      <n>URL_SERVICIOS</n>
+      <name>URL_SERVICIOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>URL del modulo VENTAS en QA</description>
       <initValue>'https://ventas.qa-cluster.sfycnextgen.com.mx/ui/'</initValue>
-      <n>URL_VENTAS</n>
+      <name>URL_VENTAS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
-
-   <!-- Credenciales por modulo (espejo de default) -->
    <GlobalVariableEntity>
       <description></description>
       <initValue>'mihernandezg'</initValue>
-      <n>USER_AGENDA</n>
+      <name>USER_AGENDA</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Cifrar con Katalon Encryption tool</description>
-      <initValue>'__REEMPLAZAR_CON_PASSWORD_CIFRADO__'</initValue>
-      <n>PASSWORD_AGENDA</n>
+      <description></description>
+      <initValue>'UAS54JT5V81YGtPZJ4Qyiw=='</initValue>
+      <name>PASSWORD_AGENDA</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
-
    <GlobalVariableEntity>
       <description></description>
       <initValue>'mihernandezg'</initValue>
-      <n>USER_EQUIPOS</n>
+      <name>USER_EQUIPOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Cifrar con Katalon Encryption tool</description>
-      <initValue>'__REEMPLAZAR_CON_PASSWORD_CIFRADO__'</initValue>
-      <n>PASSWORD_EQUIPOS</n>
+      <description></description>
+      <initValue>'UAS54JT5V81YGtPZJ4Qyiw=='</initValue>
+      <name>PASSWORD_EQUIPOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
-
    <GlobalVariableEntity>
       <description></description>
       <initValue>'dhernandezd'</initValue>
-      <n>USER_MATERIALES</n>
+      <name>USER_MATERIALES</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Cifrar con Katalon Encryption tool</description>
-      <initValue>'__REEMPLAZAR_CON_PASSWORD_CIFRADO__'</initValue>
-      <n>PASSWORD_MATERIALES</n>
+      <description></description>
+      <initValue>'UAS54JT5V81YGtPZJ4Qyiw=='</initValue>
+      <name>PASSWORD_MATERIALES</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
-
    <GlobalVariableEntity>
       <description></description>
       <initValue>'brntesting'</initValue>
-      <n>USER_SERVICIOS</n>
+      <name>USER_SERVICIOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Cifrar con Katalon Encryption tool</description>
-      <initValue>'__REEMPLAZAR_CON_PASSWORD_CIFRADO__'</initValue>
-      <n>PASSWORD_SERVICIOS</n>
+      <description></description>
+      <initValue>'UAS54JT5V81YGtPZJ4Qyiw=='</initValue>
+      <name>PASSWORD_SERVICIOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
-
    <GlobalVariableEntity>
       <description></description>
       <initValue>'mihernandezg'</initValue>
-      <n>USER_VENTAS</n>
+      <name>USER_VENTAS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Cifrar con Katalon Encryption tool</description>
-      <initValue>'__REEMPLAZAR_CON_PASSWORD_CIFRADO__'</initValue>
-      <n>PASSWORD_VENTAS</n>
+      <description></description>
+      <initValue>'UAS54JT5V81YGtPZJ4Qyiw=='</initValue>
+      <name>PASSWORD_VENTAS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
-
-   <!-- Configuracion general -->
    <GlobalVariableEntity>
       <description></description>
       <initValue>'SFYC'</initValue>
-      <n>DOMINIO</n>
+      <name>DOMINIO</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Timeout general en segundos</description>
       <initValue>40</initValue>
-      <n>TIME_OUT</n>
+      <name>TIME_OUT</name>
       <protected>false</protected>
       <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Timeout corto para contenido visible</description>
       <initValue>10</initValue>
-      <n>TIME_OUT_CONTENT</n>
+      <name>TIME_OUT_CONTENT</name>
       <protected>false</protected>
       <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
-
-   <!-- SQL Server (para QueryKeyword.groovy) - descomentar y configurar cuando se habilite -->
    <GlobalVariableEntity>
-      <description>Host de SQL Server (sin jdbc:)</description>
-      <initValue>'__REEMPLAZAR_CON_HOST_SQL__'</initValue>
-      <n>SQL_SERVER_HOST</n>
+      <description>Host de SQL Server</description>
+      <initValue>'megang-383.evolution.corp'</initValue>
+      <name>SQL_SERVER_HOST</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Puerto SQL Server</description>
       <initValue>1433</initValue>
-      <n>SQL_SERVER_PORT</n>
+      <name>SQL_SERVER_PORT</name>
       <protected>false</protected>
       <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Nombre de la base de datos de datos de prueba</description>
-      <initValue>'QA_DATA'</initValue>
-      <n>SQL_SERVER_DB</n>
+      <description>Base de datos de SQL Server</description>
+      <initValue>'cartera'</initValue>
+      <name>SQL_SERVER_DB</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'__REEMPLAZAR_CON_USER_SQL__'</initValue>
-      <n>SQL_SERVER_USER</n>
+      <description>Usuario de SQL Server</description>
+      <initValue>'mihernandezg'</initValue>
+      <name>SQL_SERVER_USER</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Cifrar con Katalon Encryption tool</description>
-      <initValue>'__REEMPLAZAR_CON_PASSWORD_CIFRADO__'</initValue>
-      <n>SQL_SERVER_PASSWORD</n>
+      <description>Password de SQL Server (cifrado con Katalon Encryption)</description>
+      <initValue>'UAS54JT5V81YGtPZJ4Qyiw=='</initValue>
+      <name>SQL_SERVER_PASSWORD</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
-
 </GlobalVariableEntities>
