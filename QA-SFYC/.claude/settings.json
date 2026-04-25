@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(Test Cases/**)",
+      "Write(Test Suites/**)",
+      "Write(Object Repository/**)",
+      "Write(Scripts/groovy/**)",
+      "Write(Keywords/**)",
+      "Write(Data Files/**)",
+      "Write(Include/**)",
+      "Write(Profiles/**)",
+      "Write(CLAUDE.md)",
+      "Write(.claude/**)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(katalonc:*)"
+    ],
+    "deny": [
+      "Write(.env)",
+      "Write(Web_KS_NombreProyecto.prj)",
+      "Write(.classpath)",
+      "Write(build.gradle)",
+      "Write(Libs/internal/GlobalVariable.groovy)",
+      "Bash(rm -rf:*)",
+      "Bash(git push:* main)",
+      "Bash(git push:* develop)",
+      "Bash(git push:* master)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Write(Profiles/default.glbl)",
+      "Write(Profiles/dev.glbl)",
+      "Write(Profiles/qa.glbl)"
+    ]
+  },
+  "env": {
+    "KATALON_PROJECT_PATH": "${workspaceFolder}/Web_KS_NombreProyecto.prj",
+    "DEFAULT_BROWSER": "Chrome",
+    "DEFAULT_PROFILE": "default"
+  }
+}

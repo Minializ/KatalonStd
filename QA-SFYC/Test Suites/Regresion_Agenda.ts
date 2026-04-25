@@ -21,7 +21,7 @@
          <id>351abf9c-b298-40f0-8238-d6060d751cdc</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>2-40</value>
+            <value>2-4</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
       </testDataLink>
@@ -37,15 +37,22 @@
       <guid>49598d6f-6c83-449f-b32c-c529336fc1b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>''</defaultValue>
+         <description></description>
+         <id>2fc0b3f9-e2b0-44d7-939e-1b2eff9d2d4f</id>
+         <masked>false</masked>
+         <name>numeroSuscriptor</name>
+      </iterationNameVariable>
       <testCaseId>Test Cases/AGENDA/Contratos/Equipos/TC-062_RecogerEquipo</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>0f4b621e-656c-4dd7-9111-3767290eca02</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>2-40</value>
+            <value>2-4</value>
          </iterationEntity>
-         <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
+         <testDataId>Data Files/AGENDA/SuscriptoresSUS (1)</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -72,7 +79,7 @@
          <id>beb29367-dbb9-460d-8157-9d5d6f54146e</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>2-40</value>
+            <value>2-4</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
       </testDataLink>
@@ -94,7 +101,7 @@
          <id>fd549398-d9fb-4ea0-a334-6ab37798d516</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>2-40</value>
+            <value>2-4</value>
          </iterationEntity>
          <testDataId>Data Files/AGENDA/SuscriptoresRemplazo</testDataId>
       </testDataLink>
