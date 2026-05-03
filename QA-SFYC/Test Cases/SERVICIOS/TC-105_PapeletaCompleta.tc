@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Llenar papeleta completa con multiples tabs</description>
+   <name>TC-105_PapeletaCompleta</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0105-4a1b-8001-000000000105</testCaseGuid>
+</TestCaseEntity>

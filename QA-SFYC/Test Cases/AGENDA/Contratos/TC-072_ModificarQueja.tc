@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Modificar una queja administrativa existente</description>
+   <name>TC-072_ModificarQueja</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0072-4a1b-8001-000000000072</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>v0072-0001-4a1b-8001-000000000001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411627544'</defaultValue>
+      <description></description>
+      <id>v0072-0001-4a1b-8001-000000000001</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

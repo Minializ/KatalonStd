@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Solicitud de traspaso de equipo</description>
+   <name>TC-094_SolicitudTraspaso</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0094-4a1b-8001-000000000094</testCaseGuid>
+</TestCaseEntity>

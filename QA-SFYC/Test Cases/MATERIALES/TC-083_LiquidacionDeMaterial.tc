@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Liquidar material entregado</description>
+   <name>TC-083_LiquidacionDeMaterial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0083-4a1b-8001-000000000083</testCaseGuid>
+</TestCaseEntity>

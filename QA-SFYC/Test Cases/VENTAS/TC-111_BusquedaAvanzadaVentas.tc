@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Busqueda avanzada de solicitudes de venta</description>
+   <name>TC-111_BusquedaAvanzadaVentas</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0111-4a1b-8001-000000000111</testCaseGuid>
+</TestCaseEntity>

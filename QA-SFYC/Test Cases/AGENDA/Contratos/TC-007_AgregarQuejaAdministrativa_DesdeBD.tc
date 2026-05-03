@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Agrega una queja administrativa tomando los datos desde SQL Server. Tipo de queja parametrizable: profeco o administrativa.</description>
+   <name>TC-007_AgregarQuejaAdministrativa_DesdeBD</name>
+   <tag>agente,quejas,agenda,sql</tag>
+   <comment>Generado por Agente QA - 2026-05-03. Caso dorado de referencia: TC-003.</comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-e5f6-4789-9abc-def012345678</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>11111111-1111-1111-1111-111111111111</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>22222222-2222-2222-2222-222222222222</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33333333-3333-3333-3333-333333333333</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'administrativa'</defaultValue>
+      <description>Tipo de queja: 'profeco' o 'administrativa'</description>
+      <id>11111111-1111-1111-1111-111111111111</id>
+      <masked>false</masked>
+      <name>tipoQueja</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pruebas agente'</defaultValue>
+      <description>Nombre de la persona que reporta la queja</description>
+      <id>22222222-2222-2222-2222-222222222222</id>
+      <masked>false</masked>
+      <name>reporta</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description>Si es true, toma el suscriptor desde SQL. Si es false, usa el default.</description>
+      <id>33333333-3333-3333-3333-333333333333</id>
+      <masked>false</masked>
+      <name>obtenerSuscriptorDeBD</name>
+   </variable>
+</TestCaseEntity>

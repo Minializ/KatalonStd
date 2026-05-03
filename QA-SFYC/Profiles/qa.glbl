@@ -132,7 +132,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Host de SQL Server</description>
-      <initValue>'megang-383.evolution.corp'</initValue>
+      <initValue>'10.10.1.81'</initValue>
       <name>SQL_SERVER_HOST</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
@@ -153,16 +153,16 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Usuario de SQL Server</description>
-      <initValue>'mihernandezg'</initValue>
+      <initValue>'uscarcry'</initValue>
       <name>SQL_SERVER_USER</name>
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Password de SQL Server (cifrado con Katalon Encryption)</description>
-      <initValue>'UAS54JT5V81YGtPZJ4Qyiw=='</initValue>
+      <initValue>''</initValue>
       <name>SQL_SERVER_PASSWORD</name>
-      <protected>false</protected>
+      <protected>true</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

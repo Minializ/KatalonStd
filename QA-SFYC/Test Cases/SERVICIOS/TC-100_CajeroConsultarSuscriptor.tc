@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Consultar suscriptor en Cajero</description>
+   <name>TC-100_CajeroConsultarSuscriptor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0100-4a1b-8001-000000000100</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>v0100-0001-4a1b-8001-000000000001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411627544'</defaultValue>
+      <description></description>
+      <id>v0100-0001-4a1b-8001-000000000001</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

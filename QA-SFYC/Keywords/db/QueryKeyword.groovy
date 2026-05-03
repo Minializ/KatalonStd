@@ -12,6 +12,8 @@ import java.sql.ResultSetMetaData
 import java.sql.SQLException
 import java.sql.Statement
 
+import com.kms.katalon.core.configuration.RunConfiguration
+
 /**
  * QueryKeyword
  * ----------------------------------------------------------------------------
@@ -66,6 +68,7 @@ class QueryKeyword {
         String port = String.valueOf(GlobalVariable.SQL_SERVER_PORT)
         String db   = String.valueOf(GlobalVariable.SQL_SERVER_DB)
         String user = String.valueOf(GlobalVariable.SQL_SERVER_USER)
+        // Katalon descifra automaticamente las variables con protected=true
         String pass = String.valueOf(GlobalVariable.SQL_SERVER_PASSWORD)
 
         String url = "jdbc:sqlserver://${host}:${port};" +

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Buscar contrato existente</description>
+   <name>TC-103_BuscarContrato</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0103-4a1b-8001-000000000103</testCaseGuid>
+</TestCaseEntity>

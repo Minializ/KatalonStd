@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Consultar corte de caja</description>
+   <name>TC-107_CorteDeCaja</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0107-4a1b-8001-000000000107</testCaseGuid>
+</TestCaseEntity>

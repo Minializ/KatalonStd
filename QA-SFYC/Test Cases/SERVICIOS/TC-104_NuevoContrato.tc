@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Crear nuevo contrato</description>
+   <name>TC-104_NuevoContrato</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0104-4a1b-8001-000000000104</testCaseGuid>
+</TestCaseEntity>

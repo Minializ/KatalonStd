@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Registrar una nueva entrega de material</description>
+   <name>TC-080_EntregaDeMaterial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0080-4a1b-8001-000000000080</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Cancelar solicitud de venta</description>
+   <name>TC-112_CancelarSolicitudVenta</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0112-4a1b-8001-000000000112</testCaseGuid>
+</TestCaseEntity>

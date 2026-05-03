@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Asignar solicitud a vendedor</description>
+   <name>TC-113_AsignarSolicitudVendedor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0113-4a1b-8001-000000000113</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Registrar aclaracion de material</description>
+   <name>TC-085_AclaracionDeMaterial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0085-4a1b-8001-000000000085</testCaseGuid>
+</TestCaseEntity>

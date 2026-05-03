@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Cambio masivo de ubicacion de equipos</description>
+   <name>TC-092_CambioMasivoUbicacion</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0092-4a1b-8001-000000000092</testCaseGuid>
+</TestCaseEntity>

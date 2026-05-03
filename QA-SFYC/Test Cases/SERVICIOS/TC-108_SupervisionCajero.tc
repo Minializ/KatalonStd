@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Supervision de cajeros</description>
+   <name>TC-108_SupervisionCajero</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0108-4a1b-8001-000000000108</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Consultar ordenes de trabajo en MATERIALES</description>
+   <name>TC-084_OrdenesDeTrabajoMaterial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0084-4a1b-8001-000000000084</testCaseGuid>
+</TestCaseEntity>

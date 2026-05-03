@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Crear una requisicion de material</description>
+   <name>TC-081_RequisicionDeMaterial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0081-4a1b-8001-000000000081</testCaseGuid>
+</TestCaseEntity>

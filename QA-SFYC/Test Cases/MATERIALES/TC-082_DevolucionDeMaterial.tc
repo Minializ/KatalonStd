@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Registrar devolucion de material</description>
+   <name>TC-082_DevolucionDeMaterial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0082-4a1b-8001-000000000082</testCaseGuid>
+</TestCaseEntity>
