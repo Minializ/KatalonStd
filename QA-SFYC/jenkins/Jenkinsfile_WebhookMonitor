@@ -1,0 +1,171 @@
+/**
+ * Pipeline: QA-Monitor-sfyc2
+ * Proposito: Detectar cambios en el repo de desarrollo (sfyc2) y notificar al equipo QA.
+ *            Opcionalmente dispara regresion automatica si los cambios afectan modulos criticos.
+ *
+ * Trigger: GitHub Webhook (push en cualquier rama)
+ */
+pipeline {
+    agent any
+
+    triggers {
+        githubPush()
+    }
+
+    environment {
+        REPO_DEV       = 'sfyc_WEB/sfyc2'                    // org/repo en GitHub
+        QA_PROJECT     = 'Web_KS_NombreProyecto.prj'
+        QA_REPO_PATH   = 'C:\\Proyectos\\Katalon\\KatalonTests-QA\\KatalonTests-QA\\QA-SFYC'
+        TEAMS_WEBHOOK  = credentials('teams-webhook-url')     // ID del secreto en Jenkins
+    }
+
+    stages {
+
+        stage('Detectar cambios') {
+            steps {
+                script {
+                    // Archivos modificados en el ultimo push
+                    def changes = []
+                    currentBuild.changeSets.each { changeSet ->
+                        changeSet.items.each { entry ->
+                            entry.affectedFiles.each { file ->
+                                changes.add(file.path)
+                            }
+                        }
+                    }
+                    env.CHANGED_FILES = changes.join('\n')
+                    env.CHANGE_COUNT  = changes.size().toString()
+
+                    // Clasificar por modulo afectado
+                    def modulosAfectados = [] as Set
+                    changes.each { path ->
+                        if (path.contains('apps/control') && path.contains('material'))  modulosAfectados.add('MATERIALES')
+                        else if (path.contains('apps/control'))                          modulosAfectados.add('AGENDA')
+                        else if (path.contains('apps/equipments'))                       modulosAfectados.add('EQUIPOS')
+                        else if (path.contains('apps/services'))                         modulosAfectados.add('SERVICIOS')
+                        else if (path.contains('apps/sales'))                            modulosAfectados.add('VENTAS')
+                        else if (path.contains('libs/'))                                 modulosAfectados.add('SHARED_LIBS')
+                    }
+                    env.MODULOS_AFECTADOS = modulosAfectados.join(',')
+
+                    echo "Archivos cambiados: ${env.CHANGE_COUNT}"
+                    echo "Modulos afectados: ${env.MODULOS_AFECTADOS}"
+                }
+            }
+        }
+
+        stage('Notificar QA') {
+            steps {
+                script {
+                    def branch   = env.GIT_BRANCH ?: env.BRANCH_NAME ?: 'desconocida'
+                    def author   = currentBuild.changeSets.isEmpty() ? 'N/A' :
+                                   currentBuild.changeSets[0].items[0].author.toString()
+                    def commitMsg = currentBuild.changeSets.isEmpty() ? 'N/A' :
+                                    currentBuild.changeSets[0].items[0].msg
+
+                    def mensaje = """\
+                    🔔 **Cambio detectado en sfyc2**
+                    - **Rama:** ${branch}
+                    - **Autor:** ${author}
+                    - **Commit:** ${commitMsg}
+                    - **Archivos modificados:** ${env.CHANGE_COUNT}
+                    - **Modulos afectados:** ${env.MODULOS_AFECTADOS ?: 'Ninguno critico'}
+
+                    _Revisar si los Test Cases de regresion aplican._
+                    """.stripIndent()
+
+                    echo mensaje
+
+                    // Notificacion a Microsoft Teams (opcional)
+                    if (env.TEAMS_WEBHOOK) {
+                        def payload = """
+                        {
+                            "@type": "MessageCard",
+                            "summary": "Cambio en sfyc2 - ${branch}",
+                            "themeColor": "0076D7",
+                            "title": "Cambio detectado en sfyc2",
+                            "sections": [{
+                                "facts": [
+                                    {"name": "Rama", "value": "${branch}"},
+                                    {"name": "Autor", "value": "${author}"},
+                                    {"name": "Commit", "value": "${commitMsg}"},
+                                    {"name": "Archivos", "value": "${env.CHANGE_COUNT}"},
+                                    {"name": "Modulos", "value": "${env.MODULOS_AFECTADOS ?: 'N/A'}"}
+                                ]
+                            }]
+                        }
+                        """
+                        httpRequest(
+                            url: env.TEAMS_WEBHOOK,
+                            httpMode: 'POST',
+                            contentType: 'APPLICATION_JSON',
+                            requestBody: payload,
+                            validResponseCodes: '200:299'
+                        )
+                    }
+
+                    // Notificacion por email
+                    emailext(
+                        to: 'qa-team@sfyc.com.mx',
+                        subject: "[QA-sfyc2] Cambio en rama ${branch} - ${env.MODULOS_AFECTADOS}",
+                        body: mensaje,
+                        mimeType: 'text/plain'
+                    )
+                }
+            }
+        }
+
+        stage('Regresion automatica (opcional)') {
+            when {
+                expression {
+                    // Solo ejecutar regresion si se modificaron modulos conocidos
+                    return env.MODULOS_AFECTADOS?.trim()
+                }
+            }
+            steps {
+                script {
+                    def suites = []
+                    def modulos = env.MODULOS_AFECTADOS.split(',')
+
+                    modulos.each { modulo ->
+                        switch (modulo.trim()) {
+                            case 'AGENDA':     suites.add('Regresion_Agenda_Generados'); break
+                            case 'MATERIALES': suites.add('Regresion_Materiales_Generados'); break
+                            case 'EQUIPOS':    suites.add('Regresion_Equipos_Generados'); break
+                            case 'SERVICIOS':  suites.add('Regresion_Servicios_Generados'); break
+                            case 'VENTAS':     suites.add('Regresion_Ventas_Generados'); break
+                            case 'SHARED_LIBS':
+                                // Si cambian libs compartidas, correr todo
+                                suites = ['Regresion_Agenda_Generados',
+                                           'Regresion_Materiales_Generados',
+                                           'Regresion_Equipos_Generados',
+                                           'Regresion_Servicios_Generados',
+                                           'Regresion_Ventas_Generados']
+                                break
+                        }
+                    }
+
+                    suites.unique().each { suite ->
+                        echo "Disparando regresion: ${suite}"
+                        build job: 'QA-Agente-Katalon',
+                              parameters: [
+                                  string(name: 'TEST_SUITE', value: "Test Suites/${suite}"),
+                                  string(name: 'BROWSER',    value: 'Chrome'),
+                                  string(name: 'PROFILE',    value: 'default')
+                              ],
+                              wait: false  // No esperar, se ejecuta en paralelo
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        failure {
+            echo 'ERROR: Fallo la deteccion o notificacion de cambios.'
+        }
+        success {
+            echo "Monitor completado. Modulos afectados: ${env.MODULOS_AFECTADOS ?: 'ninguno'}"
+        }
+    }
+}

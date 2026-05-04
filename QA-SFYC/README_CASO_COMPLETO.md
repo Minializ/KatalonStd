@@ -89,3 +89,110 @@ caso-completo/
 Estas cosas son las que el agente, en una sesion real con Claude Code + Playwright
 MCP, descubriria abriendo la URL y leyendo el DOM. En este ejemplo las dejo como
 "hipotesis razonable" basada en lo que vi en tu Object Repository.
+
+---
+
+# Test Cases Generados por Modulo (TC-070 a TC-116)
+
+Batch de **34 Test Cases** generados automaticamente a partir del analisis del
+repositorio de desarrollo (`sfyc2/frontend`). Cada TC incluye:
+
+- Archivo `.tc` (metadata XML para Katalon)
+- Script `.groovy` (logica de prueba)
+- Test Suite de regresion por modulo
+
+## AGENDA (TC-070 a TC-074)
+
+| TC | Nombre | Descripcion |
+|---|---|---|
+| TC-070 | ConsultarSuscriptorPorId | Consulta de suscriptor por numero de ID |
+| TC-071 | ConsultarSuscriptorPorNombre | Consulta de suscriptor por nombre completo |
+| TC-072 | ModificarQueja | Modificar datos de una queja administrativa existente |
+| TC-073 | CancelarQuejaAdministrativa | Cancelar queja seleccionando causa y confirmando |
+| TC-074 | ConsultaOrdenesTrabajoMtto | Consultar ordenes de trabajo de mantenimiento |
+
+**Ubicacion:** `Test Cases/AGENDA/Contratos/`
+**Suite:** `Test Suites/Regresion_Agenda_Generados.ts`
+
+## MATERIALES (TC-080 a TC-085)
+
+| TC | Nombre | Descripcion |
+|---|---|---|
+| TC-080 | EntregaDeMaterial | Navegacion y validacion del modulo de entrega |
+| TC-081 | RequisicionDeMaterial | Acceso al modulo de requisiciones |
+| TC-082 | DevolucionDeMaterial | Flujo de devolucion de material al almacen |
+| TC-083 | LiquidacionDeMaterial | Liquidacion de material entregado |
+| TC-084 | OrdenesDeTrabajoMaterial | Consulta de ordenes de trabajo en materiales |
+| TC-085 | AclaracionDeMaterial | Flujo de aclaracion de material |
+
+**Ubicacion:** `Test Cases/MATERIALES/`
+**Suite:** `Test Suites/Regresion_Materiales_Generados.ts`
+
+## EQUIPOS (TC-090 a TC-096)
+
+| TC | Nombre | Descripcion |
+|---|---|---|
+| TC-090 | RegistrarMovimiento | Registro de movimiento de equipo |
+| TC-091 | AsignarEquipoCuadrilla | Asignacion de equipo a cuadrilla |
+| TC-092 | CambioMasivoUbicacion | Cambio masivo de ubicacion de equipos |
+| TC-093 | ConsultarUbicacionEquipo | Consulta de ubicacion de un equipo |
+| TC-094 | SolicitudTraspaso | Solicitud de traspaso de equipo |
+| TC-095 | RegistrarSerie | Registro de serie de equipo |
+| TC-096 | PalletId | Gestion de Pallet ID |
+
+**Ubicacion:** `Test Cases/EQUIPOS/`
+**Suite:** `Test Suites/Regresion_Equipos_Generados.ts`
+
+## SERVICIOS (TC-100 a TC-108)
+
+| TC | Nombre | Descripcion |
+|---|---|---|
+| TC-100 | CajeroConsultarSuscriptor | Consulta de suscriptor en modulo Cajero |
+| TC-101 | CajeroPago | Registro de pago en Cajero |
+| TC-102 | CajeroCancelarPago | Cancelacion de pago en Cajero |
+| TC-103 | BuscarContrato | Busqueda de contrato existente |
+| TC-104 | NuevoContrato | Acceso al formulario de nuevo contrato |
+| TC-105 | PapeletaCompleta | Modulo de papeletas con multiples tabs |
+| TC-106 | DepositoBancario | Registro de deposito bancario |
+| TC-107 | CorteDeCaja | Consulta de corte de caja |
+| TC-108 | SupervisionCajero | Supervision de cajeros |
+
+**Ubicacion:** `Test Cases/SERVICIOS/`
+**Suite:** `Test Suites/Regresion_Servicios_Generados.ts`
+
+## VENTAS (TC-110 a TC-116)
+
+| TC | Nombre | Descripcion |
+|---|---|---|
+| TC-110 | ConsultarSolicitudesVenta | Consulta de solicitudes de venta |
+| TC-111 | BusquedaAvanzadaVentas | Busqueda avanzada de solicitudes |
+| TC-112 | CancelarSolicitudVenta | Cancelacion de solicitud de venta |
+| TC-113 | AsignarSolicitudVendedor | Asignacion de solicitud a vendedor |
+| TC-114 | TransferirSolicitud | Transferencia de solicitud de venta |
+| TC-115 | CatalogoHombroAHombro | Catalogo de vendedores hombro a hombro |
+| TC-116 | BitacoraVentas | Consulta de bitacora de ventas |
+
+**Ubicacion:** `Test Cases/VENTAS/`
+**Suite:** `Test Suites/Regresion_Ventas_Generados.ts`
+
+## Como ejecutar un suite de regresion
+
+```
+katalonc -noSplash -runMode=console ^
+  -projectPath="Web_KS_NombreProyecto.prj" ^
+  -executionProfile="default" ^
+  -testSuitePath="Test Suites/Regresion_Equipos_Generados" ^
+  -browserType="Chrome"
+```
+
+Cambiar `Regresion_Equipos_Generados` por el suite deseado.
+
+## Convenciones aplicadas
+
+- Login via `FuncionesAuxiliares.login(url, user, password)`
+- Navegacion via `FuncionesAuxiliares.ingresarMenu(modulo, opcion, subopcion)`
+- Esperas via `FuncionesAuxiliares.esperarCargaContenido()`
+- Credenciales/URLs via `GlobalVariable.*` (nunca hardcodeadas)
+- Timeouts via `GlobalVariable.TIME_OUT`
+- Test Objects con prefijo `'Object Repository/'` en `findTestObject()`
+- Sin `try/finally` ni `closeBrowser()` (compatibles con ejecucion en suite)
