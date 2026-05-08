@@ -88,7 +88,7 @@
       <guid>3e6ab3b6-5be6-4711-b526-1a01cd061fc9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-27_AsignacionPallets</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/CargaPallets/TC-27_AsignacionPallets</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que el sistema muestra mensajes de error cuando se intenta crear una solicitud de traspaso de pallets sin llenar los campos obligatorios (plaza destino, tipo equipo, observaciones).</description>
+   <name>TC-098_TraspasoPallets_ValidarCamposObligatorios</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0098-4a1b-8001-000000000098</testCaseGuid>
+</TestCaseEntity>

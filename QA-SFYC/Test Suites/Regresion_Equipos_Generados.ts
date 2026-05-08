@@ -57,7 +57,7 @@
       <guid>a1b2c3d4-0096-4a1b-8001-000000000096</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/EQUIPOS/TC-096_PalletId</testCaseId>
+      <testCaseId>Test Cases/EQUIPOS/operaciones/CargaPallets/TC-096_PalletId</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
