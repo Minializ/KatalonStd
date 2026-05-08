@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Agregar queja tecnica seleccionando tipo servicio Internet y validar que el servicio se filtra correctamente.</description>
+   <name>TC-009_AgregarQuejaTecnica_ServicioInternet</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1000009-0006-4006-a006-000000000009</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>v0090001-0006-4006-a006-000000000001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411607720'</defaultValue>
+      <description>Numero de suscriptor para consulta</description>
+      <id>v0090001-0006-4006-a006-000000000001</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

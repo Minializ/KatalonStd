@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que el boton Aceptar permanece deshabilitado si no se selecciona el campo obligatorio Tipo de Contrato en el formulario de queja tecnica.</description>
+   <name>TC-007_ValidarCampoObligatorio_TipoContrato</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1000007-0004-4004-a004-000000000007</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>v0070001-0004-4004-a004-000000000001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411607720'</defaultValue>
+      <description>Numero de suscriptor para consulta</description>
+      <id>v0070001-0004-4004-a004-000000000001</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

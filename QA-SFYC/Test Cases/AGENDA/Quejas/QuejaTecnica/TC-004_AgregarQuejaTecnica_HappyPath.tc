@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Flujo completo de alta de queja tecnica: login, consultar suscriptor, navegar a Trabajos &gt; Quejas, agregar queja con todos los campos, validar mensaje de exito.</description>
+   <name>TC-004_AgregarQuejaTecnica_HappyPath</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1000004-0001-4001-a001-000000000004</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>v0040001-0001-4001-a001-000000000001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411607720'</defaultValue>
+      <description>Numero de suscriptor para consulta</description>
+      <id>v0040001-0001-4001-a001-000000000001</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

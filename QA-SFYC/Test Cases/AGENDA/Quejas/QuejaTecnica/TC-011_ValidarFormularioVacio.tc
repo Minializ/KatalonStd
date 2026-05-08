@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que el formulario de queja tecnica no permite envio cuando todos los campos obligatorios estan vacios.</description>
+   <name>TC-011_ValidarFormularioVacio</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1000011-0008-4008-a008-000000000011</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>v0110001-0008-4008-a008-000000000001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411607720'</defaultValue>
+      <description>Numero de suscriptor para consulta</description>
+      <id>v0110001-0008-4008-a008-000000000001</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Agregar queja tecnica seleccionando tipo servicio Cable y validar que el servicio se filtra correctamente.</description>
+   <name>TC-008_AgregarQuejaTecnica_ServicioCable</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1000008-0005-4005-a005-000000000008</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>v0080001-0005-4005-a005-000000000001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'0411607720'</defaultValue>
+      <description>Numero de suscriptor para consulta</description>
+      <id>v0080001-0005-4005-a005-000000000001</id>
+      <masked>false</masked>
+      <name>numeroSuscriptor</name>
+   </variable>
+</TestCaseEntity>
