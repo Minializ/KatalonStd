@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Buscar rango de ANIs con filtros validos (Desde, Hasta, Codigo Local). Valida que el grid muestre resultados.</description>
+   <name>TC-001_BuscarRangoAnis_HappyPath</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1d2e3f4-anis-0001-8001-000000000001</testCaseGuid>
+</TestCaseEntity>

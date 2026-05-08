@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que el campo Desde no puede ser mayor que el campo Hasta (validacion cruzada). Boton Crear Rango deshabilitado.</description>
+   <name>TC-003_ValidarRangoDesdeMAyorQueHasta</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1d2e3f4-anis-0003-8001-000000000003</testCaseGuid>
+</TestCaseEntity>

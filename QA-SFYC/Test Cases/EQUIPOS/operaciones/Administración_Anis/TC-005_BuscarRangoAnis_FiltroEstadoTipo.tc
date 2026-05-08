@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Buscar rango de ANIs filtrando por Estado=Disponible y Tipo=Normal. Valida que el grid muestre solo registros con esos filtros.</description>
+   <name>TC-005_BuscarRangoAnis_FiltroEstadoTipo</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1d2e3f4-anis-0005-8001-000000000005</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Cambio masivo de ubicacion de equipos - Flujo completo sin cambio de estado. Sucursal 41. Tipo equipo DECODIFICADOR, origen LOG destino ALM, con carga de CSV.</description>
+   <name>TC-001_CambioMasivoUbicacion_HappyPath</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b1c2d3e4-0001-4a1b-8001-000000000001</testCaseGuid>
+</TestCaseEntity>

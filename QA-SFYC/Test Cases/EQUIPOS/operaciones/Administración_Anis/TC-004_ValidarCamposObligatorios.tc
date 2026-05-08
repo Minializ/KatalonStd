@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que los botones Crear Rango y Buscar Rango estan deshabilitados cuando los campos obligatorios no estan llenos.</description>
+   <name>TC-004_ValidarCamposObligatorios</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1d2e3f4-anis-0004-8001-000000000004</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que al habilitar Cambio de Estado y seleccionar el mismo estado origen y destino, el formulario no permite enviar por validacion cruzada.</description>
+   <name>TC-005_ValidarEstadoOrigenIgualDestino</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b1c2d3e4-0005-4a1b-8001-000000000005</testCaseGuid>
+</TestCaseEntity>

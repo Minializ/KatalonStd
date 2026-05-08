@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que al seleccionar la misma ubicacion origen y destino, el formulario no permite enviar (boton deshabilitado por validacion cruzada).</description>
+   <name>TC-003_ValidarUbicacionOrigenIgualDestino</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b1c2d3e4-0003-4a1b-8001-000000000003</testCaseGuid>
+</TestCaseEntity>

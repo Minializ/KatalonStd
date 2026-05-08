@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Cambio masivo de ubicacion con Considerar Cambio de Estado habilitado. Sucursal 41. Tipo equipo, ubicacion origen/destino, estado origen/destino, carga CSV.</description>
+   <name>TC-002_CambioMasivoConCambioEstado</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b1c2d3e4-0002-4a1b-8001-000000000002</testCaseGuid>
+</TestCaseEntity>
