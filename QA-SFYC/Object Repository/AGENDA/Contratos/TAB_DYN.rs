@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//span[(text() = '${opcion}' or . = '${opcion}')] | //div[(contains(text(), '${opcion}'))] )[last()]</value>
+         <value>//span[@class='dx-tab-text' and text()='Quejas Adm.']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

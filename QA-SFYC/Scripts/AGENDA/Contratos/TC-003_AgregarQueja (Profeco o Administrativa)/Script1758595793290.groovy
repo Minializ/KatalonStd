@@ -36,6 +36,16 @@ WebUI.comment('INICIO TC-003_AgregarQuea - : ' + tipoQueja.toUpperCase())
 //Se manda a llamar el caso de prueba de consulta de suscriptor, el cual necesita el parametro de Id para realizar la consulta
 CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'(numeroSuscriptor)
 
+// Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
+CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
+
+// Espera a que aparezca el resultado y abre el detalle del contrato
+WebUI.waitForElementVisible(
+    findTestObject('AGENDA/PaginaInicio/Consulta/TD_SuscriptorEncontrado'),
+    GlobalVariable.TIME_OUT)
+WebUI.doubleClick(
+    findTestObject('AGENDA/PaginaInicio/Consulta/TD_SuscriptorEncontrado'))
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Quejas Adm.']), 
     GlobalVariable.TIME_OUT)
 
