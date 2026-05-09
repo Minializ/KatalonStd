@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar la creación de un nuevo material en el catálogo de descripción de materiales</description>
+   <name>TC-002_CrearNuevoMaterial_HappyPath</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1b2c3d4-mat1-0002-9001-000000000002</testCaseGuid>
+</TestCaseEntity>

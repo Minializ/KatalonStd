@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>BUTTON_Refrescar</name>
+   <tag></tag>
+   <elementGuidId>d1e2f3a4-matd-5002-8001-000000000002</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'dx-datagrid-header-panel')]//div[contains(@class,'dx-toolbar-item')]//i[contains(@class,'dx-icon-refresh')]//ancestor::div[contains(@class,'dx-button-content')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

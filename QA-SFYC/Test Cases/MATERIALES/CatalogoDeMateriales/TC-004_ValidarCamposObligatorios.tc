@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar que los campos obligatorios del formulario de nuevo material impiden el envío cuando están vacíos</description>
+   <name>TC-004_ValidarCamposObligatorios</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1b2c3d4-mat1-0004-9001-000000000004</testCaseGuid>
+</TestCaseEntity>
