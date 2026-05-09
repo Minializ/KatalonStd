@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Validar que se puede eliminar/cancelar una solicitud de traspaso de pallets en estado pendiente antes de ser aceptada.</description>
-   <name>TC-100_TraspasoPallets_CancelarSolicitud</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a1b2c3d4-0100-4a1b-8001-000000000100</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Validar que el sistema impide crear un traspaso de pallets cuando la plaza origen es igual a la plaza destino.</description>
-   <name>TC-099_TraspasoPallets_PlazaOrigenIgualDestino</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a1b2c3d4-0099-4a1b-8001-000000000099</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Flujo completo (Happy Path) de traspaso de pallets: crear solicitud, asignar plaza origen y destino, tipo de equipo, cantidad, asignar transportista y guía de envío.</description>
-   <name>TC-097_TraspasoPallets_HappyPath</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a1b2c3d4-0097-4a1b-8001-000000000097</testCaseGuid>
-</TestCaseEntity>

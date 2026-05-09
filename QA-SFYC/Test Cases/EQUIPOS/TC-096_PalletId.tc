@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Consultar y gestionar Pallet ID de equipos</description>
-   <name>TC-096_PalletId</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a1b2c3d4-0096-4a1b-8001-000000000096</testCaseGuid>
-</TestCaseEntity>

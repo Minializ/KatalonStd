@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Validar el flujo de aceptación destino con asignación de transportista y guía de envío para un traspaso de pallets existente.</description>
-   <name>TC-101_TraspasoPallets_AsignarTransportista</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a1b2c3d4-0101-4a1b-8001-000000000101</testCaseGuid>
-</TestCaseEntity>
