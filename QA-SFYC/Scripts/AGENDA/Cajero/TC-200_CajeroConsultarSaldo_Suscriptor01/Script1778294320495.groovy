@@ -1,30 +1,16 @@
-﻿/**
- * ID:            TC-202_CajeroConsultarSaldo_Suscriptor03
+/**
+ * ID:            TC-200_CajeroConsultarSaldo_Suscriptor01
  * Modulo:        SERVICIOS - Cajero
- * Objetivo:      Consultar saldo de un suscriptor activo de la sucursal 41
- *                obtenido desde BD, ingresar al cajero, realizar pago en efectivo
- *                y guardar el pago.
- * Precondiciones:
- *                - Usuario IYMUNGUIA con permisos de cajero en SFYC.
- *                - Suscriptor activo con pagos >= $1 en sucursal 41.
- *                - Conexion a BD SQL Server configurada en GlobalVariable.
- * Datos:
- *                - Usuario cajero: IYMUNGUIA
- *                - Sucursal: 41
- *                - CIS: 001
- *                - Cajero: 3343
- *                - Contrasena: CCN12345
- *                - Suscriptor: obtenido de BD (fila 3 de 15)
- * Resultado esperado:
- *                - Se consulta el saldo correctamente.
- *                - Se habilita el boton Guardar Pago.
- *                - Se aplica pago en efectivo exitosamente.
+ * Objetivo:      Consultar saldo de un suscriptor activo de la sucursal 41,
+ *                ingresar al cajero, realizar pago en efectivo y guardarlo.
+ * Datos:         Usuario cajero: IYMUNGUIA | Sucursal: 41 | CIS: 001 | Cajero: 3343
+ *                Suscriptor: obtenido de BD (fila 1 de 15)
  * Autor:         Agente QA (generado)
  * Fecha:         2026-05-08
  */
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -33,7 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 // ============================================================================
 // CONFIGURACION DEL CASO
 // ============================================================================
-int indiceSuscriptor = 2  // Fila 3 de 15 (indice 2)
+int indiceSuscriptor = 0  // Fila 1 de 15 (indice 0)
 
 String sqlSuscriptores = """
 SELECT DISTINCT TOP 15
@@ -104,27 +90,21 @@ try {
         findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Usuario'),
         GlobalVariable.TIME_OUT)
 
-    // Seleccionar usuario IYMUNGUIA
     CustomKeywords.'utilidades.Agenda.selectOptionByName'(
         findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Usuario'), 'IYMUNGUIA')
 
-    // Seleccionar sucursal 41
     CustomKeywords.'utilidades.Agenda.selectOptionById'(
         findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Sucursal'), '41')
 
-    // Seleccionar CIS 001
     CustomKeywords.'utilidades.Agenda.selectOptionById'(
         findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Cis'), '1')
 
-    // Seleccionar cajero 3343
     CustomKeywords.'utilidades.Agenda.selectOptionById'(
         findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Cajero'), '3343')
 
-    // Ingresar contrasena
     WebUI.setText(
         findTestObject('SERVICIOS/Cajero/IngresarCajero/INPUT_Contrasenia'), 'CCN12345')
 
-    // Clic en Aceptar
     WebUI.click(findTestObject('SERVICIOS/Cajero/IngresarCajero/BUTTON_Aceptar'))
 
     WebUI.delay(2)
@@ -147,7 +127,6 @@ try {
 
     WebUI.click(findTestObject('SERVICIOS/Cajero/BUTTON_Calcular'))
 
-    // Esperar a que se muestre el total a pagar
     WebUI.waitForElementVisible(
         findTestObject('SERVICIOS/Cajero/LABEL_TotalPagar'),
         GlobalVariable.TIME_OUT)
@@ -191,14 +170,12 @@ try {
 
     WebUI.click(findTestObject('SERVICIOS/Cajero/AplicarPago/BUTTON_Aplicar'))
 
-    // Validar mensaje de exito
     boolean exito = WebUI.waitForElementVisible(
         findTestObject('OBJETOS_GLOBALES/toast_mensaje'),
         GlobalVariable.TIME_OUT,
         FailureHandling.OPTIONAL)
 
     if (!exito) {
-        // Intentar validar con LABEL_MensajeAlerta
         exito = WebUI.waitForElementVisible(
             findTestObject('OBJETOS_GLOBALES/LABEL_MensajeAlerta'),
             GlobalVariable.TIME_OUT_CONTENT,

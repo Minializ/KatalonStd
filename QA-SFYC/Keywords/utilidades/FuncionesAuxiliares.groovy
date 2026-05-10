@@ -227,22 +227,33 @@ class FuncionesAuxiliares {
 	// Mientras el botón esté presente, se hace clic para cerrarlo.
 	// Esto asegura que el entorno de la interfaz quede limpio para continuar con el siguiente paso del test.
 	def limpiarVista() {
+    int controlCiclado = 0
 
-		int controlCiclado = 0
+    WebUI.closeWindowIndex(1, FailureHandling.OPTIONAL)
+    WebUI.switchToWindowIndex(0, FailureHandling.OPTIONAL)
 
-		WebUI.closeWindowIndex(1, FailureHandling.OPTIONAL)
+    TestObject btnCerrar = findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar')
 
-		WebUI.switchToWindowIndex(0)
+    while (controlCiclado < 3) {
+        if (!WebUI.waitForElementVisible(btnCerrar, 1, FailureHandling.OPTIONAL)) {
+            break
+        }
 
-		while (WebUI.verifyElementPresent(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'), 1, FailureHandling.OPTIONAL)) {
-			WebUI.click(findTestObject('Object Repository/OBJETOS_GLOBALES/BUTTON_Cerrar'), FailureHandling.OPTIONAL)
-			controlCiclado++
+        WebUI.scrollToElement(btnCerrar, 1, FailureHandling.OPTIONAL)
 
-			if(controlCiclado > 3) {
-				break
-			}
-		}
-	}
+        // Espera a que sea clickeable; si no, igual intenta con enhancedClick
+        WebUI.waitForElementClickable(btnCerrar, 2, FailureHandling.OPTIONAL)
+
+        try {
+            WebUI.click(btnCerrar, FailureHandling.OPTIONAL)
+        } catch (Exception e) {
+            WebUI.enhancedClick(btnCerrar, FailureHandling.OPTIONAL)
+        }
+
+        controlCiclado++
+        WebUI.delay(1)
+    }
+}
 
 	@Keyword
 	//Metodo que elimina el chatbot para evitar obstrucciones con objetos

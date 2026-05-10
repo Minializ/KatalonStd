@@ -6,12 +6,11 @@
    <elementGuidId>060dd72e-bf7c-40e4-8fe0-d07d29bbbb90</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[contains(@class,'dx-texteditor-input') and @type='password']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//*[@placeholder=&quot;Contraseña&quot;])[last()]//input</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
