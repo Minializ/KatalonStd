@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Flujo completo de alta de queja tecnica: login, consultar suscriptor, navegar a Trabajos &gt; Quejas, agregar queja con todos los campos, validar mensaje de exito.</description>
+   <description>Flujo completo de alta de queja tecnica: login, consultar suscriptor, navegar a Trabajos > Quejas, agregar queja con todos los campos, validar mensaje de exito.</description>
    <name>TC-004_AgregarQuejaTecnica_HappyPath</name>
    <tag></tag>
    <comment></comment>

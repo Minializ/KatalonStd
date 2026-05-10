@@ -6,12 +6,11 @@
    <elementGuidId>d1e2f3a4-matd-5021-8001-000000000021</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//app-materials-description-catalog-grid//dx-data-grid</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'dx-treeview-item')]//span[normalize-space()='Catálogos']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

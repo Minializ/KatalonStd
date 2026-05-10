@@ -15,34 +15,44 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('INICIO TC-100_CajeroConsultarSuscriptor - Suscriptor: ' + numeroSuscriptor)
 
-// 1) Login a SERVICIOS
-CustomKeywords.'utilidades.FuncionesAuxiliares.login'(
-    GlobalVariable.URL_SERVICIOS,
-    GlobalVariable.USER_SERVICIOS,
-    GlobalVariable.PASSWORD_SERVICIOS)
+try {
+    // 1) Login a SERVICIOS
+    CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_SERVICIOS, GlobalVariable.USER_SERVICIOS, GlobalVariable.PASSWORD_SERVICIOS)
 
-// 2) Navegar a Cajero via menu
-CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Servicios', 'Cajero', '')
+    // 2) Navegar a Cajero via menu
+    CustomKeywords.'utilidades.FuncionesAuxiliares.ingresarMenu'('Cajero', '', '')
 
-// 3) Esperar carga
-CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+    // 3) Ingresar numero de suscriptor
+    WebUI.setMaskedText(findTestObject('SERVICIOS/Cajero/INPUT_NumeroSuscriptor'), '0' + numeroSuscriptor)
+    CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
 
-// 4) Buscar suscriptor
-WebUI.waitForElementPresent(
-    findTestObject('Object Repository/SERVICIOS/Cajero/INPUT_Suscriptor'),
-    GlobalVariable.TIME_OUT)
+	/*
+    // 4) Seleccionar usuario IYMUNGUIA
+    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Usuario'), 'IYMUNGUIA')
 
-WebUI.setText(
-    findTestObject('Object Repository/SERVICIOS/Cajero/INPUT_Suscriptor'),
-    numeroSuscriptor)
+    // 5) Seleccionar CIS 001
+    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByCode'(findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Cis'), '001')
 
-WebUI.click(findTestObject('Object Repository/SERVICIOS/Cajero/BUTTON_Consultar'))
+    // 6) Seleccionar Cajero 3343
+    CustomKeywords.'utilidades.FuncionesAuxiliares.selectOptionByName'(findTestObject('SERVICIOS/Cajero/IngresarCajero/SELECT_Cajero'), '3343')
 
-// 5) Esperar y validar resultado
-CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+    // 7) Ingresar contrasenia del cajero
+    WebUI.waitForElementVisible(findTestObject('SERVICIOS/Cajero/IngresarCajero/INPUT_Contrasenia'), 20)
+    WebUI.setEncryptedText(findTestObject('SERVICIOS/Cajero/IngresarCajero/INPUT_Contrasenia'), PasswordCajero)
+    WebUI.delay(2)
 
-WebUI.verifyElementPresent(
-    findTestObject('Object Repository/OBJETOS_GLOBALES/IMG_LogoMega'),
-    GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
+    // 8) Click Aceptar para ingresar al cajero
+    WebUI.click(findTestObject('SERVICIOS/Cajero/IngresarCajero/BUTTON_Aceptar'))*/
 
-WebUI.comment('FIN TC-100 - Consulta de suscriptor en cajero exitosa')
+    // 9) Limpiar popup si aparece
+    CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
+
+    // 10) Esperar y validar que se muestran datos del suscriptor
+    CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
+
+    WebUI.verifyElementPresent(findTestObject('SERVICIOS/Cajero/BUTTON_Calcular'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.comment('FIN TC-100 - Consulta de suscriptor en cajero exitosa')
+} finally {
+    WebUI.closeBrowser()
+}

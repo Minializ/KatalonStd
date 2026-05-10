@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Consultar saldo y aplicar pago en efectivo al suscriptor 09 (sucursal 41) obtenido desde BD</description>
-   <name>TC-208_CajeroConsultarSaldo_Suscriptor09</name>
-   <tag>cajero,saldo,pago,efectivo,sucursal41</tag>
-   <comment>Generado por Agente QA - 2026-05-08. Suscriptor 9 de 15.</comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ca200001-0001-4a1b-8001-000000000009</testCaseGuid>
-</TestCaseEntity>

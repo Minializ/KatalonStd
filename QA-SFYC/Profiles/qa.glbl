@@ -83,7 +83,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'brntesting'</initValue>
+      <initValue>'mihernandezg'</initValue>
       <name>USER_SERVICIOS</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

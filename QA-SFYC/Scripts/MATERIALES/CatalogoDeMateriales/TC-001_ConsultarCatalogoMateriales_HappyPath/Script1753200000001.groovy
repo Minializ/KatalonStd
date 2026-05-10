@@ -31,14 +31,10 @@ WebUI.click(findTestObject('Object Repository/MATERIALES/Entregas/SPAN_OpcionMen
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
 
 // 3) Verificar que la grilla de catálogo se cargó
-WebUI.verifyElementPresent(
-    findTestObject('Object Repository/MATERIALES/CatalogoMateriales/GRID_CatalogoMateriales'),
-    GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
-
+WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/CatalogoMateriales/GRID_CatalogoMateriales'), GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/MATERIALES/CatalogoMateriales/GRID_CatalogoMateriales'))
 // 4) Verificar que hay al menos un registro en la grilla
-WebUI.verifyElementPresent(
-    findTestObject('Object Repository/MATERIALES/CatalogoMateriales/TR_PrimerResultado'),
-    GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/MATERIALES/CatalogoMateriales/TR_PrimerResultado'),GlobalVariable.TIME_OUT, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.comment('La grilla de catálogo de materiales se cargó con datos correctamente')
 

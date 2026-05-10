@@ -4,5 +4,6 @@
    <name>TC-001_ConsultarCatalogoMateriales_HappyPath</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>a1b2c3d4-mat1-0001-9001-000000000001</testCaseGuid>
 </TestCaseEntity>
