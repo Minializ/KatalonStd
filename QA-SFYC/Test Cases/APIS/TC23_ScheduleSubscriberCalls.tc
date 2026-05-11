@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Valida llamadas agendadas del suscriptor</description>
+   <name>TC23_ScheduleSubscriberCalls</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>tc23-api-agenda-0023-000000000023</testCaseGuid>
+   <variableLinks>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>tc23-api-agenda-0023-000000000023_passwordAPI</variableId>
+      </variableLink>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Initial88'</defaultValue>
+      <description>Password para login OAuth al IDP</description>
+      <id>tc23-api-agenda-0023-000000000023_passwordAPI</id>
+      <masked>true</masked>
+      <name>passwordAPI</name>
+   </variable>
+</TestCaseEntity>

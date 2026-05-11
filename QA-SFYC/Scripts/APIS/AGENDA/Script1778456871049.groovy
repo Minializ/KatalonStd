@@ -219,7 +219,7 @@ def verifyNotNull(ResponseObject resp, String fieldPath) {
         if (arrayMatch.matches()) return obj[arrayMatch.group(1).toInteger()]
         // Soportar "campo[0]"
         def propArray = (prop =~ /^(\w+)\[(\d+)\]$/)
-        if (propArray.matches()) return obj[propArray.group(1)]?[propArray.group(2).toInteger()]
+        if (propArray.matches()) return obj[propArray.group(1)]?.getAt(propArray.group(2).toInteger())
         return obj[prop]
     }
     assert value != null : "Campo '${fieldPath}' es null en la respuesta"
@@ -445,7 +445,7 @@ println "  TC10 PASSED"
 // ================================================================
 println "\n===== TC11 - CauseCancellationOrders OData ====="
 def reqTC11 = buildGetRequest(
-    "${BASE_URL_DATA}/workorders/api/CauseCancellationOrders?\$orderby=id&\$top=20&\$select=id,description&\$filter=(available eq %27S%27) and (availableService eq true)&api-version=1.0"
+    "${BASE_URL_DATA}/workorders/api/CauseCancellationOrders?\$orderby=id&\$top=20&\$select=id,description&\$filter=(available%20eq%20%27S%27)%20and%20(availableService%20eq%20true)&api-version=1.0"
 )
 ResponseObject respTC11 = WS.sendRequest(reqTC11)
 
@@ -464,7 +464,7 @@ println "  TC11 PASSED"
 // ================================================================
 println "\n===== TC12 - CausesProblems OData ====="
 def reqTC12 = buildGetRequest(
-    "${BASE_URL_DATA}/materials/api/CausesProblems?\$top=20&\$select=id,description&\$filter=available eq %27S%27&api-version=1.0"
+    "${BASE_URL_DATA}/materials/api/CausesProblems?\$top=20&\$select=id,description&\$filter=available%20eq%20%27S%27&api-version=1.0"
 )
 ResponseObject respTC12 = WS.sendRequest(reqTC12)
 
@@ -483,7 +483,7 @@ println "  TC12 PASSED"
 // ================================================================
 println "\n===== TC13 - Works OData (tipo queja) ====="
 def reqTC13 = buildGetRequest(
-    "${BASE_URL_DATA}/workorders/api/Works?\$top=20&\$select=id,typeWorkId,workId,description,swDirect&\$filter=(typeWorkId eq 2) and ((workId eq 1) or (workId eq 115) or (workId eq 141) or (workId eq 135))&api-version=1.0"
+    "${BASE_URL_DATA}/workorders/api/Works?\$top=20&\$select=id,typeWorkId,workId,description,swDirect&\$filter=(typeWorkId%20eq%202)%20and%20((workId%20eq%201)%20or%20(workId%20eq%20115)%20or%20(workId%20eq%20141)%20or%20(workId%20eq%20135))&api-version=1.0"
 )
 ResponseObject respTC13 = WS.sendRequest(reqTC13)
 

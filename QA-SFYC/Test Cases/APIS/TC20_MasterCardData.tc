@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Valida datos de domiciliacion del suscriptor</description>
+   <name>TC20_MasterCardData</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>tc20-api-agenda-0020-000000000020</testCaseGuid>
+   <variableLinks>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>tc20-api-agenda-0020-000000000020_passwordAPI</variableId>
+      </variableLink>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Initial88'</defaultValue>
+      <description>Password para login OAuth al IDP</description>
+      <id>tc20-api-agenda-0020-000000000020_passwordAPI</id>
+      <masked>true</masked>
+      <name>passwordAPI</name>
+   </variable>
+</TestCaseEntity>

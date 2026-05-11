@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "*.ts": "xml"
-    }
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
 }
