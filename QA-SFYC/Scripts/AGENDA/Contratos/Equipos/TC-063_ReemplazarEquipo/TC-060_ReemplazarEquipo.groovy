@@ -27,17 +27,19 @@ CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('0430181005')
 
 // Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
 CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
+CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
 
 // Navegación a Contratos.
-WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), GlobalVariable.TIME_OUT)
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Contratos'), GlobalVariable.TIME_OUT)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Contratos',))
 
 // Navegación a Equipos dentro de Contratos.
-WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']), GlobalVariable.TIME_OUT)
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Equipos'), GlobalVariable.TIME_OUT)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Equipos'),)
+
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
-//WebUI.delay(5)
+WebUI.delay(5)
 
 // Selección del equipo por modelo (ej. HG8145V5).
 WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TD_ModeloEquipo'), 0)
@@ -46,7 +48,7 @@ WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipo
 // timeout en segundos (usa la variable global definida en tu proyecto)
 int timeout = GlobalVariable.TIME_OUT ?: 5
 
-CustomKeywords.'utilidades.FuncionesAuxiliares.eliminarChatBot'()
+
 
 // Abrir opciones del equipo y elegir Reemplazar equipo.
 WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/BUTTON_VerOpciones'))

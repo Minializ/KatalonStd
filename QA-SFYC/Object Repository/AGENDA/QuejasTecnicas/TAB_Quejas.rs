@@ -6,12 +6,11 @@
    <elementGuidId>c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@class='dx-tab-text' and text()='Quejas']/ancestor::div[contains(@class,'dx-tab')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'dx-tab')]//span[normalize-space()='Quejas']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AGENDA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>89baae36-edc4-4cef-826a-506638764835</testCaseGuid>
+   <variableLinks>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>89baae36-edc4-4cef-826a-506638764835_passwordAPI</variableId>
+      </variableLink>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Initial88'</defaultValue>
+      <description>Password para login OAuth al IDP (texto plano, solo QA)</description>
+      <id>89baae36-edc4-4cef-826a-506638764835_passwordAPI</id>
+      <masked>true</masked>
+      <name>passwordAPI</name>
+   </variable>
+</TestCaseEntity>

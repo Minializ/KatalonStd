@@ -22,20 +22,21 @@ import org.openqa.selenium.Keys as Keys
 //def modeloEquipoActual = (binding.hasVariable('modeloEquipo') && modeloEquipo) ? modeloEquipo : 'HG8145V5'
 
 
-// Consulta del suscriptor (keyword reutilizable del proyecto SFYC).
-//suscriptor en estado COR
-CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('0430507604')
 
+//suscriptor en estado COR
+// Consulta del suscriptor (keyword reutilizable del proyecto SFYC).
+CustomKeywords.'utilidades.Agenda.consultarSusciptorPorId'('0430181005')
 // Cierra el mensaje "ERROR EN EL SERVIDOR" si aparece.
 CustomKeywords.'utilidades.FuncionesAuxiliares.limpiarVista'()
 
 // Navegación a Contratos.
-WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']), GlobalVariable.TIME_OUT)
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Contratos']))
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Contratos'), GlobalVariable.TIME_OUT)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Contratos',))
 
 // Navegación a Equipos dentro de Contratos.
-WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']), GlobalVariable.TIME_OUT)
-WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/TAB_DYN', [('opcion') : 'Equipos']))
+WebUI.waitForElementPresent(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Equipos'), GlobalVariable.TIME_OUT)
+WebUI.click(findTestObject('Object Repository/AGENDA/Contratos/reemplazar_equipos/TAB_Equipos'),)
+
 
 CustomKeywords.'utilidades.FuncionesAuxiliares.esperarCargaContenido'()
 //WebUI.delay(5)
