@@ -29,6 +29,11 @@ class Preconfiguraciones {
 
 		def sistema = testCaseContext.getTestCaseId()
 
+		// Los test cases de APIs no usan browser, saltar login
+		if (sistema.contains('APIS')) {
+			return
+		}
+
 		if(sistema.contains('AGENDA')) {
 			CustomKeywords.'utilidades.FuncionesAuxiliares.login'(GlobalVariable.URL_AGENDA, GlobalVariable.USER_AGENDA, GlobalVariable.PASSWORD_AGENDA)
 		}else if (sistema.contains('MATERIALES')) {
@@ -53,6 +58,11 @@ class Preconfiguraciones {
 	 */
 	@AfterTestCase
 	def capturarEvidencias(TestCaseContext testCaseContext) {
+
+		// Los test cases de APIs no usan browser, saltar captura
+		if (testCaseContext.getTestCaseId().contains('APIS')) {
+			return
+		}
 
 		int randomNum = (int)(Math.random() * 100) + 1;
 

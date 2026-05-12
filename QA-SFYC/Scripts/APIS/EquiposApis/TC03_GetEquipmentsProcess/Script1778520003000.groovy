@@ -39,6 +39,10 @@ def body = """
 def req = API.buildPostRequest(url, body, token)
 ResponseObject resp = WS.sendRequest(req)
 
+// Loguear respuesta si no es 200 para diagnostico
+if (resp.getStatusCode() != 200) {
+    println "  !! HTTP ${resp.getStatusCode()} - Body: ${resp.getResponseBodyContent()}"
+}
 WS.verifyResponseStatusCode(resp, 200)
 
 def json = API.parseResponse(resp)

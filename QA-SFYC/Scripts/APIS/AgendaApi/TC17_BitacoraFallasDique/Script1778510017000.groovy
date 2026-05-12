@@ -17,11 +17,17 @@ def reqTC17 = API.buildGetRequest(
 ResponseObject respTC17 = WS.sendRequest(reqTC17)
 
 WS.verifyResponseStatusCode(respTC17, 200)
-WS.verifyElementPropertyValue(respTC17, "status", "OK")
-API.verifyNotNull(respTC17, "result")
 
 def parser = new JsonSlurper()
 def bodyTC17 = parser.parseText(respTC17.getResponseBodyContent())
+
+// Loguear respuesta para diagnostico si status no es OK
+if (bodyTC17.status != "OK") {
+    println "  !! status: ${bodyTC17.status}"
+    println "  !! Body: ${respTC17.getResponseBodyContent()}"
+}
+WS.verifyElementPropertyValue(respTC17, "status", "OK")
+API.verifyNotNull(respTC17, "result")
 assert bodyTC17.status == "OK"   : "TC17: status debe ser OK"
 assert bodyTC17.result != null   : "TC17: result no debe ser null"
 assert bodyTC17.result instanceof List : "TC17: result debe ser un array"

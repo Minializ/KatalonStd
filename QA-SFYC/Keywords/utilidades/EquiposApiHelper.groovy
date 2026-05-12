@@ -5,6 +5,7 @@ import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import groovy.json.JsonSlurper
+import utilidades.AgendaApiHelper
 
 /**
  * Helper reutilizable para los Test Cases de APIs del modulo EQUIPOS.
