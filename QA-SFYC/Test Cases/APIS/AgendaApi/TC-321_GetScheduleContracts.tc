@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Valida contratos agendados del suscriptor</description>
+   <name>TC-321_GetScheduleContracts</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>tc22-api-agenda-0022-000000000022</testCaseGuid>
+   <variableLinks>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>tc22-api-agenda-0022-000000000022_passwordAPI</variableId>
+      </variableLink>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Initial88'</defaultValue>
+      <description>Password para login OAuth al IDP</description>
+      <id>tc22-api-agenda-0022-000000000022_passwordAPI</id>
+      <masked>true</masked>
+      <name>passwordAPI</name>
+   </variable>
+</TestCaseEntity>

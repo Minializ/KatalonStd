@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar navegacion y carga de todas las pestanas de Ordenes de Trabajo</description>
+   <name>TC-094_ConsultaOrdenesDeTrabajoTabs</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0094-4a1b-9001-000000000094</testCaseGuid>
+</TestCaseEntity>

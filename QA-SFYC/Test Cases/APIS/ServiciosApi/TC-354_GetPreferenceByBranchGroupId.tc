@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Obtener preferencia por grupo de sucursal</description>
+   <name>TC-354_GetPreferenceByBranchGroupId</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>tc16-api-servicios-0016-000000000016</testCaseGuid>
+   <variableLinks>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>tc16-api-servicios-0016-000000000016_passwordAPI</variableId>
+      </variableLink>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Initial88'</defaultValue>
+      <description>Password para login OAuth al IDP</description>
+      <id>tc16-api-servicios-0016-000000000016_passwordAPI</id>
+      <masked>true</masked>
+      <name>passwordAPI</name>
+   </variable>
+</TestCaseEntity>

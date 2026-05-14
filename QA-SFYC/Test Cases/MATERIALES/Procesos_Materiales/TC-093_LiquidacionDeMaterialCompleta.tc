@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Flujo completo de liquidacion de material con verificacion de folio</description>
+   <name>TC-093_LiquidacionDeMaterialCompleta</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0093-4a1b-9001-000000000093</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d0fd52c2-0093-45cf-90b5-da6f244c5001</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'32'</defaultValue>
+      <description>Numero de cuadrilla para liquidacion</description>
+      <id>d0fd52c2-0093-45cf-90b5-da6f244c5001</id>
+      <masked>false</masked>
+      <name>cuadrillaMateriales</name>
+   </variable>
+</TestCaseEntity>

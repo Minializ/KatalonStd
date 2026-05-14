@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar acceso y elementos del submodulo de Aclaracion de Material</description>
+   <name>TC-095_AclaracionDeMaterial</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0095-4a1b-9001-000000000095</testCaseGuid>
+</TestCaseEntity>

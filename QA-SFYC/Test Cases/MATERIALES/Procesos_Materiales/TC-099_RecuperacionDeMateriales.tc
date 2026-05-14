@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar acceso y modos del submodulo Recuperacion de Materiales</description>
+   <name>TC-099_RecuperacionDeMateriales</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0099-4a1b-9001-000000000099</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar Catalogo de Cuadrillas con grid y popup de Nuevo Registro</description>
+   <name>TC-096_CatalogoCuadrillas</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0096-4a1b-9001-000000000096</testCaseGuid>
+</TestCaseEntity>

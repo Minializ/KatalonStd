@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar login y acceso a todos los submodulos del modulo MATERIALES</description>
+   <name>TC-090_LoginYAccesoMateriales</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0090-4a1b-9001-000000000090</testCaseGuid>
+</TestCaseEntity>

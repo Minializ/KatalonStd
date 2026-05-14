@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar catalogo de Stock de Materiales con grid y filtros</description>
+   <name>TC-097_StockDeMateriales</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0097-4a1b-9001-000000000097</testCaseGuid>
+</TestCaseEntity>

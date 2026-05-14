@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Validar acceso y elementos del submodulo Traspaso de Inventarios</description>
+   <name>TC-098_TraspasoDeInventarios</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0098-4a1b-9001-000000000098</testCaseGuid>
+</TestCaseEntity>

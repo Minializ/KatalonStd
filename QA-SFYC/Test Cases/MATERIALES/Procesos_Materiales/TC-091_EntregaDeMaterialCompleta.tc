@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Flujo completo de entrega manual de material con verificacion de folio</description>
+   <name>TC-091_EntregaDeMaterialCompleta</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0091-4a1b-9001-000000000091</testCaseGuid>
+</TestCaseEntity>

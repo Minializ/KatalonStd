@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Flujo completo de devolucion de material con validacion de cantidades y folio</description>
+   <name>TC-092_DevolucionDeMaterialCompleta</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-0092-4a1b-9001-000000000092</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d0fd52c2-0092-45cf-90b5-da6f244c5001</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d3abd411-0092-498f-811a-22504a93c002</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'30'</defaultValue>
+      <description>Numero de cuadrilla para devolucion</description>
+      <id>d0fd52c2-0092-45cf-90b5-da6f244c5001</id>
+      <masked>false</masked>
+      <name>cuadrillaMateriales</name>
+   </variable>
+   <variable>
+      <defaultValue>['12', '15', '346', '398', '282', '289', '397']</defaultValue>
+      <description>Sucursales con dia actual habilitado</description>
+      <id>d3abd411-0092-498f-811a-22504a93c002</id>
+      <masked>false</masked>
+      <name>sucursalesDiaActual</name>
+   </variable>
+</TestCaseEntity>
